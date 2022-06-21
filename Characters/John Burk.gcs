@@ -1,0 +1,2063 @@
+{
+	"type": "character",
+	"version": 1,
+	"id": "8bfc341a-24ab-453e-b49b-57d6e88af8aa",
+	"settings": {
+		"version": 1,
+		"default_length_units": "ft_in",
+		"default_weight_units": "lb",
+		"user_description_display": "tooltip",
+		"modifiers_display": "inline",
+		"notes_display": "inline",
+		"base_will_and_per_on_10": false,
+		"use_multiplicative_modifiers": false,
+		"use_modifying_dice_plus_adds": false,
+		"use_know_your_own_strength": false,
+		"use_reduced_swing": false,
+		"use_thrust_equals_swing_minus_2": false,
+		"use_simple_metric_conversions": true,
+		"show_college_in_sheet_spells": false,
+		"use_title_in_footer": false,
+		"block_layout": [
+			"reactions",
+			"melee",
+			"ranged",
+			"advantages skills",
+			"spells",
+			"equipment",
+			"other_equipment",
+			"notes"
+		]
+	},
+	"created_date": "Dec 15, 2020, 1:58 PM",
+	"modified_date": "Dec 16, 2020, 3:05 PM",
+	"profile": {
+		"player_name": "Joseph Mason",
+		"name": "John Burk",
+		"age": "60",
+		"birthday": "June 17",
+		"eyes": "Light Blue",
+		"hair": "Black, Wavy, Short",
+		"skin": "Tan",
+		"handedness": "Left",
+		"height": "6'",
+		"weight": "129 lb",
+		"gender": "Male",
+		"body_type": "humanoid",
+		"tech_level": "8"
+	},
+	"FP_adj": 2,
+	"total_points": 134,
+	"ST": 10,
+	"DX": 12,
+	"IQ": 10,
+	"HT": 12,
+	"speed_adj": -1,
+	"advantages": [
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "ee883ffc-4092-4768-b6c2-898507f83fca",
+			"name": "Natural Attacks",
+			"physical": true,
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Bite",
+					"reach": "C",
+					"parry": "No",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX"
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "DX"
+						},
+						{
+							"type": "Skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "Skill",
+							"name": "Karate"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Kick",
+					"reach": "C,1",
+					"parry": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Karate",
+							"modifier": -2
+						}
+					]
+				}
+			],
+			"reference": "B271"
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "f5c4d697-8fc1-408c-96e3-bde67bc81df6",
+			"based_on_id": "149239c1-aec9-4acc-a5fe-07b64cf6a323",
+			"based_on_hash": "oBXgu3PgreWBHmR9s8lObu9I03M6NDVzuRP7Bz8HpF4",
+			"name": "Language: English",
+			"mental": true,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "5f29a013-d99e-4cd7-9f47-7c7205e39ff5",
+					"based_on_id": "ff972d9a-b925-4895-a489-f3d14999074d",
+					"based_on_hash": "PTZ6jSAPUWKOKlORCr9hRHiy6DHR1CAf503TJLM/3rM",
+					"name": "Native",
+					"reference": "B23",
+					"cost_type": "points",
+					"cost": -6,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "05303cab-acbc-4cf7-857a-911945ba8943",
+					"based_on_id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+					"based_on_hash": "DtKZ0Vo3//iUI1VmkwoJuy/9b7gbaYUwli62x1ao3cs",
+					"disabled": true,
+					"name": "Spoken",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 0,
+					"affects": "total",
+					"notes": "None"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "8402be0c-fbab-40f0-a0c6-b68ed6ec0b67",
+					"based_on_id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+					"based_on_hash": "fUM0rV7DN4zKRRDMYD33argFmiTplQMuyap/Z8YtnoE",
+					"disabled": true,
+					"name": "Spoken",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "total",
+					"notes": "Broken"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "7a0dbc4e-80ff-4bc9-84c3-08848e8ae44a",
+					"based_on_id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+					"based_on_hash": "r29v7AGbJh2NjxafN936EHD4/hUhBNgHAPBe+e3906E",
+					"disabled": true,
+					"name": "Spoken",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 2,
+					"affects": "total",
+					"notes": "Accented"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "dccec095-dc69-43f2-80f5-d2f1063e52c8",
+					"based_on_id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+					"based_on_hash": "HqLvrw3qdEeiAvADO50D/apgO+NfM8busq4EtKRpOug",
+					"name": "Spoken",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 3,
+					"affects": "total",
+					"notes": "Native"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "adc76d23-9633-4133-84dc-730ae5683b5b",
+					"based_on_id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+					"based_on_hash": "U1q00bshFEYtwcuKsNfd5Af9POb375cPsilahaLXHCs",
+					"disabled": true,
+					"name": "Written",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 0,
+					"affects": "total",
+					"notes": "None"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "e776faaa-296e-4705-99dc-c087e11c1b42",
+					"based_on_id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+					"based_on_hash": "kimMn5ME4U4gnqtTMo1Qs3sgqqwKog+E6DVoO+uO/9c",
+					"disabled": true,
+					"name": "Written",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "total",
+					"notes": "Broken"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "09539308-adf2-407c-84f0-07062b852108",
+					"based_on_id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+					"based_on_hash": "1ZJQO6nenJpjW349i0CYwfgSVBF36JA6Htdf/zo3drY",
+					"disabled": true,
+					"name": "Written",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 2,
+					"affects": "total",
+					"notes": "Accented"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "2a2535f1-7584-4a5a-94be-b1fd19887fd7",
+					"based_on_id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+					"based_on_hash": "MoLKMZJQV3sFeR5r8Dm3Z09D1QeQqknOMkPCj0ZIQis",
+					"name": "Written",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 3,
+					"affects": "total",
+					"notes": "Native"
+				}
+			],
+			"reference": "B24",
+			"categories": [
+				"Advantage",
+				"Language"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "3bb59820-06e4-48b4-9c13-233b89fcf094",
+			"based_on_id": "e8bfbdc6-b47c-470a-a80c-fe4574662193",
+			"based_on_hash": "czWrTVqU9kRPn/pJwvs4GtSM92ab/7YFIj7mlILR7t0",
+			"name": "Cultural Familiarity (American)",
+			"mental": true,
+			"base_points": 1,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "d2ae5f9a-d324-46e9-ba71-0f82c0a51d01",
+					"based_on_id": "ab12b725-01c8-4fc4-8e71-619a54c79496",
+					"based_on_hash": "sr2bPGPOcPs6708ecOcUCLaKeljqtiQTuOmpipdc/zI",
+					"disabled": true,
+					"name": "Alien",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "846fb329-d722-4656-91ed-f50c4998696c",
+					"based_on_id": "f72aa995-6766-4eaf-a3ca-0f4ff76d47c5",
+					"based_on_hash": "saPDuD/AQ76GciEXnfev3rMgfAiyaxnoF1h9uZd0C6M",
+					"name": "Native",
+					"cost_type": "points",
+					"cost": -1,
+					"affects": "total"
+				}
+			],
+			"reference": "B23",
+			"notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "4bfc5b2e-ea7f-4101-a037-feb9a22388a3",
+			"based_on_id": "30963b5e-c943-4f40-9521-bf181e7f207f",
+			"based_on_hash": "aOMTkJsNbJG9BTmy6ug8xQA5nw04dPep9gBq9pFomRI",
+			"name": "Fit",
+			"physical": true,
+			"base_points": 5,
+			"reference": "B55",
+			"notes": "+1 to all HT rolls to stay conscious, avoid death, resist disease, resist poison; recover FP at twice the normal rate (but not FP spent for spells or psi powers)",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "e8a25035-5ac1-4267-97e8-c8696006a888",
+			"based_on_id": "3b3fddf6-222b-4389-9460-8d2f4a70bb01",
+			"based_on_hash": "Cj8TFYiSvAZL8cfV0xe0ebetbCZtZgaN2zRWClWczD0",
+			"name": "Talent (Outdoorsman)",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 10,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "418673b9-daf3-4df0-a579-084104de6b5b",
+					"based_on_id": "254be33f-2141-4378-b967-c5d751c27942",
+					"based_on_hash": "BxbP+/ul1qPqpqxXvd6MHAKGJhcjgBI2COp2jbd4K84",
+					"disabled": true,
+					"name": "Alternate Benefit",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total",
+					"notes": "Bonus to HT rolls to avoid harm from failure of covered skills"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "ff8e6b11-a2f6-467f-ab32-f49dc42cc5a9",
+					"based_on_id": "2d095bbd-0918-4dfc-975e-de2ff3901fb2",
+					"based_on_hash": "cggknkYHb8+o0mdyZNx9L9j1Qz0gIDBJF2K9jtaf0PM",
+					"disabled": true,
+					"name": "Alternative Cost",
+					"cost_type": "points",
+					"cost": -3,
+					"affects": "levels_only"
+				}
+			],
+			"reference": "B90,PU3:14",
+			"features": [
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Camouflage"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Fishing"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mimicry"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Naturalist"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Navigation"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Survival"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Tracking"
+					}
+				},
+				{
+					"type": "reaction_bonus",
+					"amount": 1,
+					"per_level": true,
+					"situation": "from explorers and nature lovers"
+				}
+			],
+			"categories": [
+				"Advantage",
+				"Talent"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "c8027f8a-4bc2-484e-9a9e-599eb41d79e8",
+			"based_on_id": "eccfc218-dec2-47ab-98e1-d39e75e5b519",
+			"based_on_hash": "QaFoMP1GxTx4bDLF8sSLGw4st25gV5HEMrncIEWi8o4",
+			"name": "Bad Temper",
+			"mental": true,
+			"base_points": -10,
+			"cr": 12,
+			"reference": "B124",
+			"categories": [
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "d2fad6ad-c840-44ec-b2ca-2470985d61b8",
+			"based_on_id": "a2be5cfc-59b7-4106-a492-221b15e4491c",
+			"based_on_hash": "ahH7SQ8HFsHctWTAVEhGlot1nH0Rk2x1YTFQAAYlpTI",
+			"name": "Code of Honor (Soldier's)",
+			"mental": true,
+			"base_points": -10,
+			"reference": "B127",
+			"notes": "An officer should be tough but fair, lead from the front, and look out for his men; an enlisted man should look out for his buddies and take care of his kit. Every soldier should be willing to fight and die for the honor of his unit, service, and country; follow orders; obey the “rules of war”; treat an honorable enemy with respect (a dishonorable enemy deserves a bullet); and wear the uniform with pride.",
+			"categories": [
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "ed7487a4-df7f-41a8-ada3-095859647b1d",
+			"based_on_id": "2f8a7457-2741-412f-82b3-6180433eeeec",
+			"based_on_hash": "3zIE+ZSmJNF/DEbU5FwEL+Vp0+M8ySIjNlr1t+xWOQQ",
+			"name": "Low Level Paranoia",
+			"mental": true,
+			"base_points": -1,
+			"reference": "B162",
+			"categories": [
+				"Quirk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "07e9c322-3c2a-4a71-bba5-97eb0a507926",
+			"based_on_id": "2f8a7457-2741-412f-82b3-6180433eeeec",
+			"based_on_hash": "3zIE+ZSmJNF/DEbU5FwEL+Vp0+M8ySIjNlr1t+xWOQQ",
+			"name": "Never Turns Down a Drink",
+			"mental": true,
+			"base_points": -1,
+			"reference": "B162",
+			"categories": [
+				"Quirk"
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "adbe7e28-4267-4d36-bc84-19c0f72e48d8",
+			"based_on_id": "962be5d6-018a-437c-9a13-e90a9ea582ed",
+			"based_on_hash": "9l3KULJL71QSa73PbK36O/0B8FFlqozzsuUFIhJ2ayk",
+			"name": "Area Knowledge",
+			"reference": "B176",
+			"specialization": "Block Island",
+			"difficulty": "IQ/E",
+			"points": 4,
+			"defaults": [
+				{
+					"type": "Skill",
+					"name": "Geography",
+					"modifier": -3
+				}
+			],
+			"notes": "All important businesses, streets, citizens, leaders, etc.",
+			"categories": [
+				"Everyman",
+				"Knowledge"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "20f5ea4f-34d8-42c3-b62a-1c76dfc73ae1",
+			"based_on_id": "fcb5f377-c561-4926-9f5e-7ee703831512",
+			"based_on_hash": "RmzKmFkGvZTwUO0scBfDtAgLVWc7B+0qfcHDynQZmXI",
+			"name": "Armoury",
+			"reference": "B178",
+			"specialization": "Small Arms",
+			"tech_level": "8",
+			"difficulty": "IQ/A",
+			"points": 8,
+			"defaulted_from": {
+				"type": "IQ",
+				"modifier": -5,
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
+			},
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Small Arms",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Military",
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "9b5e5b1f-134e-4995-98b2-4e2ae4ea361e",
+			"based_on_id": "062a6197-cdc6-42b6-8cf1-3cbf39b9f552",
+			"based_on_hash": "OsQFY5+60axJIRkEt8ZVuLifnYtHVsmkS67ZKyGwJp4",
+			"name": "Boating",
+			"reference": "B180",
+			"specialization": "Motorboat",
+			"tech_level": "8",
+			"difficulty": "DX/A",
+			"points": 2,
+			"defaulted_from": {
+				"type": "DX",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Boating",
+					"specialization": "Large Powerboat",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Boating",
+					"specialization": "Sailboat",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Boating",
+					"specialization": "Unpowered",
+					"modifier": -3
+				}
+			],
+			"categories": [
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "fdd62b27-abf3-483f-86dc-a949d80040e9",
+			"based_on_id": "eb904641-abf0-456f-8c10-7a19d6dd49f2",
+			"based_on_hash": "YIiI1SyTC03SBVYsw87vB2XeGR8etmyldn1k2FluuV0",
+			"name": "Boating",
+			"reference": "B180",
+			"specialization": "Sailboat",
+			"tech_level": "8",
+			"difficulty": "DX/A",
+			"points": 2,
+			"defaulted_from": {
+				"type": "Skill",
+				"name": "Boating",
+				"specialization": "Motorboat",
+				"modifier": -3,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Boating",
+					"specialization": "Large Powerboat",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Boating",
+					"specialization": "Motorboat",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Boating",
+					"specialization": "Unpowered",
+					"modifier": -3
+				}
+			],
+			"categories": [
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "b7bbd33f-d8af-4207-9b6f-76cdc5088e54",
+			"based_on_id": "357d52f9-003b-4128-91e4-9ddc2ac33610",
+			"based_on_hash": "waTVduBLVyh4AaQLX/tuMdx4sad4p21YbtDmKv0SFxk",
+			"name": "Camouflage",
+			"reference": "B183",
+			"difficulty": "IQ/E",
+			"points": 2,
+			"defaulted_from": {
+				"type": "Skill",
+				"name": "Survival",
+				"modifier": -2,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Survival",
+					"modifier": -2
+				}
+			],
+			"categories": [
+				"Military",
+				"Outdoor/Exploration"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "bcc99e86-7349-4803-9372-750dd560400a",
+			"based_on_id": "d3f76fd0-2dee-4a41-b37d-14d28097b284",
+			"based_on_hash": "HL4ASkkRcStxVvUnPWYarnstHkP0hdKmIB2o+F5Ats8",
+			"name": "Climbing",
+			"reference": "B183",
+			"encumbrance_penalty_multiplier": 1,
+			"difficulty": "DX/A",
+			"points": 2,
+			"defaulted_from": {
+				"type": "DX",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Athletic",
+				"Criminal/Street",
+				"Outdoor/Exploration"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "d4dca0cf-8d27-459e-8061-e9a76f1f060c",
+			"based_on_id": "3d6c88af-3abe-4db0-8124-b54f24fac5d2",
+			"based_on_hash": "7dmcojFd9riZj5Hh8QFog/VC4P+Ebo2FMQ45Cf4kPMA",
+			"name": "Driving",
+			"reference": "B188",
+			"specialization": "Automobile",
+			"tech_level": "8",
+			"difficulty": "DX/A",
+			"points": 1,
+			"defaulted_from": {
+				"type": "DX",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Driving",
+					"specialization": "Heavy Wheeled",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Driving",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "652617ba-cdfe-428a-be2b-1b8c85166c68",
+			"based_on_id": "2856d9a0-b914-4002-8d7b-91f18afd1148",
+			"based_on_hash": "RVYXdKZu5prC2IaDZevGI+6Ix3nD/pavQ0okf6I7q2Y",
+			"name": "First Aid",
+			"reference": "B195",
+			"tech_level": "8",
+			"difficulty": "IQ/E",
+			"points": 4,
+			"defaulted_from": {
+				"type": "IQ",
+				"modifier": -4,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Esoteric Medicine"
+				},
+				{
+					"type": "Skill",
+					"name": "Physician"
+				},
+				{
+					"type": "Skill",
+					"name": "Veterinary",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Everyman",
+				"Medical"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "0cf6f01d-8491-4d42-933a-356560c6d891",
+			"based_on_id": "dcc32d5e-6784-4b04-b2f5-cb3a50413d09",
+			"based_on_hash": "9RZnKaWBMGgSkn3o3n8i5pgZGK0RFRMTGMn10J5GHFU",
+			"name": "Fishing",
+			"reference": "B195",
+			"difficulty": "Per/E",
+			"points": 8,
+			"defaulted_from": {
+				"type": "Per",
+				"modifier": -4,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"defaults": [
+				{
+					"type": "Per",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Outdoor/Exploration"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "1595c529-922f-4e7d-adac-3cfb3e0cf106",
+			"based_on_id": "f4078925-07f5-439e-8ddf-7e41e717ccbf",
+			"based_on_hash": "fHUAKxoda6fR5j6ev3VZqicdmW+s0v8zAEL2aFlI8O4",
+			"name": "Guns",
+			"reference": "B198",
+			"specialization": "Rifle",
+			"tech_level": "8",
+			"difficulty": "DX/E",
+			"points": 0,
+			"defaulted_from": {
+				"type": "Skill",
+				"name": "Guns",
+				"specialization": "Shotgun",
+				"modifier": -2,
+				"level": 14,
+				"adjusted_level": 14,
+				"points": 4
+			},
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Grenade Launcher",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Gyroc",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Light Anti-Armor Weapon",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Light Machine Gun",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Musket",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Pistol",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Beam Weapons",
+					"specialization": "Rifle",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Shotgun",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Submachine Gun",
+					"modifier": -2
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Ranged Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "f0a8ea07-0c50-4b1e-a3bc-3615961f7dfc",
+			"based_on_id": "7c49cb8f-c0cb-41c8-bba0-6af99de986cc",
+			"based_on_hash": "ZJ/+usNyzb5GXCjhTyk/Gy6IX9iQZirmHKuM+U8PJUQ",
+			"name": "Guns",
+			"reference": "B198",
+			"specialization": "Shotgun",
+			"tech_level": "8",
+			"difficulty": "DX/E",
+			"points": 12,
+			"defaulted_from": {
+				"type": "DX",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Grenade Launcher",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Gyroc",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Light Anti-Armor Weapon",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Light Machine Gun",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Musket",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Pistol",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Rifle",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Submachine Gun",
+					"modifier": -2
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Ranged Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "a8423412-8bf9-4a41-9063-e3988301f070",
+			"based_on_id": "7fe83935-d6ab-4160-9511-c1966505ba71",
+			"based_on_hash": "mUvrIkVJrJm0B9M5L8+FefyEMt+hiw9wYiNORw0c4Rc",
+			"name": "Knife",
+			"reference": "B208",
+			"difficulty": "DX/E",
+			"points": 2,
+			"defaulted_from": {
+				"type": "DX",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"defaults": [
+				{
+					"type": "Skill",
+					"name": "Force Sword",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Main-Gauche",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Shortsword",
+					"modifier": -3
+				},
+				{
+					"type": "DX",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "bb0dab1b-3a87-4307-9721-a2080e6f51d5",
+			"based_on_id": "080b00c4-306f-414b-9ae0-f69725aacd53",
+			"based_on_hash": "0J88iPz6whtmv8MZAm6Ho9vzRjLAcwmrO3FW2wqYAFE",
+			"name": "Knot-Tying",
+			"reference": "B203",
+			"difficulty": "DX/E",
+			"points": 1,
+			"defaulted_from": {
+				"type": "DX",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Climbing",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Seamanship",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Everyman"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "ed59b8f5-10b4-4959-aa8b-f58e2187b27b",
+			"based_on_id": "10713241-ad54-4595-aed5-ef37eb151850",
+			"based_on_hash": "zVeukar79CowaLeWC/E2LrdO8B31cwEkqCOrDt2p4vA",
+			"name": "Merchant",
+			"reference": "B209",
+			"difficulty": "IQ/A",
+			"points": 12,
+			"defaulted_from": {
+				"type": "IQ",
+				"modifier": -5,
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
+			},
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Finance",
+					"modifier": -6
+				},
+				{
+					"type": "Skill",
+					"name": "Market Analysis",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Business",
+				"Social"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "e4ba77c3-3bc5-407d-9c7f-7b2343a06ce1",
+			"based_on_id": "dd837426-37fe-4bc5-9686-bdbdef4d1167",
+			"based_on_hash": "GZGrQ/D0vQTuEbR1nD95fTY1W/S2W2GeOlZ4mvpYCWU",
+			"name": "Navigation",
+			"reference": "B211",
+			"specialization": "Sea",
+			"tech_level": "8",
+			"difficulty": "IQ/A",
+			"points": 4,
+			"defaults": [
+				{
+					"type": "Skill",
+					"name": "Astronomy",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Seamanship",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Navigation",
+					"specialization": "Air",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Navigation",
+					"specialization": "Land",
+					"modifier": -2
+				}
+			],
+			"categories": [
+				"Outdoor/Exploration",
+				"Technical",
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "a4b2b6f3-517a-48c0-b6e9-6e32ddce2650",
+			"based_on_id": "3a96ee08-c65a-4546-99d9-64183a64143c",
+			"based_on_hash": "9U3DQ5Ps8wSfqAPHrm6TxtRJbtFdJYl6Sm720Bre6N4",
+			"name": "Scrounging",
+			"reference": "B218",
+			"difficulty": "Per/E",
+			"points": 4,
+			"defaulted_from": {
+				"type": "Per",
+				"modifier": -4,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"defaults": [
+				{
+					"type": "Per",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Criminal/Street"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "226ec626-19ae-43ff-b071-556bae6a7d60",
+			"based_on_id": "9f24f47e-22e6-4031-8998-0a767a72b77d",
+			"based_on_hash": "nMAnXCbZTjn2O8YbpJQshSpNMJSUhizA0JKw2Bm+Tko",
+			"name": "Shadowing",
+			"reference": "B219",
+			"difficulty": "IQ/A",
+			"points": 8,
+			"defaulted_from": {
+				"type": "Skill",
+				"name": "Stealth",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Observation",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Stealth",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Police",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "3a5d22df-41e8-4a10-8afd-6af039a4439f",
+			"based_on_id": "72661777-9390-47f1-9819-0cf31205c3f5",
+			"based_on_hash": "PIEkzJfL5hIiHdPwhFsH2KVWUpCfT/9fZzoydNEAK8Y",
+			"name": "Stealth",
+			"reference": "B222",
+			"encumbrance_penalty_multiplier": 1,
+			"difficulty": "DX/A",
+			"points": 2,
+			"defaulted_from": {
+				"type": "DX",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Police",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "96bf8fff-4703-4534-b562-cd6fa6598b90",
+			"based_on_id": "cf67bacb-575a-4e0e-bcbe-967984d6a2d5",
+			"based_on_hash": "/E1PZDBCEqEqxwLSNmELtvo3sBgRXc0OtWJFwJGnAFg",
+			"name": "Survival",
+			"reference": "B223",
+			"specialization": "Island/Beach",
+			"difficulty": "Per/A",
+			"points": 4,
+			"defaulted_from": {
+				"type": "Per",
+				"modifier": -5,
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
+			},
+			"defaults": [
+				{
+					"type": "Per",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Naturalist",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Survival",
+					"specialization": "Tropical Lagoon",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Survival",
+					"specialization": "Arctic",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Survival",
+					"specialization": "Desert",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Survival",
+					"specialization": "Jungle",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Survival",
+					"specialization": "Mountain",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Survival",
+					"specialization": "Plains",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Survival",
+					"specialization": "Swampland",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Survival",
+					"specialization": "Woodlands",
+					"modifier": -3
+				}
+			],
+			"categories": [
+				"Outdoor/Exploration"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "e96da682-a2b4-4b96-bdfa-2e441e8ef1ce",
+			"based_on_id": "4f28c023-b6a6-40a8-b1d7-e553faa1237f",
+			"based_on_hash": "2PqPFCfyZMZSD5MCKh5fDVqvtiU0v3oQaS/QitmqP+A",
+			"name": "Survival",
+			"reference": "B223",
+			"specialization": "Woodlands",
+			"difficulty": "Per/A",
+			"points": 4,
+			"defaulted_from": {
+				"type": "Skill",
+				"name": "Survival",
+				"specialization": "Island/Beach",
+				"modifier": -3,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"defaults": [
+				{
+					"type": "Per",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Naturalist",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Survival",
+					"specialization": "Arctic",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Survival",
+					"specialization": "Desert",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Survival",
+					"specialization": "Island/Beach",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Survival",
+					"specialization": "Jungle",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Survival",
+					"specialization": "Mountain",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Survival",
+					"specialization": "Plains",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Survival",
+					"specialization": "Swampland",
+					"modifier": -3
+				}
+			],
+			"categories": [
+				"Outdoor/Exploration"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "aee7f902-b5c1-4dd6-8ade-6f313c629aad",
+			"based_on_id": "ca2a4b51-514e-4095-8fb8-0f5ec0f3e975",
+			"based_on_hash": "svMm9FBlPxPrA7ofa8zXmzyYs937+ej3Gg/9S9LKtIc",
+			"name": "Swimming",
+			"reference": "B224",
+			"encumbrance_penalty_multiplier": 2,
+			"difficulty": "HT/E",
+			"points": 1,
+			"defaulted_from": {
+				"type": "HT",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"defaults": [
+				{
+					"type": "HT",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Athletic",
+				"Outdoor/Exploration"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "76f22209-9144-4dc1-a1c2-52f4ecf252a9",
+			"based_on_id": "caa1b97b-7bc1-46f1-8975-4f8ab42b13fa",
+			"based_on_hash": "VkqMdf9Btc8jrd5AeY+ZpatddiB8Ro7Y7EUmqdX1SLs",
+			"name": "Thrown Weapon",
+			"reference": "B226",
+			"specialization": "Knife",
+			"difficulty": "DX/E",
+			"points": 1,
+			"defaulted_from": {
+				"type": "DX",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Ranged Combat"
+			]
+		}
+	],
+	"equipment": [
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "ea2d8242-9f27-43b0-b170-26b87ff8328c",
+			"based_on_id": "9c2ca67f-6247-4eea-9fd9-1a09d88832d0",
+			"based_on_hash": "e4eyn3R647xQOIgUjrzY/K36e1eyBOKUZcQerHkA0QA",
+			"equipped": true,
+			"quantity": 10,
+			"description": "12G Shotgun Shell",
+			"weight": "0.15 lb"
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "20914fe6-d4ed-490a-bc62-1107fd284331",
+			"based_on_id": "86b81173-96f3-4e47-874b-0a771a8670f6",
+			"based_on_hash": "rXLs6h8teDN9v6DUYaxyxUPFNNA6UeWxgA4XnM7p3/E",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Boots",
+			"tech_level": "2",
+			"value": "80",
+			"weight": "3 lb",
+			"reference": "B284",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 2,
+					"location": "feet"
+				},
+				{
+					"type": "weapon_bonus",
+					"amount": 1,
+					"selection_type": "weapons_with_name",
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Kick"
+					}
+				}
+			],
+			"notes": "Flexible; Concealable",
+			"categories": [
+				"Footwear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "32a92376-eb59-406a-be73-1314a161738e",
+			"based_on_id": "715ef050-b7fd-452e-b195-3b82375aca72",
+			"based_on_hash": "7rh8nwosulDpbH1ReNc/mf8HAunkl3Z5WcvtRg0BV6k",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Cloth Gloves",
+			"tech_level": "1",
+			"value": "15",
+			"reference": "B284",
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"location": "hands"
+				}
+			],
+			"categories": [
+				"Gloves"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "75721c76-1191-477c-b7de-031dcbf54f13",
+			"based_on_id": "7e3fc52f-8953-4543-b9ea-d19b5fe004cc",
+			"based_on_hash": "eFA0hWmT9VtqgDantkpEELGq1RrFbEMOj6zqukBQZWY",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Clothing, Ordinary, Status 0",
+			"tech_level": "7",
+			"value": "120",
+			"weight": "2 lb",
+			"reference": "HT63",
+			"categories": [
+				"Clothing"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "98c85bb8-c476-4f77-9c16-6cef83c51a79",
+			"based_on_id": "3bc16bc3-e7f1-4120-b468-2e5cd51e7546",
+			"based_on_hash": "npEWGfgxsW1y88xEoqbBMc//v/MQ/yyqIvo+MpJ6cmw",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Hat, Cloth",
+			"tech_level": "1",
+			"value": "6",
+			"reference": "HT64",
+			"categories": [
+				"Headgear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "5419ea7a-92c2-4c55-a3e7-d7e851597a1b",
+			"based_on_id": "6e98495d-e7a8-4c0a-8efa-bfdce7458df6",
+			"based_on_hash": "d3qUzPGzzoxJZYhecVy8Z7PQtRKHoxDBZjRsZK1Du+s",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Pump Shotgun, 12G",
+			"tech_level": "6",
+			"value": "240",
+			"weight": "8 lb",
+			"reference": "B279",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "pi",
+						"base": "1d+1"
+					},
+					"strength": "10†",
+					"accuracy": "3",
+					"range": "50/125",
+					"rate_of_fire": "2x9",
+					"shots": "5(3i)",
+					"bulk": "-5",
+					"recoil": "1",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Shotgun"
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Gun!"
+						}
+					]
+				}
+			],
+			"categories": [
+				"Missile Weapon"
+			]
+		}
+	],
+	"other_equipment": [
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"id": "0a11613e-578a-4338-800e-a750927170b2",
+			"based_on_id": "5f0e8187-5664-4cdd-8c52-e45a570c7fee",
+			"based_on_hash": "34eU+rkkf7SdfFPSaC3vTGU7rRmusz/LFnL3hhg5ZSc",
+			"equipped": true,
+			"description": "Backpack, Small",
+			"tech_level": "1",
+			"value": "60",
+			"weight": "3 lb",
+			"reference": "B288",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "40 lb"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Camping and Survival Gear"
+			],
+			"open": true,
+			"children": [
+				{
+					"type": "equipment",
+					"version": 1,
+					"id": "33d5072f-337d-4fd1-a4b6-1af795673709",
+					"based_on_id": "09c6fcec-e597-4ea5-8797-1eec02f584a2",
+					"based_on_hash": "Dcrloz3IyyiVU5xbhQdTtp6iyKZFiURszaYP4ElKd54",
+					"equipped": true,
+					"quantity": 10,
+					"description": "7.62mm Round",
+					"weight": "0.02 lb"
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"id": "ac9d1c1b-4799-4f39-89c3-312dbb5a6366",
+					"based_on_id": "44e58602-d9b5-4b79-a001-2f40a00ae1fc",
+					"based_on_hash": "GNjJnERWDWSWBxC4cSCYH3p6ekj3gx6rLpdaAaAW06M",
+					"equipped": true,
+					"quantity": 25,
+					"description": "12G Shotgun Shell",
+					"weight": "0.15 lb"
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"id": "6be27060-1c1a-4c23-83bf-a7912f148ccd",
+					"based_on_id": "62874b4b-f21d-4cb0-9f2e-0b0b2559a460",
+					"based_on_hash": "p+fJSetbJ4+HYwL0OUzZa1iltiltcRUmN4o4EveMptk",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Blanket",
+					"tech_level": "1",
+					"value": "20",
+					"weight": "4 lb",
+					"reference": "B288",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"id": "42dd647c-ed4d-4fba-a4f6-02febfe37fff",
+					"based_on_id": "04491a60-0381-4f60-88bf-7dbc661561c6",
+					"based_on_hash": "Yt0W8DWNsC1IQcTan1JnGI2FhTyfJnq7/0nnom23kkc",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Cigarette Lighter",
+					"tech_level": "6",
+					"value": "10",
+					"weight": "0.01 lb",
+					"reference": "B288",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"id": "a703a2d2-d60e-4d66-b3ab-5ad756a184ec",
+					"based_on_id": "612bda88-a600-4fba-8d9c-3860bc01df6f",
+					"based_on_hash": "kzp6BO1JOqUM4ZWYrB9bormhG8PZd6TNnEWSq6fumQ8",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Compass",
+					"tech_level": "6",
+					"value": "50",
+					"weight": "0.144 lb",
+					"reference": "B288",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "starts_with",
+								"qualifier": "navigation"
+							}
+						}
+					],
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"id": "84a09e18-af0d-4a7d-a82b-a43fca8d2595",
+					"based_on_id": "ca318be7-ef9c-4b64-b876-e65849d6880a",
+					"based_on_hash": "OIvRTYDPHER/1mK2Cn9XJtJnnALQFfc4oNTVzc4ZX1E",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Fishhooks & Line",
+					"tech_level": "0",
+					"value": "50",
+					"weight": "0.01 lb",
+					"reference": "B288",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"id": "3643e400-8a06-4a3b-b952-e8e27ddad487",
+					"based_on_id": "b5bb2b27-5828-42d2-b117-0a88db0f1fbf",
+					"based_on_hash": "QIguQG+Y/u28bmoC7lrPsPYUiopRaS1zG/v6WVo7LN4",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Personal Basics",
+					"tech_level": "0",
+					"value": "5",
+					"weight": "1 lb",
+					"reference": "B288",
+					"notes": "Minimum gear for camping: -2 to any Survival roll without it. Includes utensils, tinderbox or flint and steel, towel, etc., as TL permits.",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				}
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"id": "fce10f3f-ffa2-471f-aeb0-7c368a477fc2",
+			"based_on_id": "317f929c-59de-403f-a7c0-fb2dd922f67b",
+			"based_on_hash": "Df1ofPZVtudzgSPswqv/LDdDvnFmyJ33i9KYj/AmIXo",
+			"equipped": true,
+			"description": "Canteen",
+			"tech_level": "5",
+			"value": "10",
+			"weight": "1 lb",
+			"reference": "B288",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "2 lb"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Camping and Survival Gear"
+			],
+			"open": true
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "c5d4cea3-7c03-4527-ba06-44461538a03e",
+			"based_on_id": "e7347256-2496-4063-b2ae-8e77b558e84f",
+			"based_on_hash": "sIixd8Ydqd6fwiieFJ+wAmoYUzewl+n/J53ZOskOzGE",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Fishing Kit",
+			"tech_level": "6",
+			"value": "5",
+			"reference": "HT58",
+			"categories": [
+				"General Equipment"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "27b9097b-34d5-4269-9d4a-34405909b0d3",
+			"based_on_id": "f6fa0931-7c69-4b63-adf2-063e0ec7d094",
+			"based_on_hash": "ae1km848RdykEeyHdXn1HUSt8lT16e90/7hep43V2E8",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Glass Lantern",
+			"tech_level": "5",
+			"value": "15",
+			"weight": "2 lb",
+			"reference": "HT51",
+			"notes": "5-yard radius. Pint/10hrs.",
+			"categories": [
+				"General Equipment"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "0ec5cff0-148e-482e-890f-3d4974f4d932",
+			"based_on_id": "08158de0-4147-4414-b54f-1ed3ab47059f",
+			"based_on_hash": "bU8zxkfQmrMY+BUE5nS7GbnH5ASFsdBXN6AfQLJDvKY",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Kerosene",
+			"tech_level": "6",
+			"value": "1.5",
+			"weight": "6.5 lb",
+			"reference": "HT16",
+			"notes": "\"Quantity\" represents gallons.",
+			"categories": [
+				"Power"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "37005d49-a354-4691-b58d-71fab89bf2b4",
+			"based_on_id": "b6cdb4bc-8233-47c0-a372-4c302e743a2b",
+			"based_on_hash": "cujj4YybAM09lTr8k8Fon7HUQGC41Js4aKj0ZrYwTeM",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Pole, 6'",
+			"tech_level": "0",
+			"value": "5",
+			"weight": "3 lb",
+			"reference": "B288",
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "90044f13-bc49-4d76-ad5d-7d9e52044cca",
+			"based_on_id": "b7a37ad6-8c6f-4707-a82e-628212582576",
+			"based_on_hash": "Cz0T1gD/Ib/N1FlCUA8AvW5EGmKl6liFgnDntZMduh8",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Self-Loading Rifle, 7.62mm",
+			"tech_level": "6",
+			"legality_class": "3",
+			"value": "600",
+			"weight": "10 lb",
+			"reference": "B279",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "pi",
+						"base": "7d"
+					},
+					"strength": "10†",
+					"accuracy": "5",
+					"range": "1000/4200",
+					"rate_of_fire": "3",
+					"shots": "8(3)",
+					"bulk": "-5",
+					"recoil": "3",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Rifle"
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Gun!"
+						}
+					]
+				}
+			],
+			"categories": [
+				"Missile Weapon"
+			]
+		}
+	],
+	"print_settings": {
+		"printer": "Microsoft Print to PDF",
+		"units": "in",
+		"orientation": "portrait",
+		"width": 8.5,
+		"height": 11,
+		"top_margin": 0.25,
+		"left_margin": 0.25,
+		"bottom_margin": 0.25,
+		"right_margin": 0.25,
+		"ink_chromaticity": "monochrome",
+		"sides": "single",
+		"quality": "normal"
+	}
+}

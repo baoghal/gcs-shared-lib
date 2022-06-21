@@ -1,0 +1,2241 @@
+{
+	"type": "character",
+	"version": 1,
+	"id": "b2675a36-064f-439f-a797-2dfd84c9cc88",
+	"settings": {
+		"version": 1,
+		"default_length_units": "ft_in",
+		"default_weight_units": "lb",
+		"user_description_display": "tooltip",
+		"modifiers_display": "inline",
+		"notes_display": "inline",
+		"base_will_and_per_on_10": false,
+		"use_multiplicative_modifiers": false,
+		"use_modifying_dice_plus_adds": false,
+		"use_know_your_own_strength": false,
+		"use_reduced_swing": false,
+		"use_thrust_equals_swing_minus_2": false,
+		"use_simple_metric_conversions": true,
+		"show_college_in_sheet_spells": false,
+		"use_title_in_footer": false,
+		"block_layout": [
+			"reactions",
+			"melee",
+			"ranged",
+			"advantages skills",
+			"spells",
+			"equipment",
+			"other_equipment",
+			"notes"
+		]
+	},
+	"created_date": "Dec 15, 2020, 1:22 PM",
+	"modified_date": "Dec 21, 2020, 11:08 PM",
+	"profile": {
+		"player_name": "Joseph Mason",
+		"name": "Lowell 'Low' Garza",
+		"age": "30",
+		"birthday": "May 16",
+		"eyes": "Dark Brown",
+		"hair": "Black",
+		"skin": "Tan",
+		"handedness": "Right",
+		"height": "5' 9\"",
+		"weight": "153 lb",
+		"gender": "Male",
+		"body_type": "humanoid",
+		"tech_level": "8"
+	},
+	"FP_adj": 2,
+	"total_points": 150,
+	"ST": 10,
+	"DX": 12,
+	"IQ": 10,
+	"HT": 12,
+	"advantages": [
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "c16e5c79-267d-4cbb-aecf-8306146ed900",
+			"name": "Natural Attacks",
+			"physical": true,
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Bite",
+					"reach": "C",
+					"parry": "No",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX"
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"defaults": [
+						{
+							"type": "DX"
+						},
+						{
+							"type": "Skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "Skill",
+							"name": "Karate"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Kick",
+					"reach": "C,1",
+					"parry": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Brawling",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Karate",
+							"modifier": -2
+						}
+					]
+				}
+			],
+			"reference": "B271"
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "92c972de-6870-47fb-ae09-16d04f6af548",
+			"based_on_id": "149239c1-aec9-4acc-a5fe-07b64cf6a323",
+			"based_on_hash": "oBXgu3PgreWBHmR9s8lObu9I03M6NDVzuRP7Bz8HpF4",
+			"name": "Language: English",
+			"mental": true,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "147968b8-c2f5-4bb2-8f00-6e2cd5e137fd",
+					"based_on_id": "ff972d9a-b925-4895-a489-f3d14999074d",
+					"based_on_hash": "PTZ6jSAPUWKOKlORCr9hRHiy6DHR1CAf503TJLM/3rM",
+					"name": "Native",
+					"reference": "B23",
+					"cost_type": "points",
+					"cost": -6,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "e03a1d5b-e1e4-4fea-8116-4b928c2d2c7f",
+					"based_on_id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+					"based_on_hash": "DtKZ0Vo3//iUI1VmkwoJuy/9b7gbaYUwli62x1ao3cs",
+					"disabled": true,
+					"name": "Spoken",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 0,
+					"affects": "total",
+					"notes": "None"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "06938c5d-8b64-4b5d-869a-7cad440a0c55",
+					"based_on_id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+					"based_on_hash": "fUM0rV7DN4zKRRDMYD33argFmiTplQMuyap/Z8YtnoE",
+					"disabled": true,
+					"name": "Spoken",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "total",
+					"notes": "Broken"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "c1f2ad7b-a666-4ee0-95d7-fd2b38aac6ad",
+					"based_on_id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+					"based_on_hash": "r29v7AGbJh2NjxafN936EHD4/hUhBNgHAPBe+e3906E",
+					"disabled": true,
+					"name": "Spoken",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 2,
+					"affects": "total",
+					"notes": "Accented"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "46e0673b-fd67-417b-9568-0d243cf6b333",
+					"based_on_id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+					"based_on_hash": "HqLvrw3qdEeiAvADO50D/apgO+NfM8busq4EtKRpOug",
+					"name": "Spoken",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 3,
+					"affects": "total",
+					"notes": "Native"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "8688d528-84ad-4963-ac11-6dcf5b15d154",
+					"based_on_id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+					"based_on_hash": "U1q00bshFEYtwcuKsNfd5Af9POb375cPsilahaLXHCs",
+					"disabled": true,
+					"name": "Written",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 0,
+					"affects": "total",
+					"notes": "None"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "77275c27-ec0e-424f-b95a-f01b31bbb3f9",
+					"based_on_id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+					"based_on_hash": "kimMn5ME4U4gnqtTMo1Qs3sgqqwKog+E6DVoO+uO/9c",
+					"disabled": true,
+					"name": "Written",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "total",
+					"notes": "Broken"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "35c9bc08-4dd0-484d-9f2b-3ce4a12d6450",
+					"based_on_id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+					"based_on_hash": "1ZJQO6nenJpjW349i0CYwfgSVBF36JA6Htdf/zo3drY",
+					"disabled": true,
+					"name": "Written",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 2,
+					"affects": "total",
+					"notes": "Accented"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "66fd6d4e-fddf-4933-9fda-eb0afdd774f6",
+					"based_on_id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+					"based_on_hash": "MoLKMZJQV3sFeR5r8Dm3Z09D1QeQqknOMkPCj0ZIQis",
+					"name": "Written",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 3,
+					"affects": "total",
+					"notes": "Native"
+				}
+			],
+			"reference": "B24",
+			"categories": [
+				"Advantage",
+				"Language"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "ec35ca9d-3faf-4c8c-8208-bdd1377dd949",
+			"based_on_id": "e8bfbdc6-b47c-470a-a80c-fe4574662193",
+			"based_on_hash": "czWrTVqU9kRPn/pJwvs4GtSM92ab/7YFIj7mlILR7t0",
+			"name": "Cultural Familiarity (American)",
+			"mental": true,
+			"base_points": 1,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "d3489493-809f-43c0-b189-3f87bbfe4ba3",
+					"based_on_id": "ab12b725-01c8-4fc4-8e71-619a54c79496",
+					"based_on_hash": "sr2bPGPOcPs6708ecOcUCLaKeljqtiQTuOmpipdc/zI",
+					"disabled": true,
+					"name": "Alien",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "ae422f68-8e46-49a5-82dd-b44c3054fd6f",
+					"based_on_id": "f72aa995-6766-4eaf-a3ca-0f4ff76d47c5",
+					"based_on_hash": "saPDuD/AQ76GciEXnfev3rMgfAiyaxnoF1h9uZd0C6M",
+					"name": "Native",
+					"cost_type": "points",
+					"cost": -1,
+					"affects": "total"
+				}
+			],
+			"reference": "B23",
+			"notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "745b290d-5f04-428b-9eb1-e3afaa583f07",
+			"based_on_id": "04171edc-4d0e-4ce3-b06f-1815e60b7488",
+			"based_on_hash": "w6bxxt4cnN9GD1T1dnXDZY5YExnNSPmv1gnb4WE7CwU",
+			"name": "Combat Reflexes",
+			"mental": true,
+			"base_points": 15,
+			"reference": "B43",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "Enhanced Time Sense"
+						}
+					}
+				]
+			},
+			"features": [
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "starts_with",
+						"qualifier": "fast-draw"
+					}
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"attribute": "dodge"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"attribute": "parry"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"attribute": "block"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 2,
+					"attribute": "fright_check"
+				}
+			],
+			"notes": "Never freeze; +6 on all IQ rolls to wake up or to recover from surprise or mental stun; Your side gets +1 to initiative rolls (+2 if you're the leader)",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "125084a4-b3b7-4d67-942b-62a0a8d7f06f",
+			"based_on_id": "8a8229a8-02d0-4943-bdff-81099e0b00e9",
+			"based_on_hash": "BopT61XMSFhEOcl05BXKMoOlRAMmAdmz5EdRGQOnwGo",
+			"name": "Luck",
+			"mental": true,
+			"base_points": 15,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "217a2726-bc64-41dd-ad9d-8ce765f8e88e",
+					"based_on_id": "b5f2c667-bec1-442e-9ef9-f051a6c31510",
+					"based_on_hash": "aGHnRn9WEId5Qf3vUwN6EKxe/mIoR4yw5q3NPJOTqOI",
+					"disabled": true,
+					"name": "Active",
+					"reference": "B66",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "91793d8c-5832-4725-9164-60a9f58054d8",
+					"based_on_id": "d9965ee9-527e-4933-95ef-ef8a02ed7683",
+					"based_on_hash": "bLlYRRx/cxJlZkFZ+veJArZqQs+EOEE09s+pV2QUHiQ",
+					"disabled": true,
+					"name": "Aspected",
+					"reference": "B66",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "@Aspect@"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "7358725f-2f8c-467d-8a09-8b43533648c6",
+					"based_on_id": "67318c7d-d090-4012-a955-0d1a36052c27",
+					"based_on_hash": "Z4xIzxZ58dwO4wj7vqmLHsuPxq7ssQqOPOcJYgWV7yg",
+					"disabled": true,
+					"name": "Defensive",
+					"reference": "B66",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "53cb907f-38a6-49a8-8250-b23b9ac68428",
+					"based_on_id": "4f41a545-c80c-4754-bf3c-93b9662beef2",
+					"based_on_hash": "or/m5+4joJ3sTvvYg0CLr2XzKEPklh5/3JA7yfi2dXE",
+					"disabled": true,
+					"name": "Wishing",
+					"reference": "P59",
+					"cost_type": "percentage",
+					"cost": 100,
+					"affects": "total"
+				}
+			],
+			"reference": "B66",
+			"notes": "Usable once per hour of play",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "56720176-8c13-4918-9eea-7bb79e3ff3da",
+			"based_on_id": "7ec3f5a8-668e-46d8-8b83-024e6496f48f",
+			"based_on_hash": "TFjCFEV0CeDfplstn3VPu2ypNT7cYbRRA6cAclA596k",
+			"name": "Acrophobia (Heights)",
+			"mental": true,
+			"base_points": -10,
+			"cr": 12,
+			"reference": "B150",
+			"notes": "You may not voluntarily go more than 15 feet above ground, unless you are inside a building and away from windows. If there is some chance of an actual fall, self-control rolls are at -5.",
+			"categories": [
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "92ec9223-745a-420b-91bb-fb0b65a0c41e",
+			"based_on_id": "b7a0c1db-f40a-471a-857f-e0c88e218d72",
+			"based_on_hash": "Rv0hhrbRJsv0p9Ma16hydWv9n05WET0aVva1aeX5O84",
+			"name": "Greed",
+			"mental": true,
+			"base_points": -15,
+			"cr": 12,
+			"reference": "B137",
+			"notes": "Make a self-control roll any time riches are offered – as payment for fair work, gains from adventure, spoils of crime, or just bait. If you fail, you do whatever it takes to get the payoff.",
+			"categories": [
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "5c95dddb-ea49-4ffb-a5e0-9b0b4c349756",
+			"based_on_id": "02b0051f-766c-4320-bcb4-b67092d53002",
+			"based_on_hash": "076eJPHTFrSYuLQtY3ejuk/006uwjJsRAO+bdBreZMs",
+			"name": "Pacifism: Cannot Harm Innocents",
+			"mental": true,
+			"base_points": -10,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "54be31ee-0cbd-45a7-a53d-c5338693de01",
+					"based_on_id": "74354ea8-96ba-4eee-9027-9f746e9bd941",
+					"based_on_hash": "BKfRyGJKGwgRvKmvhYSp+ld8kv+GSXFxzj/ZVTDcgJ8",
+					"disabled": true,
+					"name": "Species-Specific",
+					"reference": "UT32",
+					"cost_type": "percentage",
+					"cost": -80,
+					"affects": "total"
+				}
+			],
+			"reference": "B148",
+			"notes": "You may fight – you may even start fights – but you may only use deadly force on a foe that is attempting to do you serious harm. Capture is not “serious harm” unless you are already under penalty of death or have a Code of Honor that would require suicide if captured. You never intentionally do anything that causes, or even threatens to cause, injury to the uninvolved – particularly if they are “ordinary folks.”",
+			"categories": [
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "f1c1629e-54ea-4fa7-a5dc-b63c42258c30",
+			"based_on_id": "a31d3c41-54dc-4bdb-8743-976a1b5cbeb9",
+			"based_on_hash": "FTS4OCUsOPxM+zZ3wrd+mAEg8iXkgOo0FY8ehD4yGiQ",
+			"name": "Sense of Duty",
+			"mental": true,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "32296b05-f3f5-4145-9d67-efec0d8a0df5",
+					"based_on_id": "de47158b-455d-4448-8055-86065b81d6d1",
+					"based_on_hash": "WjsWuvKr7HEQGNLiAJ2Gpk0vS16J6cBfCZIad0CMEnA",
+					"name": "Friends and Companions",
+					"reference": "B153",
+					"cost_type": "points",
+					"cost": -5,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "2c89b7b1-0bbb-4dc6-ab2f-518b7476bd1a",
+					"based_on_id": "8fde1c7b-7271-4b9b-9032-8551dde325a8",
+					"based_on_hash": "sJNYn9mgnnEMBMeh4bKLsMVWZtosxIebdKtTHubH+6s",
+					"disabled": true,
+					"name": "@Small Group@",
+					"reference": "B153",
+					"cost_type": "points",
+					"cost": -5,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "aa1aeed3-7de4-4c9d-8a15-3bcbfa17a77a",
+					"based_on_id": "89ec98d8-237b-4ab6-82e5-f9767592c065",
+					"based_on_hash": "bfHObGHwkzMZT2/ypaQAH5PcljWActOJh5BQuu0bsm0",
+					"disabled": true,
+					"name": "@Individual@",
+					"reference": "B153",
+					"cost_type": "points",
+					"cost": -2,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "e5ff9089-1ae9-4dec-b68e-efc030dc70ba",
+					"based_on_id": "0daad494-07fe-4b61-a1fe-ab5e198b6411",
+					"based_on_hash": "+mNP1QWRd4ag8jTrKUzzvdke0Zam6vkz5mlniy63QMo",
+					"disabled": true,
+					"name": "@Large Group@",
+					"reference": "B153",
+					"cost_type": "points",
+					"cost": -10,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "39af5fc9-35a8-494f-8b91-06b521f27123",
+					"based_on_id": "103f5c35-d3d6-4f0f-9336-447062d5c050",
+					"based_on_hash": "vzUw9Yibr4SF6ejYaee9uPwFMtb3dDylb4ftrdNLWr8",
+					"disabled": true,
+					"name": "@Entire Race@",
+					"reference": "B153",
+					"cost_type": "points",
+					"cost": -15,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "2578ac4a-95b6-44bb-924d-af6cdbb855a1",
+					"based_on_id": "721ee069-0e87-46c8-9638-0f2dee3142e6",
+					"based_on_hash": "Bq7WsSHB60v/roE0I9HZia/BCNn+O0S+SrItyXf6Hpw",
+					"disabled": true,
+					"name": "Every Living Being",
+					"reference": "B153",
+					"cost_type": "points",
+					"cost": -20,
+					"affects": "total"
+				}
+			],
+			"reference": "B153",
+			"categories": [
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "f9bfd690-a0f0-4ac7-831a-b499d96456b7",
+			"based_on_id": "6bf50471-43ac-411b-88a2-248029fd9472",
+			"based_on_hash": "Jk+FaUICZ8dYWxIvxnBQXME528mBPuq/0+QzHQ8LCOU",
+			"name": "Minor Addiction",
+			"mental": true,
+			"levels": "0",
+			"base_points": -1,
+			"reference": "B164",
+			"notes": "Tobacco",
+			"categories": [
+				"Quirk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "617154bf-77bd-4fdd-a3d4-4b2aafff6d8b",
+			"based_on_id": "2f8a7457-2741-412f-82b3-6180433eeeec",
+			"based_on_hash": "3zIE+ZSmJNF/DEbU5FwEL+Vp0+M8ySIjNlr1t+xWOQQ",
+			"name": "Plays with Zippo",
+			"mental": true,
+			"base_points": -1,
+			"reference": "B162",
+			"categories": [
+				"Quirk"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "d11899ba-9a56-4146-afde-5c96d7347937",
+			"based_on_id": "2f8a7457-2741-412f-82b3-6180433eeeec",
+			"based_on_hash": "3zIE+ZSmJNF/DEbU5FwEL+Vp0+M8ySIjNlr1t+xWOQQ",
+			"name": "Uncomfortable Around Kids",
+			"mental": true,
+			"base_points": -1,
+			"reference": "B162",
+			"categories": [
+				"Quirk"
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "e71a4445-c1de-4896-b598-41f8dde5868b",
+			"based_on_id": "e8f8d8d0-ac96-404d-993c-16bff6c1c1d5",
+			"based_on_hash": "LRDTrfz8zfZrOAs7R8V5QE5xFQFp4Fpk4WEJ2u25pbA",
+			"name": "Area Knowledge",
+			"reference": "B176",
+			"specialization": "Block Island; Lived there",
+			"difficulty": "IQ/E",
+			"points": 1,
+			"defaulted_from": {
+				"type": "IQ",
+				"modifier": -4,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Geography",
+					"modifier": -3
+				}
+			],
+			"notes": "All important businesses, streets, citizens, leaders, etc.",
+			"categories": [
+				"Everyman",
+				"Knowledge"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "d53d47a5-4876-458f-a270-69dd40d46844",
+			"based_on_id": "a4194102-33fa-43fc-ac8e-14454cf89fc5",
+			"based_on_hash": "B136Cbxvfnm82eB1VOZpL5OaQMSjWrny2+McOoeg6nc",
+			"name": "Brawling",
+			"reference": "B182",
+			"difficulty": "DX/E",
+			"points": 2,
+			"features": [
+				{
+					"type": "weapon_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "weapons_with_required_skill",
+					"name": {
+						"compare": "is",
+						"qualifier": "Brawling"
+					},
+					"level": {
+						"compare": "at_least",
+						"qualifier": 2
+					}
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "1caa37a7-5066-49cd-8ce0-8cd325b68a0a",
+			"based_on_id": "d3f76fd0-2dee-4a41-b37d-14d28097b284",
+			"based_on_hash": "HL4ASkkRcStxVvUnPWYarnstHkP0hdKmIB2o+F5Ats8",
+			"name": "Climbing",
+			"reference": "B183",
+			"encumbrance_penalty_multiplier": 1,
+			"difficulty": "DX/A",
+			"points": 2,
+			"defaulted_from": {
+				"type": "DX",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Athletic",
+				"Criminal/Street",
+				"Outdoor/Exploration"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "3f4d487e-8fd5-41c8-bdcf-4de5d3fe3081",
+			"based_on_id": "3d6c88af-3abe-4db0-8124-b54f24fac5d2",
+			"based_on_hash": "7dmcojFd9riZj5Hh8QFog/VC4P+Ebo2FMQ45Cf4kPMA",
+			"name": "Driving",
+			"reference": "B188",
+			"specialization": "Automobile",
+			"tech_level": "8",
+			"difficulty": "DX/A",
+			"points": 2,
+			"defaulted_from": {
+				"type": "DX",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Driving",
+					"specialization": "Heavy Wheeled",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Driving",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "02dfdaae-9d07-4c47-af6f-6fe4152b71b2",
+			"based_on_id": "25d7bbd2-be98-480b-bc6e-5746565c9749",
+			"based_on_hash": "V7MDdWJcLL1x45jG+gD23liOnII/VBDTrlOJZ9IGJBs",
+			"name": "Fast-Talk",
+			"reference": "B195",
+			"difficulty": "IQ/A",
+			"points": 8,
+			"defaulted_from": {
+				"type": "IQ",
+				"modifier": -5,
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
+			},
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Acting",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Social",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "49f24e28-81c9-4b6e-8f5d-ff36be7a251f",
+			"based_on_id": "ce4250ba-e60d-4fcd-8e77-c7986e09a0da",
+			"based_on_hash": "YfbtyH8ofNSCNHxHOvGmxLF3hmdcuaPjHXp+3ivaLsI",
+			"name": "Filch",
+			"reference": "B195",
+			"difficulty": "DX/A",
+			"points": 0,
+			"defaulted_from": {
+				"type": "Skill",
+				"name": "Sleight of Hand",
+				"modifier": -4,
+				"level": 11,
+				"adjusted_level": 11,
+				"points": 1
+			},
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Pickpocket",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Sleight of Hand",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "6bba894c-697c-49d6-80f5-3539e8a8de1a",
+			"based_on_id": "bd9aaa76-c273-49f3-9cee-3a9714f4388a",
+			"based_on_hash": "zz2ISj5QHvPh5REOgUfGq6Pfc0JIwh2m5XMSGqHQVxA",
+			"name": "Forced Entry",
+			"reference": "B196",
+			"difficulty": "DX/E",
+			"points": 2,
+			"categories": [
+				"Criminal/Street",
+				"Police",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "f4ee168d-a721-4ecc-9d05-cc3d3dc2d1d8",
+			"based_on_id": "23669f29-65d1-4749-8d09-c8729950b030",
+			"based_on_hash": "oPafr87nOfInGq5TFWeQ6ydVMVMqmTqFjgYh+HD6dI4",
+			"name": "Gesture",
+			"reference": "B198",
+			"difficulty": "IQ/E",
+			"points": 4,
+			"defaulted_from": {
+				"type": "IQ",
+				"modifier": -4,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Social"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "c6d0f211-fb18-40be-84d5-58316bbc0d21",
+			"based_on_id": "dfac08e6-3434-4391-b2e9-8954c32e04af",
+			"based_on_hash": "9PujoXERQIHE6IOs5FIGGuei05yYlFqiFUOBeI/0eiQ",
+			"name": "Guns",
+			"reference": "B198",
+			"specialization": "Pistol",
+			"tech_level": "8",
+			"difficulty": "DX/E",
+			"points": 8,
+			"defaulted_from": {
+				"type": "DX",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Grenade Launcher",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Gyroc",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Light Anti-Armor Weapon",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Light Machine Gun",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Musket",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Beam Weapons",
+					"specialization": "Pistol",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Rifle",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Shotgun",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Submachine Gun",
+					"modifier": -2
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Ranged Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "a3d28675-493c-4c39-b9cd-ee6ccc0d9bb9",
+			"based_on_id": "f4078925-07f5-439e-8ddf-7e41e717ccbf",
+			"based_on_hash": "fHUAKxoda6fR5j6ev3VZqicdmW+s0v8zAEL2aFlI8O4",
+			"name": "Guns",
+			"reference": "B198",
+			"specialization": "Rifle",
+			"tech_level": "8",
+			"difficulty": "DX/E",
+			"points": 0,
+			"defaulted_from": {
+				"type": "Skill",
+				"name": "Guns",
+				"specialization": "Pistol",
+				"modifier": -2,
+				"level": 13,
+				"adjusted_level": 13,
+				"points": 2
+			},
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Grenade Launcher",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Gyroc",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Light Anti-Armor Weapon",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Light Machine Gun",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Musket",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Pistol",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Beam Weapons",
+					"specialization": "Rifle",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Shotgun",
+					"modifier": -2
+				},
+				{
+					"type": "Skill",
+					"name": "Guns",
+					"specialization": "Submachine Gun",
+					"modifier": -2
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Ranged Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "6683a34b-ea45-40b7-a068-639ca3a23539",
+			"based_on_id": "0054befd-d2ea-4fdb-ba8d-5955536fa8a7",
+			"based_on_hash": "bPwQtcRiSpywHU7gnHfCqZsg6hh/hJEIZrRuaTd8nDs",
+			"name": "Holdout",
+			"reference": "B200",
+			"difficulty": "IQ/A",
+			"points": 0,
+			"defaulted_from": {
+				"type": "Skill",
+				"name": "Sleight of Hand",
+				"modifier": -3,
+				"level": 12,
+				"adjusted_level": 12,
+				"points": 8
+			},
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Sleight of Hand",
+					"modifier": -3
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "eb97adff-ac15-480b-97b7-183eb4df4966",
+			"based_on_id": "7fe83935-d6ab-4160-9511-c1966505ba71",
+			"based_on_hash": "mUvrIkVJrJm0B9M5L8+FefyEMt+hiw9wYiNORw0c4Rc",
+			"name": "Knife",
+			"reference": "B208",
+			"difficulty": "DX/E",
+			"points": 1,
+			"defaulted_from": {
+				"type": "DX",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"defaults": [
+				{
+					"type": "Skill",
+					"name": "Force Sword",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Main-Gauche",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Shortsword",
+					"modifier": -3
+				},
+				{
+					"type": "DX",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "5ba0f87b-2dcc-48ae-b6cd-2bcd0d29a698",
+			"based_on_id": "4d841d77-87b6-4fbf-9170-c16b300805ee",
+			"based_on_hash": "m2R8HhCMdZ34MLS/LDeMTHZJg2ypQlNLt4b9i/zzfIo",
+			"name": "Mechanic",
+			"reference": "B207",
+			"specialization": "Automobile",
+			"tech_level": "8",
+			"difficulty": "IQ/A",
+			"points": 8,
+			"defaulted_from": {
+				"type": "IQ",
+				"modifier": -5,
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
+			},
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Engineer",
+					"specialization": "Automobile",
+					"modifier": -4
+				},
+				{
+					"type": "Skill",
+					"name": "Machinist",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Mechanic",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Repair/Maintainance"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "b3f71339-3179-4a6d-bed4-3a41c6f69d3c",
+			"based_on_id": "99f9cb09-b7f1-4e84-a798-ab2cc4ed80ac",
+			"based_on_hash": "kwX6TzJeY5CcSie76NPQe3PwkUuwO4IlvArSyriysIY",
+			"name": "Observation",
+			"reference": "B211",
+			"difficulty": "Per/A",
+			"points": 4,
+			"defaulted_from": {
+				"type": "Per",
+				"modifier": -5,
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
+			},
+			"defaults": [
+				{
+					"type": "Per",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Shadowing",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Military",
+				"Police",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "78f406f0-ed37-4732-b52e-1963c07c0dcf",
+			"based_on_id": "4ac89942-341e-4ae7-bcbd-3c651d4c4fb7",
+			"based_on_hash": "Fzpag7CyIkL7ppB0vJ7HS4tq/Qqp795DAihDUogZjV8",
+			"name": "Pickpocket",
+			"reference": "B213",
+			"difficulty": "DX/H",
+			"points": 0,
+			"defaulted_from": {
+				"type": "Skill",
+				"name": "Sleight of Hand",
+				"modifier": -4,
+				"level": 11,
+				"adjusted_level": 11,
+				"points": 2
+			},
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -6
+				},
+				{
+					"type": "Skill",
+					"name": "Filch",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Sleight of Hand",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Criminal/Street"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "ab0d038b-ef0c-4585-bc2a-9f03a4f1582a",
+			"based_on_id": "3a96ee08-c65a-4546-99d9-64183a64143c",
+			"based_on_hash": "9U3DQ5Ps8wSfqAPHrm6TxtRJbtFdJYl6Sm720Bre6N4",
+			"name": "Scrounging",
+			"reference": "B218",
+			"difficulty": "Per/E",
+			"points": 2,
+			"defaulted_from": {
+				"type": "Per",
+				"modifier": -4,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"defaults": [
+				{
+					"type": "Per",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Criminal/Street"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "bc9124da-00d7-401e-84ae-5475b88a37a7",
+			"based_on_id": "a4d05150-68e2-4931-a197-30d9a8ca920c",
+			"based_on_hash": "xK+2ZPit4fG6jGfZhjxMDOXVEfJwkzl2ekBGevCAE24",
+			"name": "Search",
+			"reference": "B219",
+			"difficulty": "Per/A",
+			"points": 4,
+			"defaulted_from": {
+				"type": "Per",
+				"modifier": -5,
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
+			},
+			"defaults": [
+				{
+					"type": "Per",
+					"modifier": -5
+				},
+				{
+					"type": "Skill",
+					"name": "Criminology",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Police",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "4763fcd9-5999-49f4-95c9-2bb9e2f8476f",
+			"based_on_id": "95c3a5ac-1a49-4cb2-87e1-6b1ee8b0d3dd",
+			"based_on_hash": "LD3FoAUZz6x1kff9NRFyLHwz+HXZNDh1BdRB7n1vqxI",
+			"name": "Sleight of Hand",
+			"reference": "B221",
+			"difficulty": "DX/H",
+			"points": 16,
+			"defaults": [
+				{
+					"type": "Skill",
+					"name": "Filch",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Arts/Entertainment",
+				"Criminal/Street"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "ac54a506-d58b-46f4-8973-82657155d84b",
+			"based_on_id": "72661777-9390-47f1-9819-0cf31205c3f5",
+			"based_on_hash": "PIEkzJfL5hIiHdPwhFsH2KVWUpCfT/9fZzoydNEAK8Y",
+			"name": "Stealth",
+			"reference": "B222",
+			"encumbrance_penalty_multiplier": 1,
+			"difficulty": "DX/A",
+			"points": 4,
+			"defaulted_from": {
+				"type": "DX",
+				"modifier": -5,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				},
+				{
+					"type": "DX",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Police",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "2140d71c-328f-48fc-b048-c5c379376832",
+			"based_on_id": "abec4328-8bde-4fa4-9171-21628b0a64d7",
+			"based_on_hash": "P3uD3eW4+tIfNpzpYWXGNiH/CsbGFSqjbi/aC9VMbKY",
+			"name": "Streetwise",
+			"reference": "B223",
+			"difficulty": "IQ/A",
+			"points": 8,
+			"defaulted_from": {
+				"type": "IQ",
+				"modifier": -5,
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
+			},
+			"defaults": [
+				{
+					"type": "IQ",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Police",
+				"Social"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "b272afe1-99d4-453b-8f53-0ffe8f7aa418",
+			"based_on_id": "ca2a4b51-514e-4095-8fb8-0f5ec0f3e975",
+			"based_on_hash": "svMm9FBlPxPrA7ofa8zXmzyYs937+ej3Gg/9S9LKtIc",
+			"name": "Swimming",
+			"reference": "B224",
+			"encumbrance_penalty_multiplier": 2,
+			"difficulty": "HT/E",
+			"points": 2,
+			"defaulted_from": {
+				"type": "HT",
+				"modifier": -4,
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
+			},
+			"defaults": [
+				{
+					"type": "HT",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Athletic",
+				"Outdoor/Exploration"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "a6e36c82-e2b2-4231-acb4-c805adf935a0",
+			"based_on_id": "f320e945-5889-4a76-8230-2d04b8ea500c",
+			"based_on_hash": "PylJgRp27P1AI54puVy8TFtrYGaJsVHC4vouOtwMlE4",
+			"name": "Throwing",
+			"reference": "B226",
+			"difficulty": "DX/A",
+			"points": 2,
+			"defaulted_from": {
+				"type": "DX",
+				"modifier": -3,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"defaults": [
+				{
+					"type": "DX",
+					"modifier": -3
+				},
+				{
+					"type": "Skill",
+					"name": "Dropping",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Athletic",
+				"Combat/Weapon",
+				"Ranged Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"version": 1,
+			"id": "dbced22b-7766-4fd9-87cf-44e84248d8f2",
+			"based_on_id": "be120498-9335-4a24-9564-217cc8f2909a",
+			"based_on_hash": "5TcsJsd6kFlleY+TKdo6Ndhb9O3Ztqj2pc1DQAP6Uik",
+			"name": "Wrestling",
+			"reference": "B228",
+			"difficulty": "DX/A",
+			"points": 2,
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		}
+	],
+	"equipment": [
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "20d49995-9816-49fc-81a8-c78a78771f32",
+			"based_on_id": "555babbf-ed84-4d5e-bba7-9987d096724d",
+			"based_on_hash": "3ov/74G8+sCutd1XWBjN61OfTZAiHKfgAcYADXWgGEE",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Assault Carbine, 5.56mm",
+			"tech_level": "8",
+			"legality_class": "2",
+			"value": "900",
+			"weight": "7.3 lb",
+			"reference": "B279",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "pi",
+						"base": "4d+2"
+					},
+					"strength": "9†",
+					"accuracy": "4",
+					"range": "400/3000",
+					"rate_of_fire": "15",
+					"shots": "30+1(3)",
+					"bulk": "-3",
+					"recoil": "2",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Rifle"
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Gun!"
+						}
+					]
+				}
+			],
+			"categories": [
+				"Missile Weapon"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"version": 1,
+			"id": "15cabb2f-64c7-4819-b015-f0ced5844923",
+			"based_on_id": "165e324f-8655-4627-bdbf-a463a7aa9851",
+			"based_on_hash": "hXEESN6CJ/aGH77T61B0csgQp8PA+kGfucKKKVEETYw",
+			"equipped": true,
+			"description": "Backpack, Small",
+			"tech_level": "1",
+			"value": "60",
+			"weight": "3 lb",
+			"reference": "B288",
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "40 lb"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Camping and Survival Gear"
+			],
+			"open": true,
+			"children": [
+				{
+					"type": "equipment",
+					"version": 1,
+					"id": "0e26ef4b-bd41-47c8-9768-49482be671e4",
+					"based_on_id": "fa597c45-f50b-417e-8f21-d42621e14562",
+					"based_on_hash": "Uk9aXaETF9KoI/j55m9Lt4RNDOYDbJ92Tcm17Z+/HrE",
+					"equipped": true,
+					"quantity": 60,
+					"description": "5.56mm Round",
+					"weight": "0.02 lb"
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"id": "16cf57c5-8289-4e0d-bcd5-08d6abef6934",
+					"based_on_id": "1c36d0ed-1c07-4941-ae05-124ff2a21e3c",
+					"based_on_hash": "iahK85oyvrimX/WSSETinSHYWBQSO74GhP8MOCnLf1s",
+					"equipped": true,
+					"quantity": 11,
+					"description": "9x19mm Parabellum",
+					"value": "0.3",
+					"weight": "0.026 lb",
+					"reference": "HT176",
+					"categories": [
+						"Ammunition and Warheads"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"id": "423ecc16-667f-4159-bdf5-5338bfa8cd53",
+					"based_on_id": "62874b4b-f21d-4cb0-9f2e-0b0b2559a460",
+					"based_on_hash": "p+fJSetbJ4+HYwL0OUzZa1iltiltcRUmN4o4EveMptk",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Blanket",
+					"tech_level": "1",
+					"value": "20",
+					"weight": "4 lb",
+					"reference": "B288",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment_container",
+					"version": 1,
+					"id": "9da44f3e-bca1-4d99-aaeb-c4e1aa2d26a4",
+					"based_on_id": "32c0c5aa-1c43-4e59-88be-dae9c1f8b56e",
+					"based_on_hash": "23ITw6r7+WwKuN5TYVJU1o2u8/vWMn0+934SE33dsjc",
+					"equipped": true,
+					"description": "Canteen",
+					"tech_level": "5",
+					"value": "10",
+					"weight": "1 lb",
+					"reference": "B288",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "2 lb"
+								}
+							}
+						]
+					},
+					"categories": [
+						"Camping and Survival Gear"
+					],
+					"open": true
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"id": "fee861f4-f73e-4987-aa32-7f52bf7d8315",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Carton of Marlboros",
+					"weight": "0.25 lb"
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"id": "0784110f-23ac-4fc8-9f0c-1aee1931b60e",
+					"based_on_id": "b669205c-4834-4b3f-b440-55ef154fe98c",
+					"based_on_hash": "LZtlfoilWvvz7te+yhnh1TRRGT/rz0kX9x8JHBXrSlo",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Crowbar, 3'",
+					"tech_level": "2",
+					"value": "20",
+					"weight": "3 lb",
+					"reference": "B289",
+					"weapons": [
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "sw",
+								"base": "+2"
+							},
+							"strength": "10",
+							"usage": "Swung",
+							"reach": "1",
+							"parry": "0U",
+							"block": "No",
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Axe/Mace",
+									"modifier": -1
+								},
+								{
+									"type": "Skill",
+									"name": "Flail",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Two-Handed Axe/Mace",
+									"modifier": -4
+								}
+							]
+						},
+						{
+							"type": "ranged_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "sw",
+								"base": "+2"
+							},
+							"strength": "10",
+							"usage": "Thrown",
+							"accuracy": "1",
+							"range": "x1/x1.5",
+							"rate_of_fire": "1",
+							"shots": "T(1)",
+							"bulk": "-3",
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Thrown Weapon",
+									"specialization": "Axe/Mace",
+									"modifier": -1
+								}
+							]
+						}
+					],
+					"categories": [
+						"Melee Weapon",
+						"Missile Weapon",
+						"Tools"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"id": "5ef00f77-e36a-4c42-aa64-f64ee47748de",
+					"based_on_id": "20047a99-405e-4b1a-b6ec-45fca26d617b",
+					"based_on_hash": "f/aFshEyAGbEpvWJH28TpGsDipmeVl5E9zWjZlQ1U0c",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Geiger Counter",
+					"tech_level": "8",
+					"value": "400",
+					"weight": "0.5 lb",
+					"reference": "HT49",
+					"notes": "XS/10hrs.",
+					"categories": [
+						"General Equipment"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"id": "f9f314de-3ba5-40df-8b00-3fa220569ff8",
+					"based_on_id": "4b24d702-bb43-4a07-8c96-1db50fe4ee76",
+					"based_on_hash": "cv0xeZxaVQgYJ/+sXYrfkulzqHrJ6qM6ytPjaBXpCyA",
+					"equipped": true,
+					"quantity": 3,
+					"description": "Glock 17, 9x19mm 19-round magazine",
+					"tech_level": "8",
+					"legality_class": "3",
+					"value": "32.5",
+					"weight": "0.7 lb",
+					"reference": "HT100",
+					"categories": [
+						"Firearms"
+					]
+				},
+				{
+					"type": "equipment",
+					"version": 1,
+					"id": "d184db03-4fb6-4118-b2a0-3d493b4ab7cf",
+					"based_on_id": "b5bb2b27-5828-42d2-b117-0a88db0f1fbf",
+					"based_on_hash": "QIguQG+Y/u28bmoC7lrPsPYUiopRaS1zG/v6WVo7LN4",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Personal Basics",
+					"tech_level": "0",
+					"value": "5",
+					"weight": "1 lb",
+					"reference": "B288",
+					"notes": "Minimum gear for camping: -2 to any Survival roll without it. Includes utensils, tinderbox or flint and steel, towel, etc., as TL permits.",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				}
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "6ebcbef2-bd0b-4e64-92b6-3eff993cf653",
+			"equipped": true,
+			"quantity": 14,
+			"description": "Cigarettes"
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "d7a5e31c-4c4b-442f-91bb-2d7842fe54a0",
+			"based_on_id": "7e3fc52f-8953-4543-b9ea-d19b5fe004cc",
+			"based_on_hash": "eFA0hWmT9VtqgDantkpEELGq1RrFbEMOj6zqukBQZWY",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Clothing, Ordinary, Status 0",
+			"tech_level": "7",
+			"value": "120",
+			"weight": "2 lb",
+			"reference": "HT63",
+			"categories": [
+				"Clothing"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "093847ab-46a5-47e7-a099-2002a4a7ef2d",
+			"based_on_id": "fdbbc91d-4ef2-4b41-a7ea-8b6d62e45ece",
+			"based_on_hash": "hIW1FPShCzhkMluZMTvfJPXcg1VcZDSJaSChLyE23Hw",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Glock 17, 9x19mm",
+			"tech_level": "8",
+			"legality_class": "3",
+			"value": "600",
+			"weight": "1.9 lb",
+			"reference": "HT101",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "pi",
+						"base": "2d+2"
+					},
+					"strength": "8",
+					"accuracy": "2",
+					"range": "160/1,800",
+					"rate_of_fire": "3",
+					"shots": "17+1(3)",
+					"bulk": "-2",
+					"recoil": "2",
+					"defaults": [
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Pistol"
+						},
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Gun!"
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						}
+					]
+				}
+			],
+			"categories": [
+				"Firearms"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "06315fcf-3bf1-4094-85de-0745d3bb1c46",
+			"based_on_id": "193b1213-5db9-4a69-a876-c7e16027188f",
+			"based_on_hash": "4943VTs/EVa2cD/EPKYRtshO5I0AIgX6lwS44qiupwU",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Large Knife",
+			"tech_level": "0",
+			"value": "40",
+			"weight": "1 lb",
+			"reference": "B272",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cut",
+						"st": "sw",
+						"base": "-2"
+					},
+					"strength": "6",
+					"usage": "Swung",
+					"reach": "C,1",
+					"parry": "-1",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Knife"
+						},
+						{
+							"type": "Skill",
+							"name": "Force Sword",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Sword!"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "imp",
+						"st": "thr"
+					},
+					"strength": "6",
+					"usage": "Thrust",
+					"reach": "C",
+					"parry": "-1",
+					"block": "No",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Knife"
+						},
+						{
+							"type": "Skill",
+							"name": "Force Sword",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Sword!"
+						}
+					]
+				},
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "imp",
+						"st": "thr"
+					},
+					"strength": "6",
+					"usage": "Thrown",
+					"accuracy": "+0",
+					"range": "x0.8/x1.5",
+					"rate_of_fire": "1",
+					"shots": "T(1)",
+					"bulk": "-2",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Thrown Weapon",
+							"specialization": "Knife"
+						}
+					]
+				}
+			],
+			"categories": [
+				"Melee Weapon",
+				"Missile Weapon"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "a6e53b8d-e34a-4fcb-ac68-d48322e9734e",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Zippo",
+			"weight": "0.01 lb"
+		}
+	],
+	"other_equipment": [
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "9ede66ff-ee87-4a4b-a9c4-5c1dd20e2bc8",
+			"based_on_id": "0077bc48-4edc-4877-bcf2-6e3bf1693a96",
+			"based_on_hash": "YKk1HGepgEtiGlmQ98uZ+3XsNJfqwOuCDG5qx7cGvN4",
+			"equipped": true,
+			"quantity": 2,
+			"description": "Auto Pistol, 9mm",
+			"tech_level": "8",
+			"legality_class": "3",
+			"value": "800",
+			"weight": "2 lb",
+			"reference": "B278",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "pi",
+						"base": "2d+2"
+					},
+					"strength": "9",
+					"accuracy": "2",
+					"range": "150/1900",
+					"rate_of_fire": "3",
+					"shots": "18+1(3)",
+					"bulk": "-2",
+					"recoil": "2",
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Pistol"
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Gun!"
+						}
+					]
+				}
+			],
+			"categories": [
+				"Missile Weapon"
+			]
+		},
+		{
+			"type": "equipment",
+			"version": 1,
+			"id": "671ebad4-4612-4f54-a4cf-07b05110cfe6",
+			"based_on_id": "849f6806-1f91-47b6-add3-fef2fdbd7f78",
+			"based_on_hash": "lQqxEtNgp7hfXVih1PFKEWlJg9YQTPQlZuJsBLFRtI0",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Sleeping Bag",
+			"tech_level": "6",
+			"value": "25",
+			"weight": "7 lb",
+			"reference": "B288",
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		}
+	],
+	"print_settings": {
+		"printer": "Microsoft Print to PDF",
+		"units": "in",
+		"orientation": "portrait",
+		"width": 8.5,
+		"height": 11,
+		"top_margin": 0.25,
+		"left_margin": 0.25,
+		"bottom_margin": 0.25,
+		"right_margin": 0.25,
+		"ink_chromaticity": "monochrome",
+		"sides": "single",
+		"quality": "normal"
+	}
+}
