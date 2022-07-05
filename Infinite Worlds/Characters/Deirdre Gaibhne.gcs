@@ -535,9 +535,9 @@
 		}
 	},
 	"created_date": "Aug 2, 2020, 4:46 PM",
-	"modified_date": "Jun 28, 2022, 9:25 PM",
+	"modified_date": "Jul 5, 2022, 7:52 AM",
 	"profile": {
-		"player_name": "blazi",
+		"player_name": "Tim",
 		"name": "Deirdre Gaibhne",
 		"age": "23",
 		"birthday": "August 7",
@@ -1133,6 +1133,178 @@
 		},
 		{
 			"type": "advantage",
+			"id": "341cdca1-53f8-46eb-8c36-a2c3019baada",
+			"name": "Charisma",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"reference": "B41",
+			"calc": {
+				"points": 5
+			},
+			"features": [
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "fortune-telling"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "leadership"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "panhandling"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "public speaking"
+					}
+				},
+				{
+					"type": "reaction_bonus",
+					"amount": 1,
+					"per_level": true,
+					"situation": "from sapient being with whom you actively interact (converse, lecture, etc.)"
+				},
+				{
+					"type": "reaction_bonus",
+					"amount": 1,
+					"per_level": true,
+					"situation": "to Influence rolls"
+				}
+			],
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "cf4affcb-4946-4691-bd88-c6971b8a21a1",
+			"name": "Cultural Familiarity (American)",
+			"mental": true,
+			"base_points": 1,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "063cabe3-0bc6-41c0-9e58-674e7b36a1e5",
+					"disabled": true,
+					"name": "Alien",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "f1f52a4a-f85d-43df-a10b-1eaf7fa9655c",
+					"name": "Native",
+					"cost_type": "points",
+					"cost": -1,
+					"affects": "total"
+				}
+			],
+			"reference": "B23",
+			"calc": {
+				"points": 0
+			},
+			"notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "73d14062-6579-4d6a-80f3-352137c817b2",
+			"name": "Cultural Familiarity (Brookhaven-2)",
+			"mental": true,
+			"base_points": 1,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "dd92d641-01f3-459a-bae1-650a96a7e8a9",
+					"disabled": true,
+					"name": "Alien",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "bd5453af-214f-401a-b041-afe47153b599",
+					"name": "Native",
+					"cost_type": "points",
+					"cost": -1,
+					"affects": "total"
+				}
+			],
+			"reference": "B23",
+			"calc": {
+				"points": 0
+			},
+			"notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "a09df0ca-2a3d-42b3-86f6-f0e859144a57",
+			"name": "Cultural Familiarity (Homeline)",
+			"mental": true,
+			"base_points": 1,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "1145122b-8cc9-4cf9-b980-42aa9e9ca61f",
+					"disabled": true,
+					"name": "Alien",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "3820db55-13bc-4fe4-aed9-806774d7daa9",
+					"disabled": true,
+					"name": "Native",
+					"cost_type": "points",
+					"cost": -1,
+					"affects": "total"
+				}
+			],
+			"reference": "B23",
+			"calc": {
+				"points": 1
+			},
+			"notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
 			"id": "68190763-5f6e-4e96-a758-302e7cf8a456",
 			"name": "Gadgeteer",
 			"mental": true,
@@ -1155,6 +1327,117 @@
 			},
 			"categories": [
 				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "f0901fda-d3c3-4af2-b56e-105bdb9b9ece",
+			"name": "Language: English",
+			"mental": true,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "1cde9d7a-f3d4-480b-b891-46a5d9459575",
+					"name": "Native",
+					"reference": "B23",
+					"cost_type": "points",
+					"cost": -6,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "421cded2-c535-45a1-ae85-9ec500e5f033",
+					"disabled": true,
+					"name": "Spoken",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 0,
+					"affects": "total",
+					"notes": "None"
+				},
+				{
+					"type": "modifier",
+					"id": "db25771f-48d2-468a-9aa1-2c97e082e83d",
+					"disabled": true,
+					"name": "Spoken",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "total",
+					"notes": "Broken"
+				},
+				{
+					"type": "modifier",
+					"id": "c3b28d68-a5df-49d9-8441-9a3ef16d3524",
+					"disabled": true,
+					"name": "Spoken",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 2,
+					"affects": "total",
+					"notes": "Accented"
+				},
+				{
+					"type": "modifier",
+					"id": "d4689fe4-8d07-4626-bfd9-2b9247b258d8",
+					"name": "Spoken",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 3,
+					"affects": "total",
+					"notes": "Native"
+				},
+				{
+					"type": "modifier",
+					"id": "d2cccb2d-425b-418b-986b-f455fb99d4f9",
+					"disabled": true,
+					"name": "Written",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 0,
+					"affects": "total",
+					"notes": "None"
+				},
+				{
+					"type": "modifier",
+					"id": "d3d2a51a-e652-4abf-8d08-2485f632a3be",
+					"disabled": true,
+					"name": "Written",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "total",
+					"notes": "Broken"
+				},
+				{
+					"type": "modifier",
+					"id": "c7412a9d-5a0d-4f99-b559-f19494ea995a",
+					"disabled": true,
+					"name": "Written",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 2,
+					"affects": "total",
+					"notes": "Accented"
+				},
+				{
+					"type": "modifier",
+					"id": "9989e32e-a171-4c53-897e-7fecece1507d",
+					"name": "Written",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 3,
+					"affects": "total",
+					"notes": "Native"
+				}
+			],
+			"reference": "B24",
+			"calc": {
+				"points": 0
+			},
+			"categories": [
+				"Advantage",
+				"Language"
 			]
 		},
 		{
@@ -1277,6 +1560,179 @@
 			"calc": {
 				"points": 0
 			}
+		},
+		{
+			"type": "advantage",
+			"id": "b8a5646a-85ac-4ee5-9291-7f7c66b8713f",
+			"name": "Sign Language: ASL",
+			"mental": true,
+			"physical": true,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "ab2ccd67-c712-4f0b-8ca4-01af3a704f4c",
+					"disabled": true,
+					"name": "Native",
+					"reference": "B23",
+					"cost_type": "points",
+					"cost": -3,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "73917a32-f2c2-4d5c-b94f-d6b64ad5b0fe",
+					"disabled": true,
+					"name": "Signed",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "total",
+					"notes": "Broken"
+				},
+				{
+					"type": "modifier",
+					"id": "fbb55cca-87dc-447a-bbfd-952ef8bb91ad",
+					"disabled": true,
+					"name": "Signed",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 2,
+					"affects": "total",
+					"notes": "Accented"
+				},
+				{
+					"type": "modifier",
+					"id": "3de93971-7c91-4058-af31-aac4610f9fcd",
+					"name": "Signed",
+					"reference": "B24",
+					"cost_type": "points",
+					"cost": 3,
+					"affects": "total",
+					"notes": "Native"
+				}
+			],
+			"reference": "B25",
+			"calc": {
+				"points": 3
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": false,
+						"name": {
+							"compare": "is",
+							"qualifier": "Language Talent"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Advantage",
+				"Language"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "8c43f3ab-d0ee-49df-b250-9e10a703e00c",
+			"name": "Talent (Telepathy)",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 5,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "b6616338-6aea-4501-b4ad-8ecf6d241993",
+					"disabled": true,
+					"name": "Alternate Benefit",
+					"cost_type": "percentage",
+					"cost": 0,
+					"affects": "total",
+					"notes": "@Alternate Benefit@"
+				},
+				{
+					"type": "modifier",
+					"id": "a9be4911-ea4c-46ec-b8c5-380b06c2e241",
+					"disabled": true,
+					"name": "Alternative Cost",
+					"cost_type": "points",
+					"cost": 0,
+					"affects": "levels_only"
+				}
+			],
+			"reference": "B89",
+			"calc": {
+				"points": 5
+			},
+			"features": [
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Telesend"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is"
+					}
+				},
+				{
+					"type": "reaction_bonus",
+					"amount": 1,
+					"per_level": true,
+					"situation": ""
+				}
+			],
+			"categories": [
+				"Advantage",
+				"Talent"
+			]
 		},
 		{
 			"type": "advantage",
@@ -1514,175 +1970,6 @@
 			"categories": [
 				"Advantage"
 			]
-		},
-		{
-			"type": "advantage",
-			"id": "8c43f3ab-d0ee-49df-b250-9e10a703e00c",
-			"name": "Talent (Telepathy)",
-			"mental": true,
-			"levels": "1",
-			"points_per_level": 5,
-			"modifiers": [
-				{
-					"type": "modifier",
-					"id": "b6616338-6aea-4501-b4ad-8ecf6d241993",
-					"disabled": true,
-					"name": "Alternate Benefit",
-					"cost_type": "percentage",
-					"cost": 0,
-					"affects": "total",
-					"notes": "@Alternate Benefit@"
-				},
-				{
-					"type": "modifier",
-					"id": "a9be4911-ea4c-46ec-b8c5-380b06c2e241",
-					"disabled": true,
-					"name": "Alternative Cost",
-					"cost_type": "points",
-					"cost": 0,
-					"affects": "levels_only"
-				}
-			],
-			"reference": "B89",
-			"calc": {
-				"points": 5
-			},
-			"features": [
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Telesend"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is"
-					}
-				},
-				{
-					"type": "reaction_bonus",
-					"amount": 1,
-					"per_level": true,
-					"situation": ""
-				}
-			],
-			"categories": [
-				"Advantage",
-				"Talent"
-			]
-		},
-		{
-			"type": "advantage",
-			"id": "341cdca1-53f8-46eb-8c36-a2c3019baada",
-			"name": "Charisma",
-			"mental": true,
-			"levels": "1",
-			"points_per_level": 5,
-			"reference": "B41",
-			"calc": {
-				"points": 5
-			},
-			"features": [
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "fortune-telling"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "leadership"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "panhandling"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "public speaking"
-					}
-				},
-				{
-					"type": "reaction_bonus",
-					"amount": 1,
-					"per_level": true,
-					"situation": "from sapient being with whom you actively interact (converse, lecture, etc.)"
-				},
-				{
-					"type": "reaction_bonus",
-					"amount": 1,
-					"per_level": true,
-					"situation": "to Influence rolls"
-				}
-			],
-			"categories": [
-				"Advantage"
-			]
 		}
 	],
 	"skills": [
@@ -1888,6 +2175,35 @@
 		},
 		{
 			"type": "skill",
+			"id": "769884de-a571-41d1-bb58-d2fbe768987c",
+			"name": "Body Language",
+			"reference": "B181",
+			"difficulty": "per/a",
+			"points": 1,
+			"calc": {
+				"level": 14,
+				"rsl": "Per-1"
+			},
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Detect Lies",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Psychology",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Police",
+				"Social",
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
 			"id": "e4d23b2b-283c-428f-bf57-d36399952202",
 			"name": "Brawling",
 			"reference": "B182",
@@ -2016,6 +2332,34 @@
 		},
 		{
 			"type": "skill",
+			"id": "85d5940d-961a-44af-8e5a-fbca42c815c7",
+			"name": "Dancing",
+			"reference": "B187",
+			"difficulty": "dx/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -5,
+				"level": 6,
+				"adjusted_level": 6,
+				"points": -6
+			},
+			"calc": {
+				"level": 10,
+				"rsl": "DX-1"
+			},
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Arts/Entertainment"
+			]
+		},
+		{
+			"type": "skill",
 			"id": "3e9c920c-fa6a-4424-b2a2-493712c8a7d1",
 			"name": "Diplomacy",
 			"reference": "B187",
@@ -2047,6 +2391,77 @@
 				"Business",
 				"Police",
 				"Social"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "e317a18a-f53f-412d-9469-0fb3d82a5737",
+			"name": "Diplomacy",
+			"reference": "B187",
+			"difficulty": "iq/h",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -6,
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
+			},
+			"calc": {
+				"level": 13,
+				"rsl": "IQ-2"
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "Politics",
+					"modifier": -6
+				}
+			],
+			"categories": [
+				"Business",
+				"Police",
+				"Social"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "d6cc5268-5286-451a-b4ed-991f75e31a9a",
+			"name": "Disguise",
+			"reference": "B187",
+			"specialization": "Human",
+			"tech_level": "8",
+			"difficulty": "iq/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
+			},
+			"calc": {
+				"level": 14,
+				"rsl": "IQ-1"
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Makeup",
+					"modifier": -3
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Spy"
 			]
 		},
 		{
@@ -2086,6 +2501,51 @@
 			],
 			"categories": [
 				"Vehicle"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "aa764768-5c04-4e83-b374-a82b88872b6e",
+			"name": "Enthrallment",
+			"reference": "B191",
+			"difficulty": "will/h",
+			"points": 4,
+			"calc": {
+				"level": 15,
+				"rsl": "Will+0"
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "charisma"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 1
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "public speaking"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			},
+			"categories": [
+				"Esoteric"
 			]
 		},
 		{
@@ -2133,34 +2593,6 @@
 		},
 		{
 			"type": "skill",
-			"id": "85d5940d-961a-44af-8e5a-fbca42c815c7",
-			"name": "Dancing",
-			"reference": "B187",
-			"difficulty": "dx/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "dx",
-				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
-			},
-			"calc": {
-				"level": 10,
-				"rsl": "DX-1"
-			},
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -5
-				}
-			],
-			"categories": [
-				"Arts/Entertainment"
-			]
-		},
-		{
-			"type": "skill",
 			"id": "3ebe35c8-847d-4b77-b3a4-d86037a10974",
 			"name": "Gesture",
 			"reference": "B198",
@@ -2185,6 +2617,104 @@
 			],
 			"categories": [
 				"Social"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "a224f5d2-bf5b-44cf-bd3e-db5a8518efde",
+			"name": "Knot-Tying",
+			"reference": "B203,MA58",
+			"difficulty": "dx/e",
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -4,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "DX+0"
+			},
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Climbing",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Seamanship",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Everyman"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "5b78559d-089b-4033-bc44-261b95bae1bd",
+			"name": "Lip Reading",
+			"reference": "B205",
+			"difficulty": "per/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "per",
+				"modifier": -10,
+				"level": 5,
+				"adjusted_level": 5,
+				"points": -5
+			},
+			"calc": {
+				"level": 14,
+				"rsl": "Per-1"
+			},
+			"defaults": [
+				{
+					"type": "per",
+					"modifier": -10
+				}
+			],
+			"categories": [
+				"Spy"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "68130e1a-817a-4393-a7be-da4fd60e00d4",
+			"name": "Lockpicking",
+			"reference": "B206",
+			"tech_level": "8",
+			"difficulty": "iq/a",
+			"points": 1,
+			"defaulted_from": {
+				"type": "iq",
+				"modifier": -5,
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
+			},
+			"calc": {
+				"level": 14,
+				"rsl": "IQ-1"
+			},
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				}
+			],
+			"categories": [
+				"Criminal/Street",
+				"Police",
+				"Spy",
+				"Technical"
 			]
 		},
 		{
@@ -2269,64 +2799,82 @@
 		},
 		{
 			"type": "skill",
-			"id": "5b78559d-089b-4033-bc44-261b95bae1bd",
-			"name": "Lip Reading",
-			"reference": "B205",
+			"id": "fe7776e7-2e5e-4e2e-8693-23177614e8c7",
+			"name": "Observation",
+			"reference": "B211",
 			"difficulty": "per/a",
-			"points": 1,
+			"points": 2,
 			"defaulted_from": {
 				"type": "per",
-				"modifier": -10,
-				"level": 5,
-				"adjusted_level": 5,
-				"points": -5
+				"modifier": -5,
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 14,
-				"rsl": "Per-1"
+				"level": 15,
+				"rsl": "Per+0"
 			},
 			"defaults": [
 				{
 					"type": "per",
-					"modifier": -10
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Shadowing",
+					"modifier": -5
 				}
 			],
 			"categories": [
+				"Criminal/Street",
+				"Military",
+				"Police",
 				"Spy"
 			]
 		},
 		{
 			"type": "skill",
-			"id": "e317a18a-f53f-412d-9469-0fb3d82a5737",
-			"name": "Diplomacy",
-			"reference": "B187",
-			"difficulty": "iq/h",
+			"id": "5a5e3982-6376-46d3-8abe-cad027a74919",
+			"name": "Public Speaking",
+			"reference": "B216",
+			"difficulty": "iq/a",
 			"points": 1,
 			"defaulted_from": {
 				"type": "iq",
-				"modifier": -6,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
+				"modifier": -5,
+				"level": 10,
+				"adjusted_level": 10,
+				"points": -10
 			},
 			"calc": {
-				"level": 13,
-				"rsl": "IQ-2"
+				"level": 15,
+				"rsl": "IQ+0"
 			},
 			"defaults": [
 				{
 					"type": "iq",
-					"modifier": -6
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Acting",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Performance",
+					"modifier": -2
 				},
 				{
 					"type": "skill",
 					"name": "Politics",
-					"modifier": -6
+					"modifier": -5
 				}
 			],
 			"categories": [
 				"Business",
-				"Police",
+				"Scholarly",
 				"Social"
 			]
 		},
@@ -2388,46 +2936,9 @@
 		},
 		{
 			"type": "skill",
-			"id": "fe7776e7-2e5e-4e2e-8693-23177614e8c7",
-			"name": "Observation",
-			"reference": "B211",
-			"difficulty": "per/a",
-			"points": 2,
-			"defaulted_from": {
-				"type": "per",
-				"modifier": -5,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
-			},
-			"calc": {
-				"level": 15,
-				"rsl": "Per+0"
-			},
-			"defaults": [
-				{
-					"type": "per",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Shadowing",
-					"modifier": -5
-				}
-			],
-			"categories": [
-				"Criminal/Street",
-				"Military",
-				"Police",
-				"Spy"
-			]
-		},
-		{
-			"type": "skill",
-			"id": "68130e1a-817a-4393-a7be-da4fd60e00d4",
-			"name": "Lockpicking",
-			"reference": "B206",
-			"tech_level": "8",
+			"id": "122eb9c0-8d30-491c-a166-6569de5f4c33",
+			"name": "Shadowing",
+			"reference": "B219",
 			"difficulty": "iq/a",
 			"points": 1,
 			"defaulted_from": {
@@ -2445,13 +2956,22 @@
 				{
 					"type": "iq",
 					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Observation",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Stealth",
+					"modifier": -4
 				}
 			],
 			"categories": [
 				"Criminal/Street",
 				"Police",
-				"Spy",
-				"Technical"
+				"Spy"
 			]
 		},
 		{
@@ -2491,21 +3011,22 @@
 		},
 		{
 			"type": "skill",
-			"id": "122eb9c0-8d30-491c-a166-6569de5f4c33",
-			"name": "Shadowing",
-			"reference": "B219",
-			"difficulty": "iq/a",
-			"points": 1,
+			"id": "ae53491f-37e1-4f4e-a0fc-1868b8b44efc",
+			"name": "Stealth",
+			"reference": "B222",
+			"encumbrance_penalty_multiplier": 1,
+			"difficulty": "dx/a",
+			"points": 4,
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
 				"level": 10,
 				"adjusted_level": 10,
-				"points": -10
+				"points": 1
 			},
 			"calc": {
-				"level": 14,
-				"rsl": "IQ-1"
+				"level": 12,
+				"rsl": "DX+1"
 			},
 			"defaults": [
 				{
@@ -2513,14 +3034,8 @@
 					"modifier": -5
 				},
 				{
-					"type": "skill",
-					"name": "Observation",
+					"type": "dx",
 					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Stealth",
-					"modifier": -4
 				}
 			],
 			"categories": [
@@ -2586,234 +3101,6 @@
 			"categories": [
 				"Criminal/Street",
 				"Police"
-			]
-		},
-		{
-			"type": "skill",
-			"id": "aa764768-5c04-4e83-b374-a82b88872b6e",
-			"name": "Enthrallment",
-			"reference": "B191",
-			"difficulty": "will/h",
-			"points": 4,
-			"calc": {
-				"level": 15,
-				"rsl": "Will+0"
-			},
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "advantage_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "charisma"
-						},
-						"level": {
-							"compare": "at_least",
-							"qualifier": 1
-						}
-					},
-					{
-						"type": "skill_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "public speaking"
-						},
-						"level": {
-							"compare": "at_least",
-							"qualifier": 12
-						}
-					}
-				]
-			},
-			"categories": [
-				"Esoteric"
-			]
-		},
-		{
-			"type": "skill",
-			"id": "5a5e3982-6376-46d3-8abe-cad027a74919",
-			"name": "Public Speaking",
-			"reference": "B216",
-			"difficulty": "iq/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
-			},
-			"calc": {
-				"level": 15,
-				"rsl": "IQ+0"
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Acting",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Performance",
-					"modifier": -2
-				},
-				{
-					"type": "skill",
-					"name": "Politics",
-					"modifier": -5
-				}
-			],
-			"categories": [
-				"Business",
-				"Scholarly",
-				"Social"
-			]
-		},
-		{
-			"type": "skill",
-			"id": "a224f5d2-bf5b-44cf-bd3e-db5a8518efde",
-			"name": "Knot-Tying",
-			"reference": "B203,MA58",
-			"difficulty": "dx/e",
-			"points": 1,
-			"defaulted_from": {
-				"type": "dx",
-				"modifier": -4,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
-			},
-			"calc": {
-				"level": 11,
-				"rsl": "DX+0"
-			},
-			"defaults": [
-				{
-					"type": "dx",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Climbing",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Seamanship",
-					"modifier": -4
-				}
-			],
-			"categories": [
-				"Everyman"
-			]
-		},
-		{
-			"type": "skill",
-			"id": "769884de-a571-41d1-bb58-d2fbe768987c",
-			"name": "Body Language",
-			"reference": "B181",
-			"difficulty": "per/a",
-			"points": 1,
-			"calc": {
-				"level": 14,
-				"rsl": "Per-1"
-			},
-			"defaults": [
-				{
-					"type": "skill",
-					"name": "Detect Lies",
-					"modifier": -4
-				},
-				{
-					"type": "skill",
-					"name": "Psychology",
-					"modifier": -4
-				}
-			],
-			"categories": [
-				"Police",
-				"Social",
-				"Spy"
-			]
-		},
-		{
-			"type": "skill",
-			"id": "d6cc5268-5286-451a-b4ed-991f75e31a9a",
-			"name": "Disguise",
-			"reference": "B187",
-			"specialization": "Human",
-			"tech_level": "8",
-			"difficulty": "iq/a",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": -10
-			},
-			"calc": {
-				"level": 14,
-				"rsl": "IQ-1"
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "skill",
-					"name": "Makeup",
-					"modifier": -3
-				}
-			],
-			"categories": [
-				"Criminal/Street",
-				"Spy"
-			]
-		},
-		{
-			"type": "skill",
-			"id": "ae53491f-37e1-4f4e-a0fc-1868b8b44efc",
-			"name": "Stealth",
-			"reference": "B222",
-			"encumbrance_penalty_multiplier": 1,
-			"difficulty": "dx/a",
-			"points": 4,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -5,
-				"level": 10,
-				"adjusted_level": 10,
-				"points": 1
-			},
-			"calc": {
-				"level": 12,
-				"rsl": "DX+1"
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -5
-				},
-				{
-					"type": "dx",
-					"modifier": -5
-				}
-			],
-			"categories": [
-				"Criminal/Street",
-				"Police",
-				"Spy"
 			]
 		}
 	],
