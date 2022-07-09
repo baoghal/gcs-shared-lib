@@ -10,95 +10,8 @@
 			"calc": {
 				"points": 99
 			},
-			"open": true,
+			"open": false,
 			"children": [
-				{
-					"type": "advantage_container",
-					"id": "80a28d82-138b-4677-a0aa-0638cc8e4745",
-					"name": "Disadvantages",
-					"calc": {
-						"points": -20
-					},
-					"open": true,
-					"children": [
-						{
-							"type": "advantage",
-							"id": "07df0073-5753-4695-94c5-973d99b92f26",
-							"name": "Duty (Patrol)",
-							"social": true,
-							"modifiers": [
-								{
-									"type": "modifier",
-									"id": "464540f9-8be0-43b8-8976-45759e660dd4",
-									"disabled": true,
-									"name": "FR: 6",
-									"cost_type": "points",
-									"cost": -2,
-									"affects": "total"
-								},
-								{
-									"type": "modifier",
-									"id": "a3899fc2-7609-465d-bd8c-301a4c04652c",
-									"disabled": true,
-									"name": "FR: 9",
-									"cost_type": "points",
-									"cost": -5,
-									"affects": "total"
-								},
-								{
-									"type": "modifier",
-									"id": "1628e240-0e78-4136-a1a1-f661a0e4d2ae",
-									"disabled": true,
-									"name": "FR: 12",
-									"cost_type": "points",
-									"cost": -10,
-									"affects": "total"
-								},
-								{
-									"type": "modifier",
-									"id": "c7c64313-2ea9-4a0d-9647-6c636acfc93f",
-									"name": "FR: 15",
-									"cost_type": "points",
-									"cost": -15,
-									"affects": "total"
-								},
-								{
-									"type": "modifier",
-									"id": "734ad4fb-a8c6-4229-8e10-ecee0057f513",
-									"name": "Extremely Hazardous",
-									"cost_type": "points",
-									"cost": -5,
-									"affects": "total"
-								},
-								{
-									"type": "modifier",
-									"id": "f05b89db-2ce7-4749-9fbe-26ba979f9fc6",
-									"disabled": true,
-									"name": "Involuntary",
-									"cost_type": "points",
-									"cost": -5,
-									"affects": "total"
-								},
-								{
-									"type": "modifier",
-									"id": "172c8ba3-55db-4c7d-8517-2be40d96528e",
-									"disabled": true,
-									"name": "Nonhazardous",
-									"cost_type": "points",
-									"cost": 5,
-									"affects": "total"
-								}
-							],
-							"reference": "B133",
-							"calc": {
-								"points": -20
-							},
-							"categories": [
-								"Disadvantage"
-							]
-						}
-					]
-				},
 				{
 					"type": "advantage_container",
 					"id": "6898b8d4-3610-489d-9101-502582343c8b",
@@ -282,66 +195,6 @@
 				},
 				{
 					"type": "advantage_container",
-					"id": "cffdbfe4-1e0b-4066-9039-b2ddfa690628",
-					"name": "Secondary Characteristics",
-					"calc": {
-						"points": 14
-					},
-					"open": false,
-					"children": [
-						{
-							"type": "advantage",
-							"id": "9264dae5-49de-4aef-8852-22bf3ebef41b",
-							"name": "Extra Fatigue Points",
-							"physical": true,
-							"levels": "3",
-							"points_per_level": 3,
-							"reference": "B16",
-							"calc": {
-								"points": 9
-							},
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"amount": 1,
-									"per_level": true,
-									"attribute": "fp"
-								}
-							],
-							"categories": [
-								"Advantage",
-								"Attribute"
-							]
-						},
-						{
-							"type": "advantage",
-							"id": "e600ee4f-f67f-47b3-814a-ef5bacd9d796",
-							"name": "Increased Basic Speed",
-							"physical": true,
-							"levels": "1",
-							"points_per_level": 5,
-							"reference": "B17",
-							"calc": {
-								"points": 5
-							},
-							"features": [
-								{
-									"type": "attribute_bonus",
-									"amount": 0.25,
-									"decimal": true,
-									"per_level": true,
-									"attribute": "basic_speed"
-								}
-							],
-							"categories": [
-								"Advantage",
-								"Attribute"
-							]
-						}
-					]
-				},
-				{
-					"type": "advantage_container",
 					"id": "051d22d4-4b83-4772-9b7e-070a9a7cc74a",
 					"name": "Attributes",
 					"calc": {
@@ -489,6 +342,410 @@
 								"Attribute"
 							]
 						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"id": "80a28d82-138b-4677-a0aa-0638cc8e4745",
+					"name": "Disadvantages",
+					"calc": {
+						"points": -20
+					},
+					"open": true,
+					"children": [
+						{
+							"type": "advantage",
+							"id": "07df0073-5753-4695-94c5-973d99b92f26",
+							"name": "Duty (Patrol)",
+							"social": true,
+							"modifiers": [
+								{
+									"type": "modifier",
+									"id": "464540f9-8be0-43b8-8976-45759e660dd4",
+									"disabled": true,
+									"name": "FR: 6",
+									"cost_type": "points",
+									"cost": -2,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"id": "a3899fc2-7609-465d-bd8c-301a4c04652c",
+									"disabled": true,
+									"name": "FR: 9",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"id": "1628e240-0e78-4136-a1a1-f661a0e4d2ae",
+									"disabled": true,
+									"name": "FR: 12",
+									"cost_type": "points",
+									"cost": -10,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"id": "c7c64313-2ea9-4a0d-9647-6c636acfc93f",
+									"name": "FR: 15",
+									"cost_type": "points",
+									"cost": -15,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"id": "734ad4fb-a8c6-4229-8e10-ecee0057f513",
+									"name": "Extremely Hazardous",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"id": "f05b89db-2ce7-4749-9fbe-26ba979f9fc6",
+									"disabled": true,
+									"name": "Involuntary",
+									"cost_type": "points",
+									"cost": -5,
+									"affects": "total"
+								},
+								{
+									"type": "modifier",
+									"id": "172c8ba3-55db-4c7d-8517-2be40d96528e",
+									"disabled": true,
+									"name": "Nonhazardous",
+									"cost_type": "points",
+									"cost": 5,
+									"affects": "total"
+								}
+							],
+							"reference": "B133",
+							"calc": {
+								"points": -20
+							},
+							"categories": [
+								"Disadvantage"
+							]
+						}
+					]
+				},
+				{
+					"type": "advantage_container",
+					"id": "cffdbfe4-1e0b-4066-9039-b2ddfa690628",
+					"name": "Secondary Characteristics",
+					"calc": {
+						"points": 14
+					},
+					"open": false,
+					"children": [
+						{
+							"type": "advantage",
+							"id": "9264dae5-49de-4aef-8852-22bf3ebef41b",
+							"name": "Extra Fatigue Points",
+							"physical": true,
+							"levels": "3",
+							"points_per_level": 3,
+							"reference": "B16",
+							"calc": {
+								"points": 9
+							},
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 1,
+									"per_level": true,
+									"attribute": "fp"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						},
+						{
+							"type": "advantage",
+							"id": "e600ee4f-f67f-47b3-814a-ef5bacd9d796",
+							"name": "Increased Basic Speed",
+							"physical": true,
+							"levels": "1",
+							"points_per_level": 5,
+							"reference": "B17",
+							"calc": {
+								"points": 5
+							},
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"amount": 0.25,
+									"decimal": true,
+									"per_level": true,
+									"attribute": "basic_speed"
+								}
+							],
+							"categories": [
+								"Advantage",
+								"Attribute"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage_container",
+			"id": "4edd00db-eaa5-4dd4-87b8-bbff76dcc252",
+			"name": "Infinity Unlimited Service",
+			"calc": {
+				"points": -15
+			},
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"id": "0b7c0c62-17b5-4c53-9535-c0fab5adde35",
+					"name": "Code of Honor (Patrol)",
+					"mental": true,
+					"base_points": -5,
+					"reference": "IW179",
+					"calc": {
+						"points": -5
+					},
+					"notes": "Defend the Patrol, The Secret, and Homeline to the death if necessary. Don’t complain, don’t play politics, don’t embarrass the Patrol or your buddies. Don’t fully trust anyone who isn’t Patrol. Go down swinging. Leave all other allegiances aside when you put on Patrol blue and black.",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "c38c524c-4037-41a5-a3e2-cd6c8482e611",
+					"name": "Duty (Patrol)",
+					"social": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "c0cc401b-3ce4-44e0-9b86-ef4c3c5cdc89",
+							"disabled": true,
+							"name": "FR: 6",
+							"cost_type": "points",
+							"cost": -2,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "055dfc4e-c6d6-4436-bc8a-0c2eef5ad1d6",
+							"disabled": true,
+							"name": "FR: 9",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "83ddb294-2e25-459c-b0cf-e5cceed0c073",
+							"disabled": true,
+							"name": "FR: 12",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "573af731-468d-4486-a62f-1c61ffe45618",
+							"name": "FR: 15",
+							"cost_type": "points",
+							"cost": -15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "294555b0-1a4f-466e-b924-cf3c520b1a78",
+							"name": "Extremely Hazardous",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "48328181-ca45-431c-8a63-0701b82f3709",
+							"disabled": true,
+							"name": "Involuntary",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "30e0d484-94ef-4f4c-a07c-25b047ba7af2",
+							"disabled": true,
+							"name": "Nonhazardous",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total"
+						}
+					],
+					"reference": "B133",
+					"calc": {
+						"points": -20
+					},
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "ef558840-74f2-4944-ad1c-dee7f8dd5cea",
+					"name": "Legal Enforcement Powers",
+					"social": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "b0d047bd-29ec-4366-803d-72e719e228ae",
+							"disabled": true,
+							"name": "@Local cop@",
+							"reference": "B65",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "bdd470d1-ec17-4b2a-a79e-62d3b1026ff8",
+							"disabled": true,
+							"name": "@KGB@",
+							"reference": "B65",
+							"cost_type": "points",
+							"cost": 15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "725283d9-e8bf-4302-b6db-944121045c84",
+							"name": "Intervention Service",
+							"reference": "B65",
+							"cost_type": "points",
+							"cost": 10,
+							"affects": "total"
+						}
+					],
+					"reference": "B65",
+					"calc": {
+						"points": 10
+					},
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "6f406e41-cb89-4748-af42-e85b3564dd5c",
+					"name": "Patrol Rank",
+					"physical": true,
+					"levels": "1",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "9eff07c3-4f42-4e2b-8ff7-163f77540191",
+							"disabled": true,
+							"name": "Replaces Status",
+							"reference": "B29",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"id": "c529402c-bf45-4759-9c47-4463166ed057",
+							"disabled": true,
+							"name": "Courtesy",
+							"reference": "B29",
+							"cost_type": "points",
+							"cost": -4,
+							"affects": "levels_only"
+						}
+					],
+					"reference": "B29",
+					"calc": {
+						"points": 5
+					},
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "87ad6818-175d-4332-9579-3428af54897f",
+					"name": "Sense of Duty",
+					"mental": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "279708b7-b2b9-4990-a043-0dc8f4641958",
+							"disabled": true,
+							"name": "Friends and Companions",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "455e0bce-613f-40d2-9f01-d567ca2a94d6",
+							"name": "Patrol",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "1820610e-a982-4b4b-8298-ef25fe33ec5c",
+							"disabled": true,
+							"name": "@Individual@",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -2,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "5704cb33-9cc5-4852-a020-930a91dbab97",
+							"disabled": true,
+							"name": "@Large Group@",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "01d13587-ba96-4ac3-bc46-5a860e6fddee",
+							"disabled": true,
+							"name": "@Entire Race@",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "32f64bc6-80fe-476a-83b5-99de20ea0811",
+							"disabled": true,
+							"name": "Every Living Being",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -20,
+							"affects": "total"
+						}
+					],
+					"reference": "B153, IW180",
+					"calc": {
+						"points": -5
+					},
+					"categories": [
+						"Disadvantage"
 					]
 				}
 			]
