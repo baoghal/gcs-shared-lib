@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Aug 2, 2020, 4:46 PM",
-	"modified_date": "Jul 5, 2022, 7:52 AM",
+	"modified_date": "Jul 5, 2022, 10:48 PM",
 	"profile": {
 		"player_name": "Tim",
 		"name": "Deirdre Gaibhne",
@@ -554,10 +554,10 @@
 	"attributes": [
 		{
 			"attr_id": "st",
-			"adj": 3,
+			"adj": 4,
 			"calc": {
-				"value": 13,
-				"points": 30
+				"value": 14,
+				"points": 40
 			}
 		},
 		{
@@ -578,10 +578,10 @@
 		},
 		{
 			"attr_id": "ht",
-			"adj": 1,
+			"adj": 2,
 			"calc": {
-				"value": 11,
-				"points": 10
+				"value": 12,
+				"points": 20
 			}
 		},
 		{
@@ -644,7 +644,7 @@
 			"attr_id": "basic_speed",
 			"adj": 0,
 			"calc": {
-				"value": 5.5,
+				"value": 5.75,
 				"points": 0
 			}
 		},
@@ -661,8 +661,8 @@
 			"adj": 0,
 			"damage": 0,
 			"calc": {
-				"value": 11,
-				"current": 11,
+				"value": 12,
+				"current": 12,
 				"points": 0
 			}
 		},
@@ -671,13 +671,13 @@
 			"adj": 0,
 			"damage": 0,
 			"calc": {
-				"value": 13,
-				"current": 13,
+				"value": 14,
+				"current": 14,
 				"points": 0
 			}
 		}
 	],
-	"total_points": 250,
+	"total_points": 255,
 	"advantages": [
 		{
 			"type": "advantage",
@@ -1501,7 +1501,7 @@
 					"parry": "0",
 					"calc": {
 						"level": 13,
-						"parry": "9",
+						"parry": "11",
 						"block": "",
 						"damage": "1d cr"
 					},
@@ -1970,6 +1970,82 @@
 			"categories": [
 				"Advantage"
 			]
+		},
+		{
+			"type": "advantage",
+			"id": "929016d1-405b-4b9a-accb-20bf9ac1ac08",
+			"name": "Duty (Patrol)",
+			"social": true,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "68aab753-2906-4a14-b506-a9c8d28467db",
+					"disabled": true,
+					"name": "FR: 6",
+					"cost_type": "points",
+					"cost": -2,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "6c37571a-a28e-4391-9171-8bfe28dcb9f8",
+					"disabled": true,
+					"name": "FR: 9",
+					"cost_type": "points",
+					"cost": -5,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "fe8139f9-2be6-4b33-b262-d6d9a28a0c9d",
+					"disabled": true,
+					"name": "FR: 12",
+					"cost_type": "points",
+					"cost": -10,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "0bb7d19e-571d-42bc-8c2f-d61fd0ebc45c",
+					"name": "FR: 15",
+					"cost_type": "points",
+					"cost": -15,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "9405e217-a295-40a4-a919-2a395da589d9",
+					"name": "Extremely Hazardous",
+					"cost_type": "points",
+					"cost": -5,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "c971e929-e2fd-4cc6-b78a-218b45932cd7",
+					"disabled": true,
+					"name": "Involuntary",
+					"cost_type": "points",
+					"cost": -5,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "2705fadf-b81d-47f8-b611-24442e2eefff",
+					"disabled": true,
+					"name": "Nonhazardous",
+					"cost_type": "points",
+					"cost": 5,
+					"affects": "total"
+				}
+			],
+			"reference": "B133",
+			"calc": {
+				"points": -20
+			},
+			"categories": [
+				"Disadvantage"
+			]
 		}
 	],
 	"skills": [
@@ -2084,8 +2160,8 @@
 		},
 		{
 			"type": "skill",
-			"id": "1887439c-dec6-45bc-8fa5-65565aea6aec",
-			"name": "Axe/Mace",
+			"id": "7d31ea7a-72b6-4e62-8990-5ce9f3e45eaa",
+			"name": "Two-Handed Axe/Mace",
 			"reference": "B208",
 			"difficulty": "dx/a",
 			"points": 4,
@@ -2107,12 +2183,61 @@
 				},
 				{
 					"type": "skill",
-					"name": "Two-Handed Axe/Mace",
+					"name": "Axe/Mace",
 					"modifier": -3
 				},
 				{
 					"type": "skill",
-					"name": "Flail",
+					"name": "Polearm",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Two-Handed Flail",
+					"modifier": -4
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Melee Combat"
+			]
+		},
+		{
+			"type": "skill",
+			"id": "2c78131e-e0ff-4b8e-85b2-022c9750903a",
+			"name": "Knife",
+			"reference": "B208",
+			"difficulty": "dx/e",
+			"points": 1,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -4,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 11,
+				"rsl": "DX+0"
+			},
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Force Sword",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Main-Gauche",
+					"modifier": -3
+				},
+				{
+					"type": "skill",
+					"name": "Shortsword",
+					"modifier": -3
+				},
+				{
+					"type": "dx",
 					"modifier": -4
 				}
 			],
@@ -2244,12 +2369,12 @@
 			"defaulted_from": {
 				"type": "ht",
 				"modifier": -4,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"calc": {
-				"level": 11,
+				"level": 12,
 				"rsl": "HT+0"
 			},
 			"defaults": [
@@ -2916,12 +3041,12 @@
 			"defaulted_from": {
 				"type": "ht",
 				"modifier": -3,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
+				"level": 9,
+				"adjusted_level": 9,
+				"points": -9
 			},
 			"calc": {
-				"level": 11,
+				"level": 12,
 				"rsl": "HT+0"
 			},
 			"defaults": [
@@ -3011,6 +3136,91 @@
 		},
 		{
 			"type": "skill",
+			"id": "27394e7a-bd8d-4f8c-9f70-df5042ad7a26",
+			"name": "Guns",
+			"reference": "B198",
+			"specialization": "Rifle",
+			"tech_level": "8",
+			"difficulty": "dx/e",
+			"points": 2,
+			"defaulted_from": {
+				"type": "dx",
+				"modifier": -4,
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
+			},
+			"calc": {
+				"level": 12,
+				"rsl": "DX+1"
+			},
+			"defaults": [
+				{
+					"type": "dx",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Grenade Launcher",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Gyroc",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Light Anti-Armor Weapon",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Light Machine Gun",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Musket",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Pistol",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Beam Weapons",
+					"specialization": "Rifle",
+					"modifier": -4
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Shotgun",
+					"modifier": -2
+				},
+				{
+					"type": "skill",
+					"name": "Guns",
+					"specialization": "Submachine Gun",
+					"modifier": -2
+				}
+			],
+			"categories": [
+				"Combat/Weapon",
+				"Ranged Combat"
+			]
+		},
+		{
+			"type": "skill",
 			"id": "ae53491f-37e1-4f4e-a0fc-1868b8b44efc",
 			"name": "Stealth",
 			"reference": "B222",
@@ -3025,7 +3235,7 @@
 				"points": 1
 			},
 			"calc": {
-				"level": 12,
+				"level": 11,
 				"rsl": "DX+1"
 			},
 			"defaults": [
@@ -3055,12 +3265,12 @@
 			"defaulted_from": {
 				"type": "ht",
 				"modifier": -4,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"calc": {
-				"level": 11,
+				"level": 10,
 				"rsl": "HT+0"
 			},
 			"defaults": [
@@ -3104,10 +3314,348 @@
 			]
 		}
 	],
+	"equipment": [
+		{
+			"type": "equipment",
+			"id": "e0b2586b-b937-4d4d-8b32-3dd2a1a49db9",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Assault Rifle, 5.56mm",
+			"tech_level": "7",
+			"legality_class": "2",
+			"value": "800",
+			"weight": "9 lb",
+			"reference": "B279",
+			"weapons": [
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "pi",
+						"base": "5d"
+					},
+					"strength": "9†",
+					"accuracy": "5",
+					"range": "500/3500",
+					"rate_of_fire": "12",
+					"shots": "30+1(3)",
+					"bulk": "-4",
+					"recoil": "2",
+					"calc": {
+						"level": 12,
+						"range": "500/3500",
+						"damage": "5d pi"
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Rifle"
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Gun!"
+						}
+					]
+				}
+			],
+			"calc": {
+				"extended_value": "800",
+				"extended_weight": "9 lb"
+			},
+			"categories": [
+				"Missile Weapon"
+			]
+		},
+		{
+			"type": "equipment",
+			"id": "85a3f764-f0c5-4006-8cc8-0d70abc42b83",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Medium Shield with Spike",
+			"tech_level": "1",
+			"value": "80",
+			"weight": "20 lb",
+			"reference": "B287",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "1"
+					},
+					"strength": "0",
+					"usage": "Shield Bash",
+					"reach": "1",
+					"parry": "No",
+					"block": "+0",
+					"calc": {
+						"level": 7,
+						"parry": "No",
+						"block": "8",
+						"damage": "1d+1 cr"
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Shield",
+							"specialization": "Buckler",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Shield",
+							"specialization": "Force Shield",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Shield",
+							"specialization": "Shield"
+						}
+					]
+				}
+			],
+			"calc": {
+				"extended_value": "80",
+				"extended_weight": "20 lb"
+			},
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"amount": 2,
+					"attribute": "dodge"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 2,
+					"attribute": "parry"
+				},
+				{
+					"type": "attribute_bonus",
+					"amount": 2,
+					"attribute": "block"
+				}
+			],
+			"categories": [
+				"Shield"
+			]
+		},
+		{
+			"type": "equipment",
+			"id": "ba7569e3-55b8-4809-9262-0b1a017a5ef7",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Mace",
+			"tech_level": "2",
+			"value": "50",
+			"weight": "5 lb",
+			"reference": "B271",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "sw",
+						"base": "3"
+					},
+					"strength": "12",
+					"usage": "Swung",
+					"reach": "1",
+					"parry": "0U",
+					"block": "No",
+					"calc": {
+						"level": 9,
+						"parry": "9U",
+						"block": "No",
+						"damage": "2d+3 cr"
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Axe/Mace"
+						},
+						{
+							"type": "skill",
+							"name": "Flail",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Two-Handed Axe/Mace",
+							"modifier": -3
+						}
+					]
+				},
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "sw",
+						"base": "3"
+					},
+					"strength": "12",
+					"accuracy": "1",
+					"range": "x0.5/x1",
+					"rate_of_fire": "1",
+					"shots": "T(1)",
+					"bulk": "-4",
+					"calc": {
+						"level": 7,
+						"range": "7/14",
+						"damage": "2d+3 cr"
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Thrown Weapon",
+							"specialization": "Axe/Mace"
+						}
+					]
+				}
+			],
+			"calc": {
+				"extended_value": "50",
+				"extended_weight": "5 lb"
+			},
+			"categories": [
+				"Melee Weapon",
+				"Missile Weapon"
+			]
+		},
+		{
+			"type": "equipment",
+			"id": "c3f763be-fc33-4366-a028-87fc33fc4dc9",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Maul",
+			"tech_level": "0",
+			"value": "80",
+			"weight": "12 lb",
+			"reference": "B274",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "sw",
+						"base": "4"
+					},
+					"strength": "13‡",
+					"usage": "Swung",
+					"reach": "1,2*",
+					"parry": "0U",
+					"block": "No",
+					"calc": {
+						"level": 12,
+						"parry": "11U",
+						"block": "No",
+						"damage": "2d+4 cr"
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -5
+						},
+						{
+							"type": "skill",
+							"name": "Two-Handed Axe/Mace"
+						},
+						{
+							"type": "skill",
+							"name": "Axe/Mace",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Polearm",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Two-Handed Flail",
+							"modifier": -4
+						}
+					]
+				}
+			],
+			"calc": {
+				"extended_value": "80",
+				"extended_weight": "12 lb"
+			},
+			"categories": [
+				"Melee Weapon"
+			]
+		}
+	],
 	"calc": {
-		"swing": "2d-1",
+		"swing": "2d",
 		"thrust": "1d",
-		"basic_lift": "34 lb",
+		"basic_lift": "39 lb",
 		"lifting_st_bonus": 0,
 		"striking_st_bonus": 0,
 		"throwing_st_bonus": 0,
@@ -3119,14 +3667,14 @@
 			1
 		],
 		"dodge": [
+			10,
+			9,
 			8,
 			7,
-			6,
-			5,
-			4
+			6
 		],
-		"dodge_bonus": 0,
-		"block_bonus": 0,
-		"parry_bonus": 0
+		"dodge_bonus": 2,
+		"block_bonus": 2,
+		"parry_bonus": 2
 	}
 }
