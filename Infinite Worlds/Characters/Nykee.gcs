@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jun 21, 2022, 7:33 PM",
-	"modified_date": "Jul 12, 2022, 8:12 PM",
+	"modified_date": "Jul 12, 2022, 9:35 PM",
 	"profile": {
 		"player_name": "dergl",
 		"name": "Nykee",
@@ -676,7 +676,7 @@
 			}
 		}
 	],
-	"total_points": 255,
+	"total_points": 258,
 	"advantages": [
 		{
 			"type": "advantage",
@@ -3305,8 +3305,8 @@
 			"weight": "4 lb",
 			"reference": "ACT1:31",
 			"calc": {
-				"extended_value": "50",
-				"extended_weight": "4 lb"
+				"extended_value": "11390",
+				"extended_weight": "9.1 lb"
 			},
 			"features": [
 				{
@@ -3329,55 +3329,109 @@
 			"categories": [
 				"Armor"
 			],
-			"open": false
-		},
-		{
-			"type": "equipment",
-			"id": "9758ca74-04f9-4196-9f50-ce1b6095d652",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Bank Card",
-			"value": "3990",
-			"weight": "0 lb",
-			"calc": {
-				"extended_value": "3990",
-				"extended_weight": "0 lb"
-			}
-		},
-		{
-			"type": "equipment",
-			"id": "b36d5f7d-6474-4f54-ac8a-1b116b0ce0da",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Lockpicks",
-			"value": "50",
-			"weight": "0.1 lb",
-			"reference": "ACT1:27",
-			"calc": {
-				"extended_value": "50",
-				"extended_weight": "0.1 lb"
-			},
-			"notes": "Basic equipment for lockpicking.",
-			"categories": [
-				"Burglary"
-			]
-		},
-		{
-			"type": "equipment",
-			"id": "e207381f-f8ff-46d7-8a7e-49a9af6a2b8f",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Lockpicks, Electronic",
-			"value": "1500",
-			"weight": "3 lb",
-			"reference": "ACT1:27",
-			"calc": {
-				"extended_value": "1500",
-				"extended_weight": "3 lb"
-			},
-			"notes": "Basic equipment for Electronics Operation (Security) to defeat security systems.",
-			"categories": [
-				"Burglary"
+			"open": true,
+			"children": [
+				{
+					"type": "equipment",
+					"id": "3c4806f4-1ea0-4d60-bd41-309f590ad067",
+					"equipped": true,
+					"quantity": 42,
+					"description": "Hyper-Velocity Darts",
+					"value": "0",
+					"weight": "0 lb",
+					"calc": {
+						"extended_value": "0",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"type": "equipment",
+					"id": "9758ca74-04f9-4196-9f50-ce1b6095d652",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Bank Card",
+					"value": "3990",
+					"weight": "0 lb",
+					"calc": {
+						"extended_value": "3990",
+						"extended_weight": "0 lb"
+					}
+				},
+				{
+					"type": "equipment",
+					"id": "b36d5f7d-6474-4f54-ac8a-1b116b0ce0da",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Lockpicks",
+					"value": "50",
+					"weight": "0.1 lb",
+					"reference": "ACT1:27",
+					"calc": {
+						"extended_value": "50",
+						"extended_weight": "0.1 lb"
+					},
+					"notes": "Basic equipment for lockpicking.",
+					"categories": [
+						"Burglary"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "e207381f-f8ff-46d7-8a7e-49a9af6a2b8f",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Lockpicks, Electronic",
+					"value": "1500",
+					"weight": "3 lb",
+					"reference": "ACT1:27",
+					"calc": {
+						"extended_value": "1500",
+						"extended_weight": "3 lb"
+					},
+					"notes": "Basic equipment for Electronics Operation (Security) to defeat security systems.",
+					"categories": [
+						"Burglary"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "b21b18eb-1174-4b8f-a1f8-ecab30a0872f",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Surveillance Endoscope",
+					"value": "4500",
+					"weight": "2 lb",
+					"reference": "ACT1:30",
+					"calc": {
+						"extended_value": "4500",
+						"extended_weight": "2 lb"
+					},
+					"notes": "Spot at Vision-5.",
+					"categories": [
+						"Surveillance"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "ca89a120-f9ec-48a2-a787-b50a213b7468",
+					"equipped": true,
+					"quantity": 13,
+					"description": "Nanobug",
+					"tech_level": "8",
+					"value": "100",
+					"weight": "0 lb",
+					"reference": "B289",
+					"calc": {
+						"extended_value": "1300",
+						"extended_weight": "0 lb"
+					},
+					"notes": "Pinhead-sized audio-visual bug (-10 to spot)",
+					"categories": [
+						"Law-Enforcement",
+						"Spy Gear",
+						"Thief"
+					]
+				}
 			]
 		},
 		{
@@ -3536,8 +3590,8 @@
 			"weight": "3 lb",
 			"reference": "B288",
 			"calc": {
-				"extended_value": "202.5",
-				"extended_weight": "7.465 lb"
+				"extended_value": "232.5",
+				"extended_weight": "8.065 lb"
 			},
 			"prereqs": {
 				"type": "prereq_list",
@@ -3556,7 +3610,7 @@
 			"categories": [
 				"Camping and Survival Gear"
 			],
-			"open": false,
+			"open": true,
 			"children": [
 				{
 					"type": "equipment",
@@ -3682,6 +3736,61 @@
 					]
 				},
 				{
+					"type": "equipment",
+					"id": "8fec10b6-57fd-4b6d-bade-ed5ce476ae16",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Rope, 1/4\"",
+					"value": "30",
+					"weight": "0.6 lb",
+					"reference": "ACT1:28",
+					"calc": {
+						"extended_value": "30",
+						"extended_weight": "0.6 lb"
+					},
+					"notes": "10 yards. Supports 500lbs.",
+					"categories": [
+						"Infiltration"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "81254d09-b640-401d-b2f8-622aa1647d52",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Flashlight, Mini",
+					"tech_level": "7",
+					"value": "10",
+					"weight": "0.25 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "10",
+						"extended_weight": "0.25 lb"
+					},
+					"notes": "15' beam, lasts 1 hour",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "843fbbdc-8749-4f77-9c8d-b9e7dcab53ec",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Cigarette Lighter",
+					"tech_level": "6",
+					"value": "10",
+					"weight": "0.01 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "10",
+						"extended_weight": "0.01 lb"
+					},
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
 					"type": "equipment_container",
 					"id": "8072ef22-c039-4c1a-8256-298934c16b76",
 					"equipped": true,
@@ -3727,66 +3836,11 @@
 							}
 						}
 					]
-				},
-				{
-					"type": "equipment",
-					"id": "81254d09-b640-401d-b2f8-622aa1647d52",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Flashlight, Mini",
-					"tech_level": "7",
-					"value": "10",
-					"weight": "0.25 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "10",
-						"extended_weight": "0.25 lb"
-					},
-					"notes": "15' beam, lasts 1 hour",
-					"categories": [
-						"Camping and Survival Gear"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "843fbbdc-8749-4f77-9c8d-b9e7dcab53ec",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Cigarette Lighter",
-					"tech_level": "6",
-					"value": "10",
-					"weight": "0.01 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "10",
-						"extended_weight": "0.01 lb"
-					},
-					"categories": [
-						"Camping and Survival Gear"
-					]
 				}
 			]
 		}
 	],
 	"other_equipment": [
-		{
-			"type": "equipment",
-			"id": "9838fe44-c689-46cf-b464-aaa851461979",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Surveillance Endoscope",
-			"value": "4500",
-			"weight": "2 lb",
-			"reference": "ACT1:30",
-			"calc": {
-				"extended_value": "4500",
-				"extended_weight": "2 lb"
-			},
-			"notes": "Spot at Vision-5.",
-			"categories": [
-				"Surveillance"
-			]
-		},
 		{
 			"type": "equipment",
 			"id": "09a6c080-fd08-46b7-9a1d-6dcae3bf768e",
@@ -3804,24 +3858,6 @@
 			"notes": "Includes scalpels, forceps, etc. Basic equipment für Surgery skill.",
 			"categories": [
 				"Medical Gear"
-			]
-		},
-		{
-			"type": "equipment",
-			"id": "684be14f-01ac-4d9c-a85e-0119fa4f628e",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Rope, 1/4\"",
-			"value": "30",
-			"weight": "0.6 lb",
-			"reference": "ACT1:28",
-			"calc": {
-				"extended_value": "30",
-				"extended_weight": "0.6 lb"
-			},
-			"notes": "10 yards. Supports 500lbs.",
-			"categories": [
-				"Infiltration"
 			]
 		},
 		{
@@ -3894,27 +3930,6 @@
 			"notes": "Range 900yds.",
 			"categories": [
 				"Surveillance"
-			]
-		},
-		{
-			"type": "equipment",
-			"id": "71aceec5-6b49-43fa-8a5a-4533580b70bb",
-			"equipped": true,
-			"quantity": 13,
-			"description": "Nanobug",
-			"tech_level": "8",
-			"value": "100",
-			"weight": "0 lb",
-			"reference": "B289",
-			"calc": {
-				"extended_value": "1300",
-				"extended_weight": "0 lb"
-			},
-			"notes": "Pinhead-sized audio-visual bug (-10 to spot)",
-			"categories": [
-				"Law-Enforcement",
-				"Spy Gear",
-				"Thief"
 			]
 		},
 		{
