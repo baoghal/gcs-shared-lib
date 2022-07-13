@@ -407,7 +407,7 @@
 					"calc": {
 						"roll_range": "8",
 						"dr": {
-							"all": 0
+							"all": 1
 						}
 					}
 				},
@@ -422,7 +422,7 @@
 					"calc": {
 						"roll_range": "9-10",
 						"dr": {
-							"all": 0
+							"all": 1
 						}
 					}
 				},
@@ -452,7 +452,7 @@
 					"calc": {
 						"roll_range": "12",
 						"dr": {
-							"all": 0
+							"all": 1
 						}
 					}
 				},
@@ -497,7 +497,7 @@
 					"calc": {
 						"roll_range": "16",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -527,7 +527,7 @@
 					"calc": {
 						"roll_range": "-",
 						"dr": {
-							"all": 0
+							"all": 1
 						}
 					}
 				}
@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jul 5, 2022, 6:42 AM",
-	"modified_date": "Jul 5, 2022, 9:47 PM",
+	"modified_date": "Jul 12, 2022, 8:13 PM",
 	"profile": {
 		"player_name": "Rob",
 		"name": "Whitney Birkner",
@@ -928,7 +928,7 @@
 					"parry": "0",
 					"calc": {
 						"level": 13,
-						"parry": "10",
+						"parry": "9",
 						"block": "",
 						"damage": "1d-1 cr"
 					},
@@ -963,7 +963,7 @@
 						"level": 11,
 						"parry": "No",
 						"block": "",
-						"damage": "1d cr"
+						"damage": "1d+1 cr"
 					},
 					"defaults": [
 						{
@@ -2733,6 +2733,42 @@
 	"equipment": [
 		{
 			"type": "equipment",
+			"id": "ba3ea9bb-bad5-48da-9c5d-4e43b6c24888",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Leather Jacket",
+			"tech_level": "1",
+			"value": "50",
+			"weight": "4 lb",
+			"reference": "B283",
+			"calc": {
+				"extended_value": "50",
+				"extended_weight": "4 lb"
+			},
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"location": "torso"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"location": "vitals"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"location": "arm"
+				}
+			],
+			"notes": "Flexible, concealable",
+			"categories": [
+				"Body Armor"
+			]
+		},
+		{
+			"type": "equipment",
 			"id": "6ef69db2-25c0-4415-a57b-b0445651b76c",
 			"equipped": false,
 			"quantity": 1,
@@ -2756,7 +2792,7 @@
 					"block": "No",
 					"calc": {
 						"level": 9,
-						"parry": "7",
+						"parry": "6",
 						"block": "No",
 						"damage": "2d-3 cut"
 					},
@@ -2803,7 +2839,7 @@
 					"block": "No",
 					"calc": {
 						"level": 9,
-						"parry": "7",
+						"parry": "6",
 						"block": "No",
 						"damage": "1d imp"
 					},
@@ -2879,319 +2915,290 @@
 		},
 		{
 			"type": "equipment",
-			"id": "28cc8c64-919a-4355-8626-b8f0c274633f",
-			"equipped": false,
+			"id": "b6998976-f4f2-4b00-b8d7-45a625cf3e6b",
+			"equipped": true,
 			"quantity": 1,
-			"description": "Assault Rifle, 5.56mm",
+			"description": "Reinforced Boots",
 			"tech_level": "7",
-			"legality_class": "2",
-			"value": "800",
-			"weight": "9 lb",
-			"reference": "B279",
-			"weapons": [
-				{
-					"type": "ranged_weapon",
-					"damage": {
-						"type": "pi",
-						"base": "5d"
-					},
-					"strength": "9†",
-					"accuracy": "5",
-					"range": "500/3500",
-					"rate_of_fire": "12",
-					"shots": "30+1(3)",
-					"bulk": "-4",
-					"recoil": "2",
-					"calc": {
-						"level": 14,
-						"range": "500/3500",
-						"damage": "5d pi"
-					},
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Pistol",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Rifle"
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Shotgun",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Light Machine Gun",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Submachine Gun",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Musket",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Grenade Launcher",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Gyroc",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Guns",
-							"specialization": "Light Anti-Armor Weapon",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Gun!"
-						}
-					]
-				}
-			],
-			"calc": {
-				"extended_value": "800",
-				"extended_weight": "9 lb"
-			},
-			"categories": [
-				"Missile Weapon"
-			]
-		},
-		{
-			"type": "equipment",
-			"id": "11a00cd9-3dfc-46d3-bc48-d693ab9143c6",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Broadsword",
-			"tech_level": "2",
-			"value": "500",
+			"value": "75",
 			"weight": "3 lb",
-			"reference": "B271",
-			"weapons": [
-				{
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cut",
-						"st": "sw",
-						"base": "1"
-					},
-					"strength": "10",
-					"usage": "Swung",
-					"reach": "1",
-					"parry": "0",
-					"block": "No",
-					"calc": {
-						"level": 8,
-						"parry": "8",
-						"block": "No",
-						"damage": "2d cut"
-					},
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Force Sword",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Broadsword"
-						},
-						{
-							"type": "skill",
-							"name": "Rapier",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Saber",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Shortsword",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Two-Handed Sword",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Sword!"
-						}
-					]
-				},
-				{
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cr",
-						"st": "thr",
-						"base": "1"
-					},
-					"strength": "10",
-					"usage": "Thrust",
-					"reach": "1",
-					"parry": "0",
-					"block": "No",
-					"calc": {
-						"level": 8,
-						"parry": "8",
-						"block": "No",
-						"damage": "1d+1 cr"
-					},
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -5
-						},
-						{
-							"type": "skill",
-							"name": "Force Sword",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Broadsword"
-						},
-						{
-							"type": "skill",
-							"name": "Rapier",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Saber",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Shortsword",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Two-Handed Sword",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Sword!"
-						}
-					]
-				}
-			],
+			"reference": "B284",
 			"calc": {
-				"extended_value": "500",
+				"extended_value": "75",
 				"extended_weight": "3 lb"
-			},
-			"categories": [
-				"Melee Weapon"
-			]
-		},
-		{
-			"type": "equipment",
-			"id": "586ae723-d0bd-4211-ad00-0ef614b352d9",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Small Shield",
-			"tech_level": "1",
-			"value": "40",
-			"weight": "8 lb",
-			"reference": "B287",
-			"weapons": [
-				{
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cr",
-						"st": "thr"
-					},
-					"strength": "0",
-					"usage": "Shield Bash",
-					"reach": "1",
-					"parry": "No",
-					"block": "+0",
-					"calc": {
-						"level": 9,
-						"parry": "No",
-						"block": "8",
-						"damage": "1d cr"
-					},
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Shield",
-							"specialization": "Buckler",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Shield",
-							"specialization": "Force Shield",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Shield",
-							"specialization": "Shield"
-						}
-					]
-				}
-			],
-			"calc": {
-				"extended_value": "40",
-				"extended_weight": "8 lb"
 			},
 			"features": [
 				{
-					"type": "attribute_bonus",
-					"amount": 1,
-					"attribute": "dodge"
+					"type": "dr_bonus",
+					"amount": 2,
+					"location": "foot"
 				},
 				{
-					"type": "attribute_bonus",
+					"type": "weapon_bonus",
 					"amount": 1,
-					"attribute": "parry"
-				},
-				{
-					"type": "attribute_bonus",
-					"amount": 1,
-					"attribute": "block"
+					"selection_type": "weapons_with_name",
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Kick"
+					}
 				}
 			],
 			"categories": [
-				"Shield"
+				"Footwear"
+			]
+		},
+		{
+			"type": "equipment",
+			"id": "17f0b6e4-835d-4e3c-b173-c272daa80078",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Bank Card",
+			"value": "20000",
+			"weight": "0 lb",
+			"calc": {
+				"extended_value": "20000",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"type": "equipment_container",
+			"id": "47a6b84b-8dd1-4671-9f6e-1d1e661a39cc",
+			"equipped": true,
+			"description": "Backpack, Small",
+			"tech_level": "1",
+			"value": "60",
+			"weight": "3 lb",
+			"reference": "B288",
+			"calc": {
+				"extended_value": "202.5",
+				"extended_weight": "7.465 lb"
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "40 lb"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Camping and Survival Gear"
+			],
+			"open": false,
+			"children": [
+				{
+					"type": "equipment",
+					"id": "5a23a770-bc90-48f3-b203-8514821d296d",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Compass",
+					"tech_level": "6",
+					"value": "50",
+					"weight": "0.144 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "50",
+						"extended_weight": "0.144 lb"
+					},
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "starts_with",
+								"qualifier": "navigation"
+							}
+						}
+					],
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "4cd0d51c-97db-4ce0-b6be-5dd6e3237ba2",
+					"equipped": true,
+					"quantity": 2,
+					"description": "Traveler's Rations",
+					"tech_level": "0",
+					"value": "2",
+					"weight": "0.5 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "4",
+						"extended_weight": "1 lb"
+					},
+					"notes": "One meal",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "c747c472-e384-4fb9-995b-f60845506ae5",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Personal Basics",
+					"tech_level": "0",
+					"value": "5",
+					"weight": "1 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "5",
+						"extended_weight": "1 lb"
+					},
+					"notes": "Minimum gear for camping: -2 to any Survival roll without it. Includes utensils, tinderbox or flint and steel, towel, etc., as TL permits.",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "53596de0-44ce-4ef0-b74d-215213ccfba2",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Fishhooks & Line",
+					"tech_level": "0",
+					"value": "50",
+					"weight": "0.01 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "50",
+						"extended_weight": "0.01 lb"
+					},
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "bd5c2c31-9316-4bd6-8b48-4381800827ed",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Matches, Waterproof",
+					"tech_level": "6",
+					"value": "1.5",
+					"weight": "0.051 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "1.5",
+						"extended_weight": "0.051 lb"
+					},
+					"notes": "Box of 50",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "6c76dd4c-9ce8-4811-b188-2143dac82084",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Cord, 3/16\", 20 yards",
+					"tech_level": "0",
+					"value": "2",
+					"weight": "1 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "2",
+						"extended_weight": "1 lb"
+					},
+					"notes": "Supports 90 lbs.",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment_container",
+					"id": "be7fb677-1595-4b16-bf3c-91cc2c706685",
+					"equipped": true,
+					"description": "Canteen",
+					"tech_level": "5",
+					"value": "10",
+					"weight": "1 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "10",
+						"extended_weight": "1 lb"
+					},
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "2 lb"
+								}
+							}
+						]
+					},
+					"notes": "Carry up to 2 lbs.",
+					"categories": [
+						"Camping and Survival Gear"
+					],
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"id": "c544507c-f207-4f44-ae4c-7dcac42e86c3",
+							"equipped": true,
+							"description": "Water",
+							"value": "0",
+							"weight": "0 lb",
+							"calc": {
+								"extended_value": "0",
+								"extended_weight": "0 lb"
+							}
+						}
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "469d0e78-f1f1-4cb6-827c-5793cf130e89",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Flashlight, Mini",
+					"tech_level": "7",
+					"value": "10",
+					"weight": "0.25 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "10",
+						"extended_weight": "0.25 lb"
+					},
+					"notes": "15' beam, lasts 1 hour",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "eeb19731-ba7f-4e88-8882-af7592991fd9",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Cigarette Lighter",
+					"tech_level": "6",
+					"value": "10",
+					"weight": "0.01 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "10",
+						"extended_weight": "0.01 lb"
+					},
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				}
 			]
 		}
 	],
@@ -3210,14 +3217,14 @@
 			1
 		],
 		"dodge": [
-			10,
 			9,
 			8,
 			7,
-			6
+			6,
+			5
 		],
-		"dodge_bonus": 1,
-		"block_bonus": 1,
-		"parry_bonus": 1
+		"dodge_bonus": 0,
+		"block_bonus": 0,
+		"parry_bonus": 0
 	}
 }

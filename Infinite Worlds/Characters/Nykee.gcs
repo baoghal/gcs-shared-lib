@@ -497,7 +497,7 @@
 					"calc": {
 						"roll_range": "16",
 						"dr": {
-							"all": 0
+							"all": 2
 						}
 					}
 				},
@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jun 21, 2022, 7:33 PM",
-	"modified_date": "Jul 5, 2022, 9:59 PM",
+	"modified_date": "Jul 12, 2022, 8:12 PM",
 	"profile": {
 		"player_name": "dergl",
 		"name": "Nykee",
@@ -758,7 +758,7 @@
 						"level": 11,
 						"parry": "No",
 						"block": "",
-						"damage": "1d-2 cr"
+						"damage": "1d-1 cr"
 					},
 					"defaults": [
 						{
@@ -2947,7 +2947,7 @@
 				"points": -11
 			},
 			"calc": {
-				"level": 12,
+				"level": 11,
 				"rsl": "DX-1"
 			},
 			"defaults": [
@@ -3263,6 +3263,40 @@
 	],
 	"equipment": [
 		{
+			"type": "equipment",
+			"id": "30bb41b5-9c43-4961-9ffb-0f4e4ab62099",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Reinforced Boots",
+			"tech_level": "7",
+			"value": "75",
+			"weight": "3 lb",
+			"reference": "B284",
+			"calc": {
+				"extended_value": "75",
+				"extended_weight": "3 lb"
+			},
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 2,
+					"location": "foot"
+				},
+				{
+					"type": "weapon_bonus",
+					"amount": 1,
+					"selection_type": "weapons_with_name",
+					"specialization": {
+						"compare": "is",
+						"qualifier": "Kick"
+					}
+				}
+			],
+			"categories": [
+				"Footwear"
+			]
+		},
+		{
 			"type": "equipment_container",
 			"id": "709ecfa5-e679-437b-870d-f97d48cf3c5d",
 			"equipped": true,
@@ -3299,6 +3333,19 @@
 		},
 		{
 			"type": "equipment",
+			"id": "9758ca74-04f9-4196-9f50-ce1b6095d652",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Bank Card",
+			"value": "3990",
+			"weight": "0 lb",
+			"calc": {
+				"extended_value": "3990",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"type": "equipment",
 			"id": "b36d5f7d-6474-4f54-ac8a-1b116b0ce0da",
 			"equipped": true,
 			"quantity": 1,
@@ -3332,63 +3379,449 @@
 			"categories": [
 				"Burglary"
 			]
+		},
+		{
+			"type": "equipment",
+			"id": "b2340aa7-b34f-49a0-ba89-ab36ffefbf16",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Large Knife",
+			"tech_level": "0",
+			"value": "40",
+			"weight": "1 lb",
+			"reference": "B272",
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cut",
+						"st": "sw",
+						"base": "-2"
+					},
+					"strength": "6",
+					"usage": "Swung",
+					"reach": "C,1",
+					"parry": "-1",
+					"block": "No",
+					"calc": {
+						"level": 9,
+						"parry": "6",
+						"block": "No",
+						"damage": "1d-3 cut"
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Knife"
+						},
+						{
+							"type": "skill",
+							"name": "Force Sword",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Sword!"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "imp",
+						"st": "thr"
+					},
+					"strength": "6",
+					"usage": "Thrust",
+					"reach": "C",
+					"parry": "-1",
+					"block": "No",
+					"calc": {
+						"level": 9,
+						"parry": "6",
+						"block": "No",
+						"damage": "1d-2 imp"
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Knife"
+						},
+						{
+							"type": "skill",
+							"name": "Force Sword",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Main-Gauche",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Shortsword",
+							"modifier": -3
+						},
+						{
+							"type": "skill",
+							"name": "Sword!"
+						}
+					]
+				},
+				{
+					"type": "ranged_weapon",
+					"damage": {
+						"type": "imp",
+						"st": "thr"
+					},
+					"strength": "6",
+					"usage": "Thrown",
+					"accuracy": "+0",
+					"range": "x0.8/x1.5",
+					"rate_of_fire": "1",
+					"shots": "T(1)",
+					"bulk": "-2",
+					"calc": {
+						"level": 9,
+						"range": "7/13",
+						"damage": "1d-2 imp"
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Thrown Weapon",
+							"specialization": "Knife"
+						}
+					]
+				}
+			],
+			"calc": {
+				"extended_value": "40",
+				"extended_weight": "1 lb"
+			},
+			"categories": [
+				"Melee Weapon",
+				"Missile Weapon"
+			]
+		},
+		{
+			"type": "equipment_container",
+			"id": "8aca3109-1864-4dc2-97d2-7bac731e14d5",
+			"equipped": true,
+			"description": "Backpack, Small",
+			"tech_level": "1",
+			"value": "60",
+			"weight": "3 lb",
+			"reference": "B288",
+			"calc": {
+				"extended_value": "202.5",
+				"extended_weight": "7.465 lb"
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "contained_weight_prereq",
+						"has": true,
+						"qualifier": {
+							"compare": "at_most",
+							"qualifier": "40 lb"
+						}
+					}
+				]
+			},
+			"categories": [
+				"Camping and Survival Gear"
+			],
+			"open": false,
+			"children": [
+				{
+					"type": "equipment",
+					"id": "cda568eb-c023-479c-85a2-d7712d288750",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Compass",
+					"tech_level": "6",
+					"value": "50",
+					"weight": "0.144 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "50",
+						"extended_weight": "0.144 lb"
+					},
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "starts_with",
+								"qualifier": "navigation"
+							}
+						}
+					],
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "2122dc55-acb9-48c4-ae9a-5df9e18b56e6",
+					"equipped": true,
+					"quantity": 2,
+					"description": "Traveler's Rations",
+					"tech_level": "0",
+					"value": "2",
+					"weight": "0.5 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "4",
+						"extended_weight": "1 lb"
+					},
+					"notes": "One meal",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "c3a607b8-5c01-4578-b8a0-7650da4ce16d",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Personal Basics",
+					"tech_level": "0",
+					"value": "5",
+					"weight": "1 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "5",
+						"extended_weight": "1 lb"
+					},
+					"notes": "Minimum gear for camping: -2 to any Survival roll without it. Includes utensils, tinderbox or flint and steel, towel, etc., as TL permits.",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "bc46066f-66dd-42a9-81df-a5730c5d4816",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Fishhooks & Line",
+					"tech_level": "0",
+					"value": "50",
+					"weight": "0.01 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "50",
+						"extended_weight": "0.01 lb"
+					},
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "52092216-c18a-4f68-ad83-f37bb760683a",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Matches, Waterproof",
+					"tech_level": "6",
+					"value": "1.5",
+					"weight": "0.051 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "1.5",
+						"extended_weight": "0.051 lb"
+					},
+					"notes": "Box of 50",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "4dba6b48-09df-4791-9130-2bda08debe6c",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Cord, 3/16\", 20 yards",
+					"tech_level": "0",
+					"value": "2",
+					"weight": "1 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "2",
+						"extended_weight": "1 lb"
+					},
+					"notes": "Supports 90 lbs.",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment_container",
+					"id": "8072ef22-c039-4c1a-8256-298934c16b76",
+					"equipped": true,
+					"description": "Canteen",
+					"tech_level": "5",
+					"value": "10",
+					"weight": "1 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "10",
+						"extended_weight": "1 lb"
+					},
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "contained_weight_prereq",
+								"has": true,
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": "2 lb"
+								}
+							}
+						]
+					},
+					"notes": "Carry up to 2 lbs.",
+					"categories": [
+						"Camping and Survival Gear"
+					],
+					"open": true,
+					"children": [
+						{
+							"type": "equipment",
+							"id": "85878862-8e8d-4382-a113-4fbcad5e65cd",
+							"equipped": true,
+							"description": "Water",
+							"value": "0",
+							"weight": "0 lb",
+							"calc": {
+								"extended_value": "0",
+								"extended_weight": "0 lb"
+							}
+						}
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "81254d09-b640-401d-b2f8-622aa1647d52",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Flashlight, Mini",
+					"tech_level": "7",
+					"value": "10",
+					"weight": "0.25 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "10",
+						"extended_weight": "0.25 lb"
+					},
+					"notes": "15' beam, lasts 1 hour",
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "843fbbdc-8749-4f77-9c8d-b9e7dcab53ec",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Cigarette Lighter",
+					"tech_level": "6",
+					"value": "10",
+					"weight": "0.01 lb",
+					"reference": "B288",
+					"calc": {
+						"extended_value": "10",
+						"extended_weight": "0.01 lb"
+					},
+					"categories": [
+						"Camping and Survival Gear"
+					]
+				}
+			]
 		}
 	],
 	"other_equipment": [
 		{
 			"type": "equipment",
-			"id": "fade1af2-f77c-4a2a-95fd-1fa2eec80338",
+			"id": "9838fe44-c689-46cf-b464-aaa851461979",
 			"equipped": true,
 			"quantity": 1,
-			"description": "Bug Detector",
-			"value": "500",
-			"weight": "1 lb",
-			"reference": "ACT1:29",
-			"calc": {
-				"extended_value": "500",
-				"extended_weight": "1 lb"
-			},
-			"categories": [
-				"Security"
-			]
-		},
-		{
-			"type": "equipment",
-			"id": "af294e10-bfee-4d23-bddb-35a8055d6f7a",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Mike, Laser",
-			"value": "5000",
+			"description": "Surveillance Endoscope",
+			"value": "4500",
 			"weight": "2 lb",
 			"reference": "ACT1:30",
 			"calc": {
-				"extended_value": "5000",
+				"extended_value": "4500",
 				"extended_weight": "2 lb"
 			},
-			"notes": "Range 900yds.",
+			"notes": "Spot at Vision-5.",
 			"categories": [
 				"Surveillance"
 			]
 		},
 		{
 			"type": "equipment",
-			"id": "71aceec5-6b49-43fa-8a5a-4533580b70bb",
+			"id": "09a6c080-fd08-46b7-9a1d-6dcae3bf768e",
 			"equipped": true,
-			"quantity": 13,
-			"description": "Nanobug",
-			"tech_level": "8",
-			"value": "100",
-			"weight": "0 lb",
+			"quantity": 1,
+			"description": "Surgical Instruments",
+			"tech_level": "1",
+			"value": "300",
+			"weight": "15 lb",
 			"reference": "B289",
 			"calc": {
-				"extended_value": "1300",
-				"extended_weight": "0 lb"
+				"extended_value": "300",
+				"extended_weight": "15 lb"
 			},
-			"notes": "Pinhead-sized audio-visual bug (-10 to spot)",
+			"notes": "Includes scalpels, forceps, etc. Basic equipment für Surgery skill.",
 			"categories": [
-				"Law-Enforcement",
-				"Spy Gear",
-				"Thief"
+				"Medical Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"id": "684be14f-01ac-4d9c-a85e-0119fa4f628e",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Rope, 1/4\"",
+			"value": "30",
+			"weight": "0.6 lb",
+			"reference": "ACT1:28",
+			"calc": {
+				"extended_value": "30",
+				"extended_weight": "0.6 lb"
+			},
+			"notes": "10 yards. Supports 500lbs.",
+			"categories": [
+				"Infiltration"
 			]
 		},
 		{
@@ -3447,6 +3880,45 @@
 		},
 		{
 			"type": "equipment",
+			"id": "af294e10-bfee-4d23-bddb-35a8055d6f7a",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Mike, Laser",
+			"value": "5000",
+			"weight": "2 lb",
+			"reference": "ACT1:30",
+			"calc": {
+				"extended_value": "5000",
+				"extended_weight": "2 lb"
+			},
+			"notes": "Range 900yds.",
+			"categories": [
+				"Surveillance"
+			]
+		},
+		{
+			"type": "equipment",
+			"id": "71aceec5-6b49-43fa-8a5a-4533580b70bb",
+			"equipped": true,
+			"quantity": 13,
+			"description": "Nanobug",
+			"tech_level": "8",
+			"value": "100",
+			"weight": "0 lb",
+			"reference": "B289",
+			"calc": {
+				"extended_value": "1300",
+				"extended_weight": "0 lb"
+			},
+			"notes": "Pinhead-sized audio-visual bug (-10 to spot)",
+			"categories": [
+				"Law-Enforcement",
+				"Spy Gear",
+				"Thief"
+			]
+		},
+		{
+			"type": "equipment",
 			"id": "67fec9e6-0e04-479d-b466-a4acca76097b",
 			"equipped": true,
 			"quantity": 10,
@@ -3497,303 +3969,281 @@
 			]
 		},
 		{
-			"type": "equipment",
-			"id": "684be14f-01ac-4d9c-a85e-0119fa4f628e",
+			"type": "equipment_container",
+			"id": "c4f8f32f-7e99-4b1a-8e98-b8a561b1c5e8",
 			"equipped": true,
-			"quantity": 1,
-			"description": "Rope, 1/4\"",
-			"value": "30",
-			"weight": "0.6 lb",
-			"reference": "ACT1:28",
-			"calc": {
-				"extended_value": "30",
-				"extended_weight": "0.6 lb"
-			},
-			"notes": "10 yards. Supports 500lbs.",
-			"categories": [
-				"Infiltration"
-			]
-		},
-		{
-			"type": "equipment",
-			"id": "70a8927c-6213-496f-bf8a-0139af9e00b9",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Hacksaw",
-			"value": "10",
-			"weight": "2 lb",
-			"reference": "ACT1:30",
-			"calc": {
-				"extended_value": "10",
-				"extended_weight": "2 lb"
-			},
-			"notes": "sw-2(2) cut per second to bars, chains, and cables.",
-			"categories": [
-				"Tools"
-			]
-		},
-		{
-			"type": "equipment",
-			"id": "9aa7bd0a-895f-4a0b-a1e4-d6cd28dd8f6c",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Bolt Cutters, Light",
-			"value": "30",
-			"weight": "15 lb",
-			"reference": "ACT1:30",
-			"calc": {
-				"extended_value": "30",
-				"extended_weight": "15 lb"
-			},
-			"notes": "8d(2) cut",
-			"categories": [
-				"Tools"
-			]
-		},
-		{
-			"type": "equipment",
-			"id": "2b611077-b1fa-492e-a33c-6d18603d6a36",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Drill, Cordless",
-			"value": "50",
-			"weight": "2 lb",
-			"reference": "ACT1:27",
-			"calc": {
-				"extended_value": "50",
-				"extended_weight": "2 lb"
-			},
-			"notes": "1d+2(2) pi++ per second, or five seconds while stealthy.",
-			"categories": [
-				"Burglary"
-			]
-		},
-		{
-			"type": "equipment",
-			"id": "83b2253a-33e0-4cd8-8375-f15c1ba6e5e3",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Cutting Torches, Pocket",
-			"value": "25",
+			"description": "Locked Up",
+			"value": "0",
 			"weight": "0 lb",
-			"reference": "ACT1:30",
-			"weapons": [
+			"calc": {
+				"extended_value": "870",
+				"extended_weight": "27.65 lb"
+			},
+			"notes": "These are locked up for your safety. You can have them back after graduation",
+			"open": true,
+			"children": [
 				{
-					"type": "ranged_weapon",
-					"damage": {
-						"type": "cr",
-						"st": "sw",
-						"base": "2"
-					},
-					"strength": "10",
-					"usage": "Thrown",
-					"accuracy": "1",
-					"range": "x1/x1.5",
-					"rate_of_fire": "1",
-					"shots": "T(1)",
-					"bulk": "-3",
+					"type": "equipment",
+					"id": "fd6813f6-e2f5-4627-9660-30fab6eac2f1",
+					"equipped": true,
+					"quantity": 3,
+					"description": "Plastique",
+					"value": "40",
+					"weight": "1.25 lb",
+					"reference": "ACT1:26",
 					"calc": {
-						"level": 8,
-						"range": "9/13",
-						"damage": "1d+1 cr"
+						"extended_value": "120",
+						"extended_weight": "3.75 lb"
 					},
-					"defaults": [
+					"notes": "5dx3 cr ex damage. Detect by smell: -8.",
+					"categories": [
+						"Demolition"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "70a8927c-6213-496f-bf8a-0139af9e00b9",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Hacksaw",
+					"value": "10",
+					"weight": "2 lb",
+					"reference": "ACT1:30",
+					"calc": {
+						"extended_value": "10",
+						"extended_weight": "2 lb"
+					},
+					"notes": "sw-2(2) cut per second to bars, chains, and cables.",
+					"categories": [
+						"Tools"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "4e0021f0-9271-425b-98b9-f3e591828d02",
+					"equipped": true,
+					"quantity": 3,
+					"description": "Extrudable Explosive",
+					"value": "10",
+					"weight": "0.3 lb",
+					"reference": "ACT1:26",
+					"calc": {
+						"extended_value": "30",
+						"extended_weight": "0.9 lb"
+					},
+					"notes": "7d cr ex damage; always deals 42 points to a door.",
+					"categories": [
+						"Demolition"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "d7bbe467-1094-4c95-a17c-5460c25bdd48",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Exploder",
+					"value": "50",
+					"weight": "0.75 lb",
+					"reference": "ACT1:26",
+					"calc": {
+						"extended_value": "50",
+						"extended_weight": "0.75 lb"
+					},
+					"notes": "Detonates up to 50 blasting caps.",
+					"categories": [
+						"Demolition"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "697a89ae-fe16-4240-9332-4f8aa103153a",
+					"equipped": true,
+					"quantity": 3,
+					"description": "Dynamite",
+					"value": "5",
+					"weight": "0.5 lb",
+					"reference": "ACT1:26",
+					"calc": {
+						"extended_value": "15",
+						"extended_weight": "1.5 lb"
+					},
+					"notes": "One stick. 9d+1 cr ex damage.",
+					"categories": [
+						"Demolition"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "2b611077-b1fa-492e-a33c-6d18603d6a36",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Drill, Cordless",
+					"value": "50",
+					"weight": "2 lb",
+					"reference": "ACT1:27",
+					"calc": {
+						"extended_value": "50",
+						"extended_weight": "2 lb"
+					},
+					"notes": "1d+2(2) pi++ per second, or five seconds while stealthy.",
+					"categories": [
+						"Burglary"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "4eda3da3-2744-4b4c-9589-140677534350",
+					"equipped": true,
+					"quantity": 10,
+					"description": "Cutting Torches, Pocket: gas bottle",
+					"value": "1",
+					"weight": "0 lb",
+					"reference": "ACT1:30",
+					"weapons": [
 						{
-							"type": "dx",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Thrown Weapon",
-							"specialization": "Axe/Mace"
+							"type": "ranged_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "sw",
+								"base": "2"
+							},
+							"strength": "10",
+							"usage": "Thrown",
+							"accuracy": "1",
+							"range": "x1/x1.5",
+							"rate_of_fire": "1",
+							"shots": "T(1)",
+							"bulk": "-3",
+							"calc": {
+								"level": 8,
+								"range": "9/13",
+								"damage": "1d+1 cr"
+							},
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Thrown Weapon",
+									"specialization": "Axe/Mace"
+								}
+							]
 						}
+					],
+					"calc": {
+						"extended_value": "10",
+						"extended_weight": "0 lb"
+					},
+					"categories": [
+						"Tools"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "83b2253a-33e0-4cd8-8375-f15c1ba6e5e3",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Cutting Torches, Pocket",
+					"value": "25",
+					"weight": "0 lb",
+					"reference": "ACT1:30",
+					"weapons": [
+						{
+							"type": "ranged_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "sw",
+								"base": "2"
+							},
+							"strength": "10",
+							"usage": "Thrown",
+							"accuracy": "1",
+							"range": "x1/x1.5",
+							"rate_of_fire": "1",
+							"shots": "T(1)",
+							"bulk": "-3",
+							"calc": {
+								"level": 8,
+								"range": "9/13",
+								"damage": "1d+1 cr"
+							},
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -4
+								},
+								{
+									"type": "skill",
+									"name": "Thrown Weapon",
+									"specialization": "Axe/Mace"
+								}
+							]
+						}
+					],
+					"calc": {
+						"extended_value": "25",
+						"extended_weight": "0 lb"
+					},
+					"notes": "1d-2 burn per second. 20 minutes per bottle.",
+					"categories": [
+						"Tools"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "fade1af2-f77c-4a2a-95fd-1fa2eec80338",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Bug Detector",
+					"value": "500",
+					"weight": "1 lb",
+					"reference": "ACT1:29",
+					"calc": {
+						"extended_value": "500",
+						"extended_weight": "1 lb"
+					},
+					"categories": [
+						"Security"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "9aa7bd0a-895f-4a0b-a1e4-d6cd28dd8f6c",
+					"equipped": true,
+					"quantity": 1,
+					"description": "Bolt Cutters, Light",
+					"value": "30",
+					"weight": "15 lb",
+					"reference": "ACT1:30",
+					"calc": {
+						"extended_value": "30",
+						"extended_weight": "15 lb"
+					},
+					"notes": "8d(2) cut",
+					"categories": [
+						"Tools"
+					]
+				},
+				{
+					"type": "equipment",
+					"id": "c5c4c60e-d189-42d9-afa7-54f7422e51a1",
+					"equipped": true,
+					"quantity": 3,
+					"description": "Blasting Caps",
+					"value": "10",
+					"weight": "0.25 lb",
+					"reference": "ACT1:26",
+					"calc": {
+						"extended_value": "30",
+						"extended_weight": "0.75 lb"
+					},
+					"notes": "Pack of six.",
+					"categories": [
+						"Demolition"
 					]
 				}
-			],
-			"calc": {
-				"extended_value": "25",
-				"extended_weight": "0 lb"
-			},
-			"notes": "1d-2 burn per second. 20 minutes per bottle.",
-			"categories": [
-				"Tools"
-			]
-		},
-		{
-			"type": "equipment",
-			"id": "4eda3da3-2744-4b4c-9589-140677534350",
-			"equipped": true,
-			"quantity": 10,
-			"description": "Cutting Torches, Pocket: gas bottle",
-			"value": "1",
-			"weight": "0 lb",
-			"reference": "ACT1:30",
-			"weapons": [
-				{
-					"type": "ranged_weapon",
-					"damage": {
-						"type": "cr",
-						"st": "sw",
-						"base": "2"
-					},
-					"strength": "10",
-					"usage": "Thrown",
-					"accuracy": "1",
-					"range": "x1/x1.5",
-					"rate_of_fire": "1",
-					"shots": "T(1)",
-					"bulk": "-3",
-					"calc": {
-						"level": 8,
-						"range": "9/13",
-						"damage": "1d+1 cr"
-					},
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -4
-						},
-						{
-							"type": "skill",
-							"name": "Thrown Weapon",
-							"specialization": "Axe/Mace"
-						}
-					]
-				}
-			],
-			"calc": {
-				"extended_value": "10",
-				"extended_weight": "0 lb"
-			},
-			"categories": [
-				"Tools"
-			]
-		},
-		{
-			"type": "equipment",
-			"id": "09a6c080-fd08-46b7-9a1d-6dcae3bf768e",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Surgical Instruments",
-			"tech_level": "1",
-			"value": "300",
-			"weight": "15 lb",
-			"reference": "B289",
-			"calc": {
-				"extended_value": "300",
-				"extended_weight": "15 lb"
-			},
-			"notes": "Includes scalpels, forceps, etc. Basic equipment für Surgery skill.",
-			"categories": [
-				"Medical Gear"
-			]
-		},
-		{
-			"type": "equipment",
-			"id": "9838fe44-c689-46cf-b464-aaa851461979",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Surveillance Endoscope",
-			"value": "4500",
-			"weight": "2 lb",
-			"reference": "ACT1:30",
-			"calc": {
-				"extended_value": "4500",
-				"extended_weight": "2 lb"
-			},
-			"notes": "Spot at Vision-5.",
-			"categories": [
-				"Surveillance"
-			]
-		},
-		{
-			"type": "equipment",
-			"id": "d7bbe467-1094-4c95-a17c-5460c25bdd48",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Exploder",
-			"value": "50",
-			"weight": "0.75 lb",
-			"reference": "ACT1:26",
-			"calc": {
-				"extended_value": "50",
-				"extended_weight": "0.75 lb"
-			},
-			"notes": "Detonates up to 50 blasting caps.",
-			"categories": [
-				"Demolition"
-			]
-		},
-		{
-			"type": "equipment",
-			"id": "c5c4c60e-d189-42d9-afa7-54f7422e51a1",
-			"equipped": true,
-			"quantity": 3,
-			"description": "Blasting Caps",
-			"value": "10",
-			"weight": "0.25 lb",
-			"reference": "ACT1:26",
-			"calc": {
-				"extended_value": "30",
-				"extended_weight": "0.75 lb"
-			},
-			"notes": "Pack of six.",
-			"categories": [
-				"Demolition"
-			]
-		},
-		{
-			"type": "equipment",
-			"id": "fd6813f6-e2f5-4627-9660-30fab6eac2f1",
-			"equipped": true,
-			"quantity": 3,
-			"description": "Plastique",
-			"value": "40",
-			"weight": "1.25 lb",
-			"reference": "ACT1:26",
-			"calc": {
-				"extended_value": "120",
-				"extended_weight": "3.75 lb"
-			},
-			"notes": "5dx3 cr ex damage. Detect by smell: -8.",
-			"categories": [
-				"Demolition"
-			]
-		},
-		{
-			"type": "equipment",
-			"id": "4e0021f0-9271-425b-98b9-f3e591828d02",
-			"equipped": true,
-			"quantity": 3,
-			"description": "Extrudable Explosive",
-			"value": "10",
-			"weight": "0.3 lb",
-			"reference": "ACT1:26",
-			"calc": {
-				"extended_value": "30",
-				"extended_weight": "0.9 lb"
-			},
-			"notes": "7d cr ex damage; always deals 42 points to a door.",
-			"categories": [
-				"Demolition"
-			]
-		},
-		{
-			"type": "equipment",
-			"id": "697a89ae-fe16-4240-9332-4f8aa103153a",
-			"equipped": true,
-			"quantity": 3,
-			"description": "Dynamite",
-			"value": "5",
-			"weight": "0.5 lb",
-			"reference": "ACT1:26",
-			"calc": {
-				"extended_value": "15",
-				"extended_weight": "1.5 lb"
-			},
-			"notes": "One stick. 9d+1 cr ex damage.",
-			"categories": [
-				"Demolition"
 			]
 		}
 	],
