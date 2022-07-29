@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Aug 2, 2020, 4:46 PM",
-	"modified_date": "Jul 12, 2022, 8:13 PM",
+	"modified_date": "Jul 26, 2022, 11:17 PM",
 	"profile": {
 		"player_name": "Tim",
 		"name": "Deirdre Gaibhne",
@@ -562,10 +562,10 @@
 		},
 		{
 			"attr_id": "dx",
-			"adj": 1,
+			"adj": 2,
 			"calc": {
-				"value": 11,
-				"points": 20
+				"value": 12,
+				"points": 40
 			}
 		},
 		{
@@ -644,7 +644,7 @@
 			"attr_id": "basic_speed",
 			"adj": 0,
 			"calc": {
-				"value": 5.75,
+				"value": 6,
 				"points": 0
 			}
 		},
@@ -652,7 +652,7 @@
 			"attr_id": "basic_move",
 			"adj": 0,
 			"calc": {
-				"value": 5,
+				"value": 6,
 				"points": 0
 			}
 		},
@@ -677,7 +677,7 @@
 			}
 		}
 	],
-	"total_points": 255,
+	"total_points": 279,
 	"advantages": [
 		{
 			"type": "advantage",
@@ -1477,7 +1477,7 @@
 						"level": 13,
 						"parry": "No",
 						"block": "No",
-						"damage": "1d cr"
+						"damage": "1d-1 cr"
 					},
 					"defaults": [
 						{
@@ -1503,7 +1503,7 @@
 						"level": 13,
 						"parry": "9",
 						"block": "",
-						"damage": "1d cr"
+						"damage": "1d-1 cr"
 					},
 					"defaults": [
 						{
@@ -1536,7 +1536,7 @@
 						"level": 11,
 						"parry": "No",
 						"block": "",
-						"damage": "1d+2 cr"
+						"damage": "1d+1 cr"
 					},
 					"defaults": [
 						{
@@ -1970,82 +1970,6 @@
 			"categories": [
 				"Advantage"
 			]
-		},
-		{
-			"type": "advantage",
-			"id": "929016d1-405b-4b9a-accb-20bf9ac1ac08",
-			"name": "Duty (Patrol)",
-			"social": true,
-			"modifiers": [
-				{
-					"type": "modifier",
-					"id": "68aab753-2906-4a14-b506-a9c8d28467db",
-					"disabled": true,
-					"name": "FR: 6",
-					"cost_type": "points",
-					"cost": -2,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "6c37571a-a28e-4391-9171-8bfe28dcb9f8",
-					"disabled": true,
-					"name": "FR: 9",
-					"cost_type": "points",
-					"cost": -5,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "fe8139f9-2be6-4b33-b262-d6d9a28a0c9d",
-					"disabled": true,
-					"name": "FR: 12",
-					"cost_type": "points",
-					"cost": -10,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "0bb7d19e-571d-42bc-8c2f-d61fd0ebc45c",
-					"name": "FR: 15",
-					"cost_type": "points",
-					"cost": -15,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "9405e217-a295-40a4-a919-2a395da589d9",
-					"name": "Extremely Hazardous",
-					"cost_type": "points",
-					"cost": -5,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "c971e929-e2fd-4cc6-b78a-218b45932cd7",
-					"disabled": true,
-					"name": "Involuntary",
-					"cost_type": "points",
-					"cost": -5,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "2705fadf-b81d-47f8-b611-24442e2eefff",
-					"disabled": true,
-					"name": "Nonhazardous",
-					"cost_type": "points",
-					"cost": 5,
-					"affects": "total"
-				}
-			],
-			"reference": "B133",
-			"calc": {
-				"points": -20
-			},
-			"categories": [
-				"Disadvantage"
-			]
 		}
 	],
 	"skills": [
@@ -2164,17 +2088,17 @@
 			"name": "Two-Handed Axe/Mace",
 			"reference": "B208",
 			"difficulty": "dx/a",
-			"points": 4,
+			"points": 2,
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
 			},
 			"calc": {
 				"level": 12,
-				"rsl": "DX+1"
+				"rsl": "DX+0"
 			},
 			"defaults": [
 				{
@@ -2212,12 +2136,12 @@
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -4,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"calc": {
-				"level": 11,
+				"level": 12,
 				"rsl": "DX+0"
 			},
 			"defaults": [
@@ -2254,17 +2178,17 @@
 			"specialization": "Sailboat",
 			"tech_level": "8",
 			"difficulty": "dx/a",
-			"points": 2,
+			"points": 1,
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
 				"level": 10,
 				"adjusted_level": 10,
-				"points": 1
+				"points": -10
 			},
 			"calc": {
 				"level": 11,
-				"rsl": "DX+0"
+				"rsl": "DX-1"
 			},
 			"defaults": [
 				{
@@ -2333,10 +2257,10 @@
 			"name": "Brawling",
 			"reference": "B182",
 			"difficulty": "dx/e",
-			"points": 4,
+			"points": 2,
 			"calc": {
 				"level": 13,
-				"rsl": "DX+2"
+				"rsl": "DX+1"
 			},
 			"features": [
 				{
@@ -2361,7 +2285,7 @@
 		},
 		{
 			"type": "skill",
-			"id": "62898ffd-5c77-45a5-961b-8ae024d7f88d",
+			"id": "2bd75748-c554-4e66-847f-317b2380d617",
 			"name": "Carousing",
 			"reference": "B183",
 			"difficulty": "ht/e",
@@ -2465,12 +2389,12 @@
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -5,
-				"level": 6,
-				"adjusted_level": 6,
-				"points": -6
+				"level": 7,
+				"adjusted_level": 7,
+				"points": -7
 			},
 			"calc": {
-				"level": 10,
+				"level": 11,
 				"rsl": "DX-1"
 			},
 			"defaults": [
@@ -2486,41 +2410,6 @@
 		{
 			"type": "skill",
 			"id": "3e9c920c-fa6a-4424-b2a2-493712c8a7d1",
-			"name": "Diplomacy",
-			"reference": "B187",
-			"difficulty": "iq/h",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -6,
-				"level": 9,
-				"adjusted_level": 9,
-				"points": -9
-			},
-			"calc": {
-				"level": 13,
-				"rsl": "IQ-2"
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -6
-				},
-				{
-					"type": "skill",
-					"name": "Politics",
-					"modifier": -6
-				}
-			],
-			"categories": [
-				"Business",
-				"Police",
-				"Social"
-			]
-		},
-		{
-			"type": "skill",
-			"id": "e317a18a-f53f-412d-9469-0fb3d82a5737",
 			"name": "Diplomacy",
 			"reference": "B187",
 			"difficulty": "iq/h",
@@ -2597,17 +2486,17 @@
 			"specialization": "Motorcycle",
 			"tech_level": "8",
 			"difficulty": "dx/a",
-			"points": 4,
+			"points": 1,
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
 				"level": 10,
 				"adjusted_level": 10,
-				"points": 1
+				"points": -10
 			},
 			"calc": {
-				"level": 12,
-				"rsl": "DX+1"
+				"level": 11,
+				"rsl": "DX-1"
 			},
 			"defaults": [
 				{
@@ -2634,10 +2523,10 @@
 			"name": "Enthrallment",
 			"reference": "B191",
 			"difficulty": "will/h",
-			"points": 4,
+			"points": 2,
 			"calc": {
-				"level": 15,
-				"rsl": "Will+0"
+				"level": 14,
+				"rsl": "Will-1"
 			},
 			"prereqs": {
 				"type": "prereq_list",
@@ -2754,12 +2643,12 @@
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -4,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"calc": {
-				"level": 11,
+				"level": 12,
 				"rsl": "DX+0"
 			},
 			"defaults": [
@@ -2928,7 +2817,7 @@
 			"name": "Observation",
 			"reference": "B211",
 			"difficulty": "per/a",
-			"points": 2,
+			"points": 1,
 			"defaulted_from": {
 				"type": "per",
 				"modifier": -5,
@@ -2937,8 +2826,8 @@
 				"points": -10
 			},
 			"calc": {
-				"level": 15,
-				"rsl": "Per+0"
+				"level": 14,
+				"rsl": "Per-1"
 			},
 			"defaults": [
 				{
@@ -2964,7 +2853,7 @@
 			"name": "Public Speaking",
 			"reference": "B216",
 			"difficulty": "iq/a",
-			"points": 1,
+			"points": 2,
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
@@ -2973,8 +2862,8 @@
 				"points": -10
 			},
 			"calc": {
-				"level": 15,
-				"rsl": "IQ+0"
+				"level": 16,
+				"rsl": "IQ+1"
 			},
 			"defaults": [
 				{
@@ -3142,17 +3031,17 @@
 			"specialization": "Rifle",
 			"tech_level": "8",
 			"difficulty": "dx/e",
-			"points": 2,
+			"points": 1,
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -4,
-				"level": 7,
-				"adjusted_level": 7,
-				"points": -7
+				"level": 8,
+				"adjusted_level": 8,
+				"points": -8
 			},
 			"calc": {
 				"level": 12,
-				"rsl": "DX+1"
+				"rsl": "DX+0"
 			},
 			"defaults": [
 				{
@@ -3226,17 +3115,17 @@
 			"reference": "B222",
 			"encumbrance_penalty_multiplier": 1,
 			"difficulty": "dx/a",
-			"points": 4,
+			"points": 2,
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
 				"level": 10,
 				"adjusted_level": 10,
-				"points": 1
+				"points": -10
 			},
 			"calc": {
 				"level": 12,
-				"rsl": "DX+1"
+				"rsl": "DX+0"
 			},
 			"defaults": [
 				{
@@ -3317,23 +3206,23 @@
 	"equipment": [
 		{
 			"type": "equipment",
-			"id": "92207aad-e285-43f7-a374-85409ba654a0",
+			"id": "a3b2db1e-afcb-4ea8-8961-565917eadb4e",
 			"equipped": true,
 			"quantity": 1,
-			"description": "Warhammer",
-			"tech_level": "3",
-			"value": "100",
-			"weight": "7 lb",
+			"description": "Maul",
+			"tech_level": "0",
+			"value": "80",
+			"weight": "12 lb",
 			"reference": "B274",
 			"weapons": [
 				{
 					"type": "melee_weapon",
 					"damage": {
-						"type": "imp",
+						"type": "cr",
 						"st": "sw",
-						"base": "3"
+						"base": "4"
 					},
-					"strength": "12‡",
+					"strength": "13‡",
 					"usage": "Swung",
 					"reach": "1,2*",
 					"parry": "0U",
@@ -3342,7 +3231,7 @@
 						"level": 12,
 						"parry": "9U",
 						"block": "No",
-						"damage": "2d+3 imp"
+						"damage": "2d+4 cr"
 					},
 					"defaults": [
 						{
@@ -3372,10 +3261,9 @@
 				}
 			],
 			"calc": {
-				"extended_value": "100",
-				"extended_weight": "7 lb"
+				"extended_value": "80",
+				"extended_weight": "12 lb"
 			},
-			"notes": "May get stuck",
 			"categories": [
 				"Melee Weapon"
 			]
@@ -3404,8 +3292,8 @@
 					"parry": "-1",
 					"block": "No",
 					"calc": {
-						"level": 11,
-						"parry": "7",
+						"level": 12,
+						"parry": "8",
 						"block": "No",
 						"damage": "2d-2 cut"
 					},
@@ -3451,8 +3339,8 @@
 					"parry": "-1",
 					"block": "No",
 					"calc": {
-						"level": 11,
-						"parry": "7",
+						"level": 12,
+						"parry": "8",
 						"block": "No",
 						"damage": "1d imp"
 					},
@@ -3500,7 +3388,7 @@
 					"shots": "T(1)",
 					"bulk": "-2",
 					"calc": {
-						"level": 7,
+						"level": 8,
 						"range": "11/21",
 						"damage": "1d imp"
 					},
@@ -3598,257 +3486,53 @@
 		},
 		{
 			"type": "equipment",
+			"id": "b101c1e0-815c-41de-9b3a-0b4d7c8df8ed",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Cigarette Lighter",
+			"tech_level": "6",
+			"value": "10",
+			"weight": "0.01 lb",
+			"reference": "B288",
+			"calc": {
+				"extended_value": "10",
+				"extended_weight": "0.01 lb"
+			},
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		},
+		{
+			"type": "equipment",
+			"id": "4c495608-5b68-41d2-816c-877939a32f50",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Flashlight, Mini",
+			"tech_level": "7",
+			"value": "10",
+			"weight": "0.25 lb",
+			"reference": "B288",
+			"calc": {
+				"extended_value": "10",
+				"extended_weight": "0.25 lb"
+			},
+			"notes": "15' beam, lasts 1 hour",
+			"categories": [
+				"Camping and Survival Gear"
+			]
+		},
+		{
+			"type": "equipment",
 			"id": "05b8c950-327d-4590-a88e-f3ff9e0d1190",
 			"equipped": true,
 			"quantity": 1,
 			"description": "Bank Card",
-			"value": "19000",
+			"value": "2100",
 			"weight": "0 lb",
 			"calc": {
-				"extended_value": "19000",
+				"extended_value": "2100",
 				"extended_weight": "0 lb"
 			}
-		},
-		{
-			"type": "equipment_container",
-			"id": "93752c13-37bc-4428-97e1-233bd226d11f",
-			"equipped": true,
-			"description": "Backpack, Small",
-			"tech_level": "1",
-			"value": "60",
-			"weight": "3 lb",
-			"reference": "B288",
-			"calc": {
-				"extended_value": "202.5",
-				"extended_weight": "7.465 lb"
-			},
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "contained_weight_prereq",
-						"has": true,
-						"qualifier": {
-							"compare": "at_most",
-							"qualifier": "40 lb"
-						}
-					}
-				]
-			},
-			"categories": [
-				"Camping and Survival Gear"
-			],
-			"open": false,
-			"children": [
-				{
-					"type": "equipment",
-					"id": "0ed9e192-aa1f-4d7c-a55c-1b432cd71612",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Compass",
-					"tech_level": "6",
-					"value": "50",
-					"weight": "0.144 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "50",
-						"extended_weight": "0.144 lb"
-					},
-					"features": [
-						{
-							"type": "skill_bonus",
-							"amount": 1,
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "starts_with",
-								"qualifier": "navigation"
-							}
-						}
-					],
-					"categories": [
-						"Camping and Survival Gear"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "19c74f0a-9663-400e-a4f8-e94dae510b7d",
-					"equipped": true,
-					"quantity": 2,
-					"description": "Traveler's Rations",
-					"tech_level": "0",
-					"value": "2",
-					"weight": "0.5 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "4",
-						"extended_weight": "1 lb"
-					},
-					"notes": "One meal",
-					"categories": [
-						"Camping and Survival Gear"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "3fcb046e-3768-4822-a642-1e3411bcdab9",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Personal Basics",
-					"tech_level": "0",
-					"value": "5",
-					"weight": "1 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "5",
-						"extended_weight": "1 lb"
-					},
-					"notes": "Minimum gear for camping: -2 to any Survival roll without it. Includes utensils, tinderbox or flint and steel, towel, etc., as TL permits.",
-					"categories": [
-						"Camping and Survival Gear"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "37a856ab-e9ba-4455-977c-f033fa7969a1",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Fishhooks & Line",
-					"tech_level": "0",
-					"value": "50",
-					"weight": "0.01 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "50",
-						"extended_weight": "0.01 lb"
-					},
-					"categories": [
-						"Camping and Survival Gear"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "66eb110f-c026-4f91-a927-3935c5dbb219",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Matches, Waterproof",
-					"tech_level": "6",
-					"value": "1.5",
-					"weight": "0.051 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "1.5",
-						"extended_weight": "0.051 lb"
-					},
-					"notes": "Box of 50",
-					"categories": [
-						"Camping and Survival Gear"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "21e5eed1-b1a6-453b-9db9-ecd93a245fbb",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Cord, 3/16\", 20 yards",
-					"tech_level": "0",
-					"value": "2",
-					"weight": "1 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "2",
-						"extended_weight": "1 lb"
-					},
-					"notes": "Supports 90 lbs.",
-					"categories": [
-						"Camping and Survival Gear"
-					]
-				},
-				{
-					"type": "equipment_container",
-					"id": "775bfd05-8630-4d3a-b488-e413e212e8b8",
-					"equipped": true,
-					"description": "Canteen",
-					"tech_level": "5",
-					"value": "10",
-					"weight": "1 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "10",
-						"extended_weight": "1 lb"
-					},
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "contained_weight_prereq",
-								"has": true,
-								"qualifier": {
-									"compare": "at_most",
-									"qualifier": "2 lb"
-								}
-							}
-						]
-					},
-					"notes": "Carry up to 2 lbs.",
-					"categories": [
-						"Camping and Survival Gear"
-					],
-					"open": true,
-					"children": [
-						{
-							"type": "equipment",
-							"id": "49bfdf13-14f3-4584-b764-75280095b99a",
-							"equipped": true,
-							"description": "Water",
-							"value": "0",
-							"weight": "0 lb",
-							"calc": {
-								"extended_value": "0",
-								"extended_weight": "0 lb"
-							}
-						}
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "4c495608-5b68-41d2-816c-877939a32f50",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Flashlight, Mini",
-					"tech_level": "7",
-					"value": "10",
-					"weight": "0.25 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "10",
-						"extended_weight": "0.25 lb"
-					},
-					"notes": "15' beam, lasts 1 hour",
-					"categories": [
-						"Camping and Survival Gear"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "b101c1e0-815c-41de-9b3a-0b4d7c8df8ed",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Cigarette Lighter",
-					"tech_level": "6",
-					"value": "10",
-					"weight": "0.01 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "10",
-						"extended_weight": "0.01 lb"
-					},
-					"categories": [
-						"Camping and Survival Gear"
-					]
-				}
-			]
 		}
 	],
 	"calc": {
@@ -3859,18 +3543,18 @@
 		"striking_st_bonus": 0,
 		"throwing_st_bonus": 0,
 		"move": [
-			5,
+			6,
 			4,
 			3,
 			2,
 			1
 		],
 		"dodge": [
+			9,
 			8,
 			7,
 			6,
-			5,
-			4
+			5
 		],
 		"dodge_bonus": 0,
 		"block_bonus": 0,

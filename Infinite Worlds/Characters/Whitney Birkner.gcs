@@ -535,11 +535,11 @@
 		}
 	},
 	"created_date": "Jul 5, 2022, 6:42 AM",
-	"modified_date": "Jul 12, 2022, 8:14 PM",
+	"modified_date": "Jul 26, 2022, 10:26 PM",
 	"profile": {
 		"player_name": "Rob",
 		"name": "Whitney Birkner",
-		"age": "25",
+		"age": "36",
 		"birthday": "July 30",
 		"eyes": "Brown",
 		"hair": "Black",
@@ -677,486 +677,130 @@
 			}
 		}
 	],
-	"total_points": 255,
+	"total_points": 275,
 	"advantages": [
 		{
 			"type": "advantage",
-			"id": "eef2c2c8-46d5-472e-8dff-be443982648a",
-			"name": "Talent (Artificer)",
-			"mental": true,
-			"levels": "1",
-			"points_per_level": 10,
-			"reference": "B90",
-			"calc": {
-				"points": 10
-			},
-			"features": [
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "armoury"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Carpentry"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Electrician"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Electronics Repair"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Engineer"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Machinist"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Masonry"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Mechanic"
-					}
-				},
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "Smith"
-					}
-				},
-				{
-					"type": "reaction_bonus",
-					"amount": 1,
-					"per_level": true,
-					"situation": "from any employer"
-				}
-			],
-			"categories": [
-				"Advantage",
-				"Talent"
-			]
-		},
-		{
-			"type": "advantage",
-			"id": "07b9c93f-452a-42b9-8eb7-86ac6da54f4e",
-			"name": "Sense of Duty",
-			"mental": true,
-			"modifiers": [
-				{
-					"type": "modifier",
-					"id": "7073f241-56bc-475a-8572-863c580275c8",
-					"name": "Friends and Companions",
-					"reference": "B153",
-					"cost_type": "points",
-					"cost": -5,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "aa209216-ab53-41e6-8901-d64dd68453db",
-					"disabled": true,
-					"name": "@Small Group@",
-					"reference": "B153",
-					"cost_type": "points",
-					"cost": -5,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "0907de0a-3a17-4265-acbd-27d890614632",
-					"disabled": true,
-					"name": "@Individual@",
-					"reference": "B153",
-					"cost_type": "points",
-					"cost": -2,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "01d48812-2a2c-4ba0-a3e5-3869a0ef69a8",
-					"disabled": true,
-					"name": "@Large Group@",
-					"reference": "B153",
-					"cost_type": "points",
-					"cost": -10,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "56abbd5d-ae56-45aa-a92a-7453c101167c",
-					"disabled": true,
-					"name": "@Entire Race@",
-					"reference": "B153",
-					"cost_type": "points",
-					"cost": -15,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "cee7374e-371b-4c3d-87cc-825268fe977c",
-					"disabled": true,
-					"name": "Every Living Being",
-					"reference": "B153",
-					"cost_type": "points",
-					"cost": -20,
-					"affects": "total"
-				}
-			],
-			"reference": "B153",
-			"calc": {
-				"points": -5
-			},
-			"categories": [
-				"Disadvantage"
-			]
-		},
-		{
-			"type": "advantage",
-			"id": "b11e46e3-3deb-4756-a4bb-66dc8cdafc6e",
-			"name": "Post-Combat Shakes",
+			"id": "faa7b969-2687-4d71-83e4-de92f927c847",
+			"name": "Arachnophobia (Spiders)",
 			"mental": true,
 			"base_points": -5,
 			"cr": 12,
+			"cr_adj": "action_penalty",
 			"reference": "B150",
 			"calc": {
 				"points": -5
 			},
-			"notes": "Make a self-control roll at the end of any battle. If you fail, roll 3d, add the amount by which you failed your self-control roll, and look up the result on the Fright Check Table.",
 			"categories": [
 				"Disadvantage"
 			]
 		},
 		{
 			"type": "advantage",
-			"id": "af23a03f-3336-4f7b-9fc0-cb9b2b36cdb5",
-			"name": "Natural Attacks",
-			"physical": true,
-			"weapons": [
-				{
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cr",
-						"st": "thr",
-						"base": "-1"
-					},
-					"usage": "Bite",
-					"reach": "C",
-					"parry": "No",
-					"block": "No",
-					"calc": {
-						"level": 13,
-						"parry": "No",
-						"block": "No",
-						"damage": "1d-1 cr"
-					},
-					"defaults": [
-						{
-							"type": "dx"
-						},
-						{
-							"type": "skill",
-							"name": "Brawling"
-						}
-					]
-				},
-				{
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cr",
-						"st": "thr",
-						"base": "-1"
-					},
-					"usage": "Punch",
-					"reach": "C",
-					"parry": "0",
-					"calc": {
-						"level": 13,
-						"parry": "9",
-						"block": "",
-						"damage": "1d-1 cr"
-					},
-					"defaults": [
-						{
-							"type": "dx"
-						},
-						{
-							"type": "skill",
-							"name": "Boxing"
-						},
-						{
-							"type": "skill",
-							"name": "Brawling"
-						},
-						{
-							"type": "skill",
-							"name": "Karate"
-						}
-					]
-				},
-				{
-					"type": "melee_weapon",
-					"damage": {
-						"type": "cr",
-						"st": "thr"
-					},
-					"usage": "Kick",
-					"reach": "C,1",
-					"parry": "No",
-					"calc": {
-						"level": 11,
-						"parry": "No",
-						"block": "",
-						"damage": "1d+1 cr"
-					},
-					"defaults": [
-						{
-							"type": "dx",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Brawling",
-							"modifier": -2
-						},
-						{
-							"type": "skill",
-							"name": "Kicking"
-						},
-						{
-							"type": "skill",
-							"name": "Karate",
-							"modifier": -2
-						}
-					]
-				}
-			],
-			"reference": "B271",
-			"calc": {
-				"points": 0
-			}
-		},
-		{
-			"type": "advantage",
-			"id": "db712e25-f81e-4060-bc52-78c9a9a5182f",
-			"name": "Magery",
+			"id": "d883a21d-792a-4a76-ac4c-6ad0484620cf",
+			"name": "Cultural Familiarity (American)",
 			"mental": true,
-			"supernatural": true,
-			"levels": "0",
-			"base_points": 5,
-			"points_per_level": 10,
+			"base_points": 1,
 			"modifiers": [
 				{
 					"type": "modifier",
-					"id": "e04c529b-77a0-450a-a1d9-7907c8e0c015",
+					"id": "332f8183-cde3-419e-abc3-ef86ce88693f",
 					"disabled": true,
-					"name": "Dance",
-					"cost_type": "percentage",
-					"cost": -40,
-					"affects": "levels_only"
+					"name": "Alien",
+					"cost_type": "points",
+					"cost": 1,
+					"affects": "total"
 				},
 				{
 					"type": "modifier",
-					"id": "0964301d-89e3-46f9-8091-d4cf26d19982",
-					"disabled": true,
-					"name": "Dark-Aspected",
-					"cost_type": "percentage",
-					"cost": -50,
-					"affects": "levels_only"
-				},
-				{
-					"type": "modifier",
-					"id": "eab97309-b7a9-4faf-ba72-accc953bbd0b",
-					"disabled": true,
-					"name": "Day-Aspected",
-					"cost_type": "percentage",
-					"cost": -40,
-					"affects": "levels_only"
-				},
-				{
-					"type": "modifier",
-					"id": "1c45dd64-b293-4f04-9621-d6cb28c438ef",
-					"disabled": true,
-					"name": "Musical",
-					"cost_type": "percentage",
-					"cost": -50,
-					"affects": "levels_only"
-				},
-				{
-					"type": "modifier",
-					"id": "0eeb387b-a098-4a70-83f4-b87a090c0343",
-					"disabled": true,
-					"name": "Night-Aspected",
-					"cost_type": "percentage",
-					"cost": -40,
-					"affects": "levels_only"
-				},
-				{
-					"type": "modifier",
-					"id": "e251e03d-dc82-4ca4-a706-b8bc51137789",
-					"disabled": true,
-					"name": "One College",
-					"cost_type": "percentage",
-					"cost": -40,
-					"affects": "levels_only",
-					"notes": "@College@"
-				},
-				{
-					"type": "modifier",
-					"id": "32e2b0d7-e6e9-43d7-89d6-ae4c633c38d9",
-					"disabled": true,
-					"name": "Solitary",
-					"cost_type": "percentage",
-					"cost": -40,
-					"affects": "levels_only"
-				},
-				{
-					"type": "modifier",
-					"id": "f9e399ee-b60f-4919-99a1-b2b8c9156053",
-					"disabled": true,
-					"name": "Song",
-					"cost_type": "percentage",
-					"cost": -40,
-					"affects": "levels_only"
+					"id": "ffd9d4f2-8676-468f-b232-1714af5b585f",
+					"name": "Native",
+					"cost_type": "points",
+					"cost": -1,
+					"affects": "total"
 				}
 			],
-			"reference": "B66",
+			"reference": "B23",
 			"calc": {
-				"points": 5
+				"points": 0
 			},
-			"features": [
-				{
-					"type": "spell_bonus",
-					"amount": 1,
-					"per_level": true,
-					"match": "all_colleges"
-				},
-				{
-					"type": "skill_bonus",
-					"amount": 1,
-					"per_level": true,
-					"selection_type": "skills_with_name",
-					"name": {
-						"compare": "is",
-						"qualifier": "thaumatology"
-					}
-				}
-			],
+			"notes": "Do not suffer the normal -3 penalty for unfamiliarity",
 			"categories": [
 				"Advantage"
 			]
 		},
 		{
 			"type": "advantage",
-			"id": "aaad1979-68c7-49f9-92f4-66f2dfc0ca89",
-			"name": "Luck",
+			"id": "af44f4a8-db97-4b69-846c-619764a8c69b",
+			"name": "Cultural Familiarity (Homeline)",
 			"mental": true,
-			"base_points": 15,
+			"base_points": 1,
 			"modifiers": [
 				{
 					"type": "modifier",
-					"id": "41a2bd45-79ae-4606-8957-abe1c267b126",
+					"id": "65f088fa-f7c8-4c58-b8e8-aef8b6df33f4",
 					"disabled": true,
-					"name": "Active",
-					"reference": "B66",
-					"cost_type": "percentage",
-					"cost": -40,
+					"name": "Alien",
+					"cost_type": "points",
+					"cost": 1,
 					"affects": "total"
 				},
 				{
 					"type": "modifier",
-					"id": "0393732f-fdcd-4425-bfbd-e2088a7f0199",
-					"disabled": true,
-					"name": "Aspected",
-					"reference": "B66",
-					"cost_type": "percentage",
-					"cost": -20,
-					"affects": "total",
-					"notes": "@Aspect@"
-				},
-				{
-					"type": "modifier",
-					"id": "5c7dc81b-d8b0-4c0e-83ce-bace8d4b2ae6",
-					"disabled": true,
-					"name": "Defensive",
-					"reference": "B66",
-					"cost_type": "percentage",
-					"cost": -20,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "df4861c9-cb05-4e21-a77a-d03bbceaf0cd",
-					"disabled": true,
-					"name": "Wishing",
-					"reference": "P59",
-					"cost_type": "percentage",
-					"cost": 100,
+					"id": "d26cdb0d-40bc-47e1-b5ff-a7b63e36001e",
+					"name": "Native",
+					"cost_type": "points",
+					"cost": -1,
 					"affects": "total"
 				}
 			],
-			"userdesc": "Best of three rolls.",
-			"reference": "B66,P59",
+			"reference": "B23",
 			"calc": {
-				"points": 15
+				"points": 0
 			},
-			"notes": "Usable once per hour of play",
+			"notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "d78c2e4c-acc6-4638-a5a0-597e465f004e",
+			"name": "Curious",
+			"mental": true,
+			"base_points": -5,
+			"cr": 12,
+			"reference": "B129",
+			"calc": {
+				"points": -5
+			},
+			"notes": "Make a self-control roll when presented with an interesting item or situation",
+			"categories": [
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "18fa83e5-c125-42e6-8334-d16a1f192f21",
+			"name": "Gadgeteer",
+			"mental": true,
+			"base_points": 25,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "7537d905-8ae1-48f9-9b3c-13b6fb805c48",
+					"disabled": true,
+					"name": "Quick",
+					"reference": "B57",
+					"cost_type": "points",
+					"cost": 25,
+					"affects": "total"
+				}
+			],
+			"reference": "B57",
+			"calc": {
+				"points": 25
+			},
 			"categories": [
 				"Advantage"
 			]
@@ -1274,204 +918,484 @@
 		},
 		{
 			"type": "advantage",
-			"id": "18fa83e5-c125-42e6-8334-d16a1f192f21",
-			"name": "Gadgeteer",
+			"id": "aaad1979-68c7-49f9-92f4-66f2dfc0ca89",
+			"name": "Luck",
 			"mental": true,
-			"base_points": 25,
+			"base_points": 15,
 			"modifiers": [
 				{
 					"type": "modifier",
-					"id": "7537d905-8ae1-48f9-9b3c-13b6fb805c48",
+					"id": "41a2bd45-79ae-4606-8957-abe1c267b126",
 					"disabled": true,
-					"name": "Quick",
-					"reference": "B57",
-					"cost_type": "points",
-					"cost": 25,
-					"affects": "total"
-				}
-			],
-			"reference": "B57",
-			"calc": {
-				"points": 25
-			},
-			"categories": [
-				"Advantage"
-			]
-		},
-		{
-			"type": "advantage",
-			"id": "d78c2e4c-acc6-4638-a5a0-597e465f004e",
-			"name": "Curious",
-			"mental": true,
-			"base_points": -5,
-			"cr": 12,
-			"reference": "B129",
-			"calc": {
-				"points": -5
-			},
-			"notes": "Make a self-control roll when presented with an interesting item or situation",
-			"categories": [
-				"Disadvantage"
-			]
-		},
-		{
-			"type": "advantage",
-			"id": "af44f4a8-db97-4b69-846c-619764a8c69b",
-			"name": "Cultural Familiarity (Homeline)",
-			"mental": true,
-			"base_points": 1,
-			"modifiers": [
-				{
-					"type": "modifier",
-					"id": "65f088fa-f7c8-4c58-b8e8-aef8b6df33f4",
-					"disabled": true,
-					"name": "Alien",
-					"cost_type": "points",
-					"cost": 1,
+					"name": "Active",
+					"reference": "B66",
+					"cost_type": "percentage",
+					"cost": -40,
 					"affects": "total"
 				},
 				{
 					"type": "modifier",
-					"id": "d26cdb0d-40bc-47e1-b5ff-a7b63e36001e",
-					"name": "Native",
-					"cost_type": "points",
-					"cost": -1,
-					"affects": "total"
-				}
-			],
-			"reference": "B23",
-			"calc": {
-				"points": 0
-			},
-			"notes": "Do not suffer the normal -3 penalty for unfamiliarity",
-			"categories": [
-				"Advantage"
-			]
-		},
-		{
-			"type": "advantage",
-			"id": "d883a21d-792a-4a76-ac4c-6ad0484620cf",
-			"name": "Cultural Familiarity (American)",
-			"mental": true,
-			"base_points": 1,
-			"modifiers": [
+					"id": "0393732f-fdcd-4425-bfbd-e2088a7f0199",
+					"disabled": true,
+					"name": "Aspected",
+					"reference": "B66",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "@Aspect@"
+				},
 				{
 					"type": "modifier",
-					"id": "332f8183-cde3-419e-abc3-ef86ce88693f",
+					"id": "5c7dc81b-d8b0-4c0e-83ce-bace8d4b2ae6",
 					"disabled": true,
-					"name": "Alien",
-					"cost_type": "points",
-					"cost": 1,
+					"name": "Defensive",
+					"reference": "B66",
+					"cost_type": "percentage",
+					"cost": -20,
 					"affects": "total"
 				},
 				{
 					"type": "modifier",
-					"id": "ffd9d4f2-8676-468f-b232-1714af5b585f",
-					"name": "Native",
-					"cost_type": "points",
-					"cost": -1,
+					"id": "df4861c9-cb05-4e21-a77a-d03bbceaf0cd",
+					"disabled": true,
+					"name": "Wishing",
+					"reference": "P59",
+					"cost_type": "percentage",
+					"cost": 100,
 					"affects": "total"
 				}
 			],
-			"reference": "B23",
+			"userdesc": "Best of three rolls.",
+			"reference": "B66,P59",
 			"calc": {
-				"points": 0
+				"points": 15
 			},
-			"notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+			"notes": "Usable once per hour of play",
 			"categories": [
 				"Advantage"
 			]
 		},
 		{
 			"type": "advantage",
-			"id": "faa7b969-2687-4d71-83e4-de92f927c847",
-			"name": "Arachnophobia (Spiders)",
+			"id": "db712e25-f81e-4060-bc52-78c9a9a5182f",
+			"name": "Magery",
+			"mental": true,
+			"supernatural": true,
+			"levels": "0",
+			"base_points": 5,
+			"points_per_level": 10,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "e04c529b-77a0-450a-a1d9-7907c8e0c015",
+					"disabled": true,
+					"name": "Dance",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "levels_only"
+				},
+				{
+					"type": "modifier",
+					"id": "0964301d-89e3-46f9-8091-d4cf26d19982",
+					"disabled": true,
+					"name": "Dark-Aspected",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "levels_only"
+				},
+				{
+					"type": "modifier",
+					"id": "eab97309-b7a9-4faf-ba72-accc953bbd0b",
+					"disabled": true,
+					"name": "Day-Aspected",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "levels_only"
+				},
+				{
+					"type": "modifier",
+					"id": "1c45dd64-b293-4f04-9621-d6cb28c438ef",
+					"disabled": true,
+					"name": "Musical",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "levels_only"
+				},
+				{
+					"type": "modifier",
+					"id": "0eeb387b-a098-4a70-83f4-b87a090c0343",
+					"disabled": true,
+					"name": "Night-Aspected",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "levels_only"
+				},
+				{
+					"type": "modifier",
+					"id": "e251e03d-dc82-4ca4-a706-b8bc51137789",
+					"disabled": true,
+					"name": "One College",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "levels_only",
+					"notes": "@College@"
+				},
+				{
+					"type": "modifier",
+					"id": "32e2b0d7-e6e9-43d7-89d6-ae4c633c38d9",
+					"disabled": true,
+					"name": "Solitary",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "levels_only"
+				},
+				{
+					"type": "modifier",
+					"id": "f9e399ee-b60f-4919-99a1-b2b8c9156053",
+					"disabled": true,
+					"name": "Song",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "levels_only"
+				}
+			],
+			"reference": "B66",
+			"calc": {
+				"points": 5
+			},
+			"features": [
+				{
+					"type": "spell_bonus",
+					"amount": 1,
+					"per_level": true,
+					"match": "all_colleges"
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "thaumatology"
+					}
+				}
+			],
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "af23a03f-3336-4f7b-9fc0-cb9b2b36cdb5",
+			"name": "Natural Attacks",
+			"physical": true,
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Bite",
+					"reach": "C",
+					"parry": "No",
+					"block": "No",
+					"calc": {
+						"level": 13,
+						"parry": "No",
+						"block": "No",
+						"damage": "1d-1 cr"
+					},
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"calc": {
+						"level": 13,
+						"parry": "9",
+						"block": "",
+						"damage": "1d-1 cr"
+					},
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "skill",
+							"name": "Karate"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Kick",
+					"reach": "C,1",
+					"parry": "No",
+					"calc": {
+						"level": 11,
+						"parry": "No",
+						"block": "",
+						"damage": "1d+1 cr"
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Brawling",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Kicking"
+						},
+						{
+							"type": "skill",
+							"name": "Karate",
+							"modifier": -2
+						}
+					]
+				}
+			],
+			"reference": "B271",
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"type": "advantage",
+			"id": "b11e46e3-3deb-4756-a4bb-66dc8cdafc6e",
+			"name": "Post-Combat Shakes",
 			"mental": true,
 			"base_points": -5,
 			"cr": 12,
-			"cr_adj": "action_penalty",
 			"reference": "B150",
 			"calc": {
 				"points": -5
 			},
+			"notes": "Make a self-control roll at the end of any battle. If you fail, roll 3d, add the amount by which you failed your self-control roll, and look up the result on the Fright Check Table.",
 			"categories": [
 				"Disadvantage"
 			]
 		},
 		{
 			"type": "advantage",
-			"id": "8a67ad91-fae0-4407-96c2-07b519c15c64",
-			"name": "Duty (Patrol)",
-			"social": true,
+			"id": "07b9c93f-452a-42b9-8eb7-86ac6da54f4e",
+			"name": "Sense of Duty",
+			"mental": true,
 			"modifiers": [
 				{
 					"type": "modifier",
-					"id": "944082bf-8355-4389-afd1-74b626be307e",
+					"id": "7073f241-56bc-475a-8572-863c580275c8",
+					"name": "Friends and Companions",
+					"reference": "B153",
+					"cost_type": "points",
+					"cost": -5,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "aa209216-ab53-41e6-8901-d64dd68453db",
 					"disabled": true,
-					"name": "FR: 6",
+					"name": "@Small Group@",
+					"reference": "B153",
+					"cost_type": "points",
+					"cost": -5,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "0907de0a-3a17-4265-acbd-27d890614632",
+					"disabled": true,
+					"name": "@Individual@",
+					"reference": "B153",
 					"cost_type": "points",
 					"cost": -2,
 					"affects": "total"
 				},
 				{
 					"type": "modifier",
-					"id": "ec67f78e-54cb-4125-9aef-d720254400c3",
+					"id": "01d48812-2a2c-4ba0-a3e5-3869a0ef69a8",
 					"disabled": true,
-					"name": "FR: 9",
-					"cost_type": "points",
-					"cost": -5,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "030ccc8d-b3a9-4a8f-af40-df4ae53b1741",
-					"disabled": true,
-					"name": "FR: 12",
+					"name": "@Large Group@",
+					"reference": "B153",
 					"cost_type": "points",
 					"cost": -10,
 					"affects": "total"
 				},
 				{
 					"type": "modifier",
-					"id": "3a252b06-3ae2-4eae-99f4-4d8bcfccf99a",
-					"name": "FR: 15",
+					"id": "56abbd5d-ae56-45aa-a92a-7453c101167c",
+					"disabled": true,
+					"name": "@Entire Race@",
+					"reference": "B153",
 					"cost_type": "points",
 					"cost": -15,
 					"affects": "total"
 				},
 				{
 					"type": "modifier",
-					"id": "0fd67113-a388-4fad-a911-cb95ecf446e1",
-					"name": "Extremely Hazardous",
-					"cost_type": "points",
-					"cost": -5,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "6ec7ddae-aff7-4f5d-b930-1f6a16b8b07b",
+					"id": "cee7374e-371b-4c3d-87cc-825268fe977c",
 					"disabled": true,
-					"name": "Involuntary",
+					"name": "Every Living Being",
+					"reference": "B153",
 					"cost_type": "points",
-					"cost": -5,
-					"affects": "total"
-				},
-				{
-					"type": "modifier",
-					"id": "7ff262d0-9011-4d67-a2f2-aefa84e72bec",
-					"disabled": true,
-					"name": "Nonhazardous",
-					"cost_type": "points",
-					"cost": 5,
+					"cost": -20,
 					"affects": "total"
 				}
 			],
-			"reference": "B133",
+			"reference": "B153",
 			"calc": {
-				"points": -20
+				"points": -5
 			},
 			"categories": [
 				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "eef2c2c8-46d5-472e-8dff-be443982648a",
+			"name": "Talent (Artificer)",
+			"mental": true,
+			"levels": "1",
+			"points_per_level": 10,
+			"reference": "B90",
+			"calc": {
+				"points": 10
+			},
+			"features": [
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "armoury"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Carpentry"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Electrician"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Electronics Repair"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Engineer"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Machinist"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Masonry"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Mechanic"
+					}
+				},
+				{
+					"type": "skill_bonus",
+					"amount": 1,
+					"per_level": true,
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Smith"
+					}
+				},
+				{
+					"type": "reaction_bonus",
+					"amount": 1,
+					"per_level": true,
+					"situation": "from any employer"
+				}
+			],
+			"categories": [
+				"Advantage",
+				"Talent"
 			]
 		}
 	],
@@ -2733,39 +2657,48 @@
 	"equipment": [
 		{
 			"type": "equipment",
-			"id": "ba3ea9bb-bad5-48da-9c5d-4e43b6c24888",
+			"id": "17f0b6e4-835d-4e3c-b173-c272daa80078",
 			"equipped": true,
 			"quantity": 1,
-			"description": "Leather Jacket",
-			"tech_level": "1",
-			"value": "50",
-			"weight": "4 lb",
-			"reference": "B283",
+			"description": "Bank Card",
+			"value": "100",
+			"weight": "0 lb",
 			"calc": {
-				"extended_value": "50",
-				"extended_weight": "4 lb"
+				"extended_value": "100",
+				"extended_weight": "0 lb"
+			}
+		},
+		{
+			"type": "equipment",
+			"id": "469d0e78-f1f1-4cb6-827c-5793cf130e89",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Flashlight, Mini",
+			"tech_level": "7",
+			"value": "10",
+			"weight": "0.25 lb",
+			"reference": "B288",
+			"calc": {
+				"extended_value": "10",
+				"extended_weight": "0.25 lb"
 			},
-			"features": [
-				{
-					"type": "dr_bonus",
-					"amount": 1,
-					"location": "torso"
-				},
-				{
-					"type": "dr_bonus",
-					"amount": 1,
-					"location": "vitals"
-				},
-				{
-					"type": "dr_bonus",
-					"amount": 1,
-					"location": "arm"
-				}
-			],
-			"notes": "Flexible, concealable",
+			"notes": "15' beam, lasts 1 hour, no battery",
 			"categories": [
-				"Body Armor"
+				"Camping and Survival Gear"
 			]
+		},
+		{
+			"type": "equipment",
+			"id": "6a9b8c50-32a3-499b-b219-0b874b25caa1",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Hand warmer",
+			"value": "0",
+			"weight": "0.1 lb",
+			"calc": {
+				"extended_value": "0",
+				"extended_weight": "0.1 lb"
+			}
 		},
 		{
 			"type": "equipment",
@@ -2915,6 +2848,42 @@
 		},
 		{
 			"type": "equipment",
+			"id": "ba3ea9bb-bad5-48da-9c5d-4e43b6c24888",
+			"equipped": true,
+			"quantity": 1,
+			"description": "Leather Jacket",
+			"tech_level": "1",
+			"value": "50",
+			"weight": "4 lb",
+			"reference": "B283",
+			"calc": {
+				"extended_value": "50",
+				"extended_weight": "4 lb"
+			},
+			"features": [
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"location": "torso"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"location": "vitals"
+				},
+				{
+					"type": "dr_bonus",
+					"amount": 1,
+					"location": "arm"
+				}
+			],
+			"notes": "Flexible, concealable",
+			"categories": [
+				"Body Armor"
+			]
+		},
+		{
+			"type": "equipment",
 			"id": "b6998976-f4f2-4b00-b8d7-45a625cf3e6b",
 			"equipped": true,
 			"quantity": 1,
@@ -2945,260 +2914,6 @@
 			],
 			"categories": [
 				"Footwear"
-			]
-		},
-		{
-			"type": "equipment",
-			"id": "17f0b6e4-835d-4e3c-b173-c272daa80078",
-			"equipped": true,
-			"quantity": 1,
-			"description": "Bank Card",
-			"value": "20000",
-			"weight": "0 lb",
-			"calc": {
-				"extended_value": "20000",
-				"extended_weight": "0 lb"
-			}
-		},
-		{
-			"type": "equipment_container",
-			"id": "47a6b84b-8dd1-4671-9f6e-1d1e661a39cc",
-			"equipped": true,
-			"description": "Backpack, Small",
-			"tech_level": "1",
-			"value": "60",
-			"weight": "3 lb",
-			"reference": "B288",
-			"calc": {
-				"extended_value": "202.5",
-				"extended_weight": "7.465 lb"
-			},
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "contained_weight_prereq",
-						"has": true,
-						"qualifier": {
-							"compare": "at_most",
-							"qualifier": "40 lb"
-						}
-					}
-				]
-			},
-			"categories": [
-				"Camping and Survival Gear"
-			],
-			"open": false,
-			"children": [
-				{
-					"type": "equipment",
-					"id": "5a23a770-bc90-48f3-b203-8514821d296d",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Compass",
-					"tech_level": "6",
-					"value": "50",
-					"weight": "0.144 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "50",
-						"extended_weight": "0.144 lb"
-					},
-					"features": [
-						{
-							"type": "skill_bonus",
-							"amount": 1,
-							"selection_type": "skills_with_name",
-							"name": {
-								"compare": "starts_with",
-								"qualifier": "navigation"
-							}
-						}
-					],
-					"categories": [
-						"Camping and Survival Gear"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "4cd0d51c-97db-4ce0-b6be-5dd6e3237ba2",
-					"equipped": true,
-					"quantity": 2,
-					"description": "Traveler's Rations",
-					"tech_level": "0",
-					"value": "2",
-					"weight": "0.5 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "4",
-						"extended_weight": "1 lb"
-					},
-					"notes": "One meal",
-					"categories": [
-						"Camping and Survival Gear"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "c747c472-e384-4fb9-995b-f60845506ae5",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Personal Basics",
-					"tech_level": "0",
-					"value": "5",
-					"weight": "1 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "5",
-						"extended_weight": "1 lb"
-					},
-					"notes": "Minimum gear for camping: -2 to any Survival roll without it. Includes utensils, tinderbox or flint and steel, towel, etc., as TL permits.",
-					"categories": [
-						"Camping and Survival Gear"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "53596de0-44ce-4ef0-b74d-215213ccfba2",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Fishhooks & Line",
-					"tech_level": "0",
-					"value": "50",
-					"weight": "0.01 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "50",
-						"extended_weight": "0.01 lb"
-					},
-					"categories": [
-						"Camping and Survival Gear"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "bd5c2c31-9316-4bd6-8b48-4381800827ed",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Matches, Waterproof",
-					"tech_level": "6",
-					"value": "1.5",
-					"weight": "0.051 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "1.5",
-						"extended_weight": "0.051 lb"
-					},
-					"notes": "Box of 50",
-					"categories": [
-						"Camping and Survival Gear"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "6c76dd4c-9ce8-4811-b188-2143dac82084",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Cord, 3/16\", 20 yards",
-					"tech_level": "0",
-					"value": "2",
-					"weight": "1 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "2",
-						"extended_weight": "1 lb"
-					},
-					"notes": "Supports 90 lbs.",
-					"categories": [
-						"Camping and Survival Gear"
-					]
-				},
-				{
-					"type": "equipment_container",
-					"id": "be7fb677-1595-4b16-bf3c-91cc2c706685",
-					"equipped": true,
-					"description": "Canteen",
-					"tech_level": "5",
-					"value": "10",
-					"weight": "1 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "10",
-						"extended_weight": "1 lb"
-					},
-					"prereqs": {
-						"type": "prereq_list",
-						"all": true,
-						"prereqs": [
-							{
-								"type": "contained_weight_prereq",
-								"has": true,
-								"qualifier": {
-									"compare": "at_most",
-									"qualifier": "2 lb"
-								}
-							}
-						]
-					},
-					"notes": "Carry up to 2 lbs.",
-					"categories": [
-						"Camping and Survival Gear"
-					],
-					"open": true,
-					"children": [
-						{
-							"type": "equipment",
-							"id": "c544507c-f207-4f44-ae4c-7dcac42e86c3",
-							"equipped": true,
-							"description": "Water",
-							"value": "0",
-							"weight": "0 lb",
-							"calc": {
-								"extended_value": "0",
-								"extended_weight": "0 lb"
-							}
-						}
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "469d0e78-f1f1-4cb6-827c-5793cf130e89",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Flashlight, Mini",
-					"tech_level": "7",
-					"value": "10",
-					"weight": "0.25 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "10",
-						"extended_weight": "0.25 lb"
-					},
-					"notes": "15' beam, lasts 1 hour",
-					"categories": [
-						"Camping and Survival Gear"
-					]
-				},
-				{
-					"type": "equipment",
-					"id": "eeb19731-ba7f-4e88-8882-af7592991fd9",
-					"equipped": true,
-					"quantity": 1,
-					"description": "Cigarette Lighter",
-					"tech_level": "6",
-					"value": "10",
-					"weight": "0.01 lb",
-					"reference": "B288",
-					"calc": {
-						"extended_value": "10",
-						"extended_weight": "0.01 lb"
-					},
-					"categories": [
-						"Camping and Survival Gear"
-					]
-				}
 			]
 		}
 	],
