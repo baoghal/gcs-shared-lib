@@ -1,0 +1,540 @@
+{
+	"type": "template",
+	"version": 2,
+	"id": "fbbf7a63-681b-4282-9b5e-2a76152057a1",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"id": "f46f64ea-ec2d-4ea6-a4bc-8eb262bbe1ce",
+			"name": "Lurikeen",
+			"calc": {
+				"points": 0
+			},
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"id": "7788cd72-2b8a-4991-9e63-1ea2ca871637",
+					"name": "Cultural Familiarity (Celt)",
+					"mental": true,
+					"base_points": 1,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "ceb25b8a-b747-4e1d-aa50-4e8e69021c19",
+							"disabled": true,
+							"name": "Alien",
+							"cost_type": "points",
+							"cost": 1,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "2b5add6b-3013-4ab8-8495-23114be1d325",
+							"disabled": true,
+							"name": "Native",
+							"cost_type": "points",
+							"cost": -1,
+							"affects": "total"
+						}
+					],
+					"reference": "B23",
+					"calc": {
+						"points": 1
+					},
+					"notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "7df1f23b-5682-4095-b98a-e19b6aeef047",
+					"name": "Cultural Familiarity (Lurikeen)",
+					"mental": true,
+					"base_points": 1,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "94d4a80d-89dc-4f56-a095-25b158b7ed5f",
+							"disabled": true,
+							"name": "Alien",
+							"cost_type": "points",
+							"cost": 1,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "f862ae14-e07f-42ea-833e-79dc80a2b218",
+							"name": "Native",
+							"cost_type": "points",
+							"cost": -1,
+							"affects": "total"
+						}
+					],
+					"reference": "B23",
+					"calc": {
+						"points": 0
+					},
+					"notes": "Do not suffer the normal -3 penalty for unfamiliarity",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "9adbeaf3-070d-4693-aee3-4d38cdd1935b",
+					"name": "Intolerance (Non-Hibernians)",
+					"mental": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "849e93ac-93d9-46ac-864c-b86ae26e4f01",
+							"name": "Scope: Common",
+							"reference": "B140",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "8f8f761b-95ae-4d22-9116-278697c5f1d6",
+							"disabled": true,
+							"name": "Scope: Occasional",
+							"reference": "B140",
+							"cost_type": "points",
+							"cost": -2,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "74c08fbc-8a12-4ee2-8f55-76bfba023e81",
+							"disabled": true,
+							"name": "Scope: Rare",
+							"reference": "B140",
+							"cost_type": "points",
+							"cost": -1,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "83995098-d5e2-4bea-81d6-006dc30190dd",
+							"disabled": true,
+							"name": "Scope: Anyone unlike you",
+							"reference": "B140",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total"
+						}
+					],
+					"reference": "B140",
+					"calc": {
+						"points": -5
+					},
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"amount": -1,
+							"situation": "from victims of your intolerance (may be as much as -5, at GM's discretion)"
+						}
+					],
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "b81fef6b-6824-4be2-96fe-afc1d6ad7bb3",
+					"name": "Language: Celt",
+					"mental": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "ae9a8b7b-16f0-49da-ad77-b7fc42b50f0f",
+							"disabled": true,
+							"name": "Native",
+							"reference": "B23",
+							"cost_type": "points",
+							"cost": -6,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "55d77740-8514-460e-841f-4112eb13a37c",
+							"disabled": true,
+							"name": "Spoken",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 0,
+							"affects": "total",
+							"notes": "None"
+						},
+						{
+							"type": "modifier",
+							"id": "2e255222-21ce-4141-8769-a20b68b04f3f",
+							"disabled": true,
+							"name": "Spoken",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 1,
+							"affects": "total",
+							"notes": "Broken"
+						},
+						{
+							"type": "modifier",
+							"id": "0f784383-a8c4-4402-8d30-e897c866808e",
+							"name": "Spoken",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 2,
+							"affects": "total",
+							"notes": "Accented"
+						},
+						{
+							"type": "modifier",
+							"id": "83d5e491-4710-42c6-973e-ec7ccf51f214",
+							"disabled": true,
+							"name": "Spoken",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 3,
+							"affects": "total",
+							"notes": "Native"
+						},
+						{
+							"type": "modifier",
+							"id": "e8684b1c-4186-4e69-b9f5-f6b2f0f9e962",
+							"disabled": true,
+							"name": "Written",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 0,
+							"affects": "total",
+							"notes": "None"
+						},
+						{
+							"type": "modifier",
+							"id": "62c977a8-b898-4ce7-9c2f-b3a317e93967",
+							"disabled": true,
+							"name": "Written",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 1,
+							"affects": "total",
+							"notes": "Broken"
+						},
+						{
+							"type": "modifier",
+							"id": "e5019dcd-a3da-4368-a348-d5ddccee5afb",
+							"name": "Written",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 2,
+							"affects": "total",
+							"notes": "Accented"
+						},
+						{
+							"type": "modifier",
+							"id": "13c698e2-1e68-4568-af35-bc40870a53dc",
+							"disabled": true,
+							"name": "Written",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 3,
+							"affects": "total",
+							"notes": "Native"
+						}
+					],
+					"reference": "B24",
+					"calc": {
+						"points": 4
+					},
+					"categories": [
+						"Advantage",
+						"Language"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "54e8e39f-c36f-4314-ab2e-684447e8a663",
+					"name": "Language: Lurikeen",
+					"mental": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "517b5a74-ab10-4cf8-ae56-5498256958a3",
+							"name": "Native",
+							"reference": "B23",
+							"cost_type": "points",
+							"cost": -6,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "94de910f-bc62-4ce3-91b8-653eb7262f1a",
+							"disabled": true,
+							"name": "Spoken",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 0,
+							"affects": "total",
+							"notes": "None"
+						},
+						{
+							"type": "modifier",
+							"id": "bdaa4984-353e-4fc5-a47d-01b9fba5b5f2",
+							"disabled": true,
+							"name": "Spoken",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 1,
+							"affects": "total",
+							"notes": "Broken"
+						},
+						{
+							"type": "modifier",
+							"id": "91e68e79-6b34-46ed-b533-d9883471851f",
+							"disabled": true,
+							"name": "Spoken",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 2,
+							"affects": "total",
+							"notes": "Accented"
+						},
+						{
+							"type": "modifier",
+							"id": "061c4c30-b0bc-47c6-85c6-2d301db688d6",
+							"name": "Spoken",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 3,
+							"affects": "total",
+							"notes": "Native"
+						},
+						{
+							"type": "modifier",
+							"id": "de78c48b-c3db-4fc5-a1f2-7e04f878fd6b",
+							"disabled": true,
+							"name": "Written",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 0,
+							"affects": "total",
+							"notes": "None"
+						},
+						{
+							"type": "modifier",
+							"id": "5f2fe5d7-59c4-45ea-ba97-313bf1b79777",
+							"disabled": true,
+							"name": "Written",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 1,
+							"affects": "total",
+							"notes": "Broken"
+						},
+						{
+							"type": "modifier",
+							"id": "b906cd25-86ed-4641-8bfc-3b2abbf3a085",
+							"disabled": true,
+							"name": "Written",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 2,
+							"affects": "total",
+							"notes": "Accented"
+						},
+						{
+							"type": "modifier",
+							"id": "fe0ad208-174a-4b9b-a3be-b120676b4f37",
+							"name": "Written",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 3,
+							"affects": "total",
+							"notes": "Native"
+						}
+					],
+					"reference": "B24",
+					"calc": {
+						"points": 0
+					},
+					"categories": [
+						"Advantage",
+						"Language"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "698e7b11-2eb9-46e8-9693-b8d6ba3ea929",
+					"name": "Natural Attacks",
+					"physical": true,
+					"weapons": [
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Bite",
+							"reach": "C",
+							"parry": "No",
+							"block": "No",
+							"calc": {
+								"level": 0,
+								"parry": "No",
+								"block": "No",
+								"damage": "thr-1 cr"
+							},
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								}
+							]
+						},
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr",
+								"base": "-1"
+							},
+							"usage": "Punch",
+							"reach": "C",
+							"parry": "0",
+							"calc": {
+								"level": 0,
+								"parry": "0",
+								"block": "",
+								"damage": "thr-1 cr"
+							},
+							"defaults": [
+								{
+									"type": "dx"
+								},
+								{
+									"type": "skill",
+									"name": "Boxing"
+								},
+								{
+									"type": "skill",
+									"name": "Brawling"
+								},
+								{
+									"type": "skill",
+									"name": "Karate"
+								}
+							]
+						},
+						{
+							"type": "melee_weapon",
+							"damage": {
+								"type": "cr",
+								"st": "thr"
+							},
+							"usage": "Kick",
+							"reach": "C,1",
+							"parry": "No",
+							"calc": {
+								"level": 0,
+								"parry": "No",
+								"block": "",
+								"damage": "thr cr"
+							},
+							"defaults": [
+								{
+									"type": "dx",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Brawling",
+									"modifier": -2
+								},
+								{
+									"type": "skill",
+									"name": "Karate",
+									"modifier": -2
+								}
+							]
+						}
+					],
+					"reference": "B271",
+					"calc": {
+						"points": 0
+					}
+				},
+				{
+					"type": "advantage",
+					"id": "5afe6923-be3e-44ce-9c75-e27a8d4f51dd",
+					"name": "Size -1",
+					"physical": true,
+					"reference": "B19",
+					"calc": {
+						"points": 0
+					},
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": -1,
+							"attribute": "sm"
+						}
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"id": "f010612d-c39d-4803-976a-4f1b4c363792",
+			"name": "Lurikeen",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"id": "3ca29950-643c-4929-b371-b38e696138bd",
+					"name": "Area Knowledge",
+					"reference": "B176",
+					"specialization": "Hibernia; Lived there",
+					"difficulty": "iq/e",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "iq",
+							"modifier": -4
+						},
+						{
+							"type": "skill",
+							"name": "Geography",
+							"modifier": -3
+						}
+					],
+					"notes": "Location of its major cities and important sites; awareness of its major customs, ethnic groups, and languages (but not necessarily expertise); names of folk of Status 6+; and a general understanding of the economic and political situation",
+					"categories": [
+						"Everyman",
+						"Knowledge"
+					]
+				}
+			]
+		}
+	],
+	"notes": [
+		{
+			"type": "note",
+			"id": "e46ef6e8-7280-4e97-bdbc-e1292d521fe2",
+			"text": "Potential Classes: Bainshee, Champion, Eldritch, Enchanter, Hero, Mentalist, Nightshade, Ranger, Vampiir"
+		},
+		{
+			"type": "note",
+			"id": "148cc593-0163-4f62-b3ed-94f21df73953",
+			"text": "STR 40, CON 40, DEX 80, QUI 80, INT 60, PIE 60, EMP 60, CHA 60"
+		}
+	]
+}

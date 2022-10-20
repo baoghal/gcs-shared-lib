@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jul 5, 2022, 6:42 AM",
-	"modified_date": "Jul 26, 2022, 10:26 PM",
+	"modified_date": "Aug 2, 2022, 9:00 PM",
 	"profile": {
 		"player_name": "Rob",
 		"name": "Whitney Birkner",
@@ -1406,7 +1406,7 @@
 			"name": "Administration",
 			"reference": "B174",
 			"difficulty": "iq/a",
-			"points": 3,
+			"points": 1,
 			"defaulted_from": {
 				"type": "iq",
 				"modifier": -5,
@@ -1415,8 +1415,8 @@
 				"points": -9
 			},
 			"calc": {
-				"level": 14,
-				"rsl": "IQ+0"
+				"level": 13,
+				"rsl": "IQ-1"
 			},
 			"defaults": [
 				{
@@ -1468,53 +1468,6 @@
 			"categories": [
 				"Everyman",
 				"Knowledge"
-			]
-		},
-		{
-			"type": "skill",
-			"id": "0358985f-3111-4d0f-a958-ae696142568e",
-			"name": "Astronomy",
-			"reference": "B179",
-			"tech_level": "8",
-			"difficulty": "iq/h",
-			"points": 1,
-			"defaulted_from": {
-				"type": "iq",
-				"modifier": -6,
-				"level": 8,
-				"adjusted_level": 8,
-				"points": -8
-			},
-			"calc": {
-				"level": 12,
-				"rsl": "IQ-2"
-			},
-			"prereqs": {
-				"type": "prereq_list",
-				"all": true,
-				"prereqs": [
-					{
-						"type": "skill_prereq",
-						"has": true,
-						"name": {
-							"compare": "is",
-							"qualifier": "mathematics"
-						},
-						"specialization": {
-							"compare": "is",
-							"qualifier": "applied"
-						}
-					}
-				]
-			},
-			"defaults": [
-				{
-					"type": "iq",
-					"modifier": -6
-				}
-			],
-			"categories": [
-				"Natural Science"
 			]
 		},
 		{
@@ -2068,7 +2021,7 @@
 			"specialization": "Rifle",
 			"tech_level": "8",
 			"difficulty": "dx/e",
-			"points": 3,
+			"points": 2,
 			"defaulted_from": {
 				"type": "dx",
 				"modifier": -4,

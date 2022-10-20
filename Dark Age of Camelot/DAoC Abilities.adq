@@ -1,0 +1,93 @@
+{
+	"type": "advantage_list",
+	"version": 2,
+	"id": "a032a855-bf48-4a52-8642-9fee321b7ea4",
+	"rows": [
+		{
+			"type": "advantage",
+			"id": "c21d603e-c32d-4205-aab1-47f74b786fda",
+			"name": "Daze",
+			"physical": true,
+			"calc": {
+				"points": 0
+			},
+			"notes": "High Fatigue, High Damage.",
+			"categories": [
+				"Advantage",
+				"Armsman",
+				"Crush",
+				"Heretic",
+				"Mercenary",
+				"Paladin",
+				"Reaver",
+				"Starter"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "030e5375-4bf4-4e3d-bc04-32ab88cd51c9",
+			"name": "Back Crush",
+			"physical": true,
+			"calc": {
+				"points": 0
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Daze"
+						}
+					}
+				]
+			},
+			"notes": "Must be behind target. Med Atk Bonus, Low Fatigue, High Damage. Stun Effect.",
+			"categories": [
+				"Advantage",
+				"Armsman",
+				"Crush",
+				"Heretic",
+				"Mercenary",
+				"Paladin",
+				"Reaver"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "5d9d86e9-6347-4b80-8828-55345583cf34",
+			"name": "Maul",
+			"physical": true,
+			"calc": {
+				"points": 0
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Back Crush"
+						}
+					}
+				]
+			},
+			"notes": "High Atk Bonus, Sm. Def. Penalty, High Fatigue, High Damage",
+			"categories": [
+				"Advantage",
+				"Armsman",
+				"Crush",
+				"Heretic",
+				"Mercenary",
+				"Paladin",
+				"Reaver"
+			]
+		}
+	]
+}

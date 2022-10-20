@@ -1,0 +1,744 @@
+{
+	"type": "advantage_list",
+	"version": 2,
+	"id": "10f9f52b-06b0-4b8f-a637-b0e0cd8bb2fd",
+	"rows": [
+		{
+			"type": "advantage",
+			"id": "48d0bf37-d5e2-401d-bde3-bdc34a5055ca",
+			"name": "Apparition",
+			"mental": true,
+			"supernatural": true,
+			"base_points": 16,
+			"reference": "VTMC101",
+			"calc": {
+				"points": 16
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Fata Morgana"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Chimerstry"
+						}
+					}
+				]
+			},
+			"notes": "Chimerstry Level 3. As Fata Morgana, but it moves. Expend 1 BP to make the illusion move, stop, or change direction.",
+			"categories": [
+				"Advantage",
+				"Chimerstry",
+				"Discipline"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "7c25d3bf-a350-4049-b19f-9e10f1e7739d",
+			"name": "Drawing Out the Beast",
+			"physical": true,
+			"supernatural": true,
+			"base_points": 48,
+			"reference": "VTM99",
+			"calc": {
+				"points": 48
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Sharing of Spirits"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Animalism"
+						}
+					}
+				]
+			},
+			"notes": "Animalism Level 5. Can transfer the Beast to another creature. Can induce Frenzy in another animal, man, or vampire.",
+			"categories": [
+				"Advantage",
+				"Animalism",
+				"Discipline"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "955754e7-c6f6-4364-9209-74fb5c6332c9",
+			"name": "Fata Morgana",
+			"mental": true,
+			"supernatural": true,
+			"base_points": 8,
+			"reference": "VTMC101",
+			"calc": {
+				"points": 8
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Ignis Fatuus"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Chimerstry"
+						}
+					}
+				]
+			},
+			"notes": "Chimerstry Level 2. As Ignis Fatuus, but extends to all senses. Will rolls at -1 per extra sense after the first.",
+			"categories": [
+				"Advantage",
+				"Chimerstry",
+				"Discipline"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "c27ca046-6d4b-4371-b92a-506d24340388",
+			"name": "Fortitude",
+			"physical": true,
+			"supernatural": true,
+			"base_points": 4,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "7680c5cf-e2d8-46c9-bf96-490cf54d5a17",
+					"name": "Power 1",
+					"reference": "VTM103",
+					"cost_type": "points",
+					"cost": 0,
+					"affects": "total",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "arm"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "eye"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "face"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "foot"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "groin"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "hand"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "leg"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "neck"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "skull"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "vitals"
+						}
+					],
+					"notes": "Duration: 10 mins. +1 DR (global), +2 to HT to resist sun or fire damage."
+				},
+				{
+					"type": "modifier",
+					"id": "0b490341-5bdd-48ac-bb1a-c46b56e8377c",
+					"disabled": true,
+					"name": "Power 2",
+					"reference": "VTM103",
+					"cost_type": "points",
+					"cost": 4,
+					"affects": "total",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "arm"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "eye"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "face"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "foot"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "groin"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "hand"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "leg"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "neck"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "skull"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "vitals"
+						}
+					],
+					"notes": "Duration: 30 mins. +2 DR (global), +4 to HT to resist sun or fire damage."
+				},
+				{
+					"type": "modifier",
+					"id": "3a42019a-05c6-4c40-8aa4-7a6d023c6ce5",
+					"disabled": true,
+					"name": "Power 3",
+					"reference": "VTM103",
+					"cost_type": "points",
+					"cost": 12,
+					"affects": "total",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "arm"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "eye"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "face"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "foot"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "groin"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "hand"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "leg"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "neck"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "skull"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "vitals"
+						}
+					],
+					"notes": "Duration: 1 hour. +4 DR (global), +6 to HT to resist sun or fire damage."
+				},
+				{
+					"type": "modifier",
+					"id": "9019bc11-99a9-4781-a56c-07b1eb1b6c24",
+					"disabled": true,
+					"name": "Power 4",
+					"reference": "VTM103",
+					"cost_type": "points",
+					"cost": 20,
+					"affects": "total",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "arm"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "eye"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "face"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "foot"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "groin"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "hand"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "leg"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "neck"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "skull"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "vitals"
+						}
+					],
+					"notes": "Duration: 2 hrs. +6 DR (global), +8 to HT to resist sun or fire damage."
+				},
+				{
+					"type": "modifier",
+					"id": "ed9064f8-c532-4a3b-a335-7b949dfc6a8d",
+					"disabled": true,
+					"name": "Power 5",
+					"reference": "VTM103",
+					"cost_type": "points",
+					"cost": 44,
+					"affects": "total",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "arm"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "eye"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "face"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "foot"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "groin"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "hand"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "leg"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "neck"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "skull"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "vitals"
+						}
+					],
+					"notes": "Duration: 6 hrs. +10 DR (global), +10 to HT to resist sun or fire damage."
+				}
+			],
+			"reference": "VTM103",
+			"calc": {
+				"points": 4
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Disciplines (Kindred)"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Fortitude"
+						}
+					}
+				]
+			},
+			"notes": "The supernatural toughness of Kindred.",
+			"categories": [
+				"Advantage",
+				"Discipline",
+				"Fortitude"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "4f040efe-85df-4676-aadf-fe35e2535dd5",
+			"name": "Horrid Reality",
+			"mental": true,
+			"supernatural": true,
+			"base_points": 48,
+			"reference": "VTMC101",
+			"calc": {
+				"points": 48
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Apparition"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Chimerstry"
+						}
+					}
+				]
+			},
+			"notes": "Chimerstry Level 5. Create an illusion of an object for one individual that can do harm. Quick Contest of Wills. -1 to Will for each full die of damage to inflict. Cant be used to kill someone. Can't do more damage than the real object could.",
+			"categories": [
+				"Advantage",
+				"Chimerstry",
+				"Discipline"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "6732e48f-3348-469c-89cd-58f072590d88",
+			"name": "Ignis Fatuus",
+			"mental": true,
+			"supernatural": true,
+			"base_points": 4,
+			"reference": "VTMC101",
+			"calc": {
+				"points": 4
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Disciplines (Kindred)"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Chimerstry"
+						}
+					}
+				]
+			},
+			"notes": "Chimerstry Level 1. Create static illusion, affectiong only one sense. Requires a Will roll plus Chimerstry level. Doesn't require concentration.",
+			"categories": [
+				"Advantage",
+				"Chimerstry",
+				"Discipline"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "c297c8b4-89ce-4be9-a753-90671a5d360d",
+			"name": "Persistence of Vision",
+			"mental": true,
+			"supernatural": true,
+			"base_points": 24,
+			"reference": "VTMC101",
+			"calc": {
+				"points": 24
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Apparition"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Chimerstry"
+						}
+					}
+				]
+			},
+			"notes": "Chimerstry Level 4. As Fata Morgana, except the illusion will continue to exist even after the creator can no longer percieve it. It will exist until dissolved or dispelled.",
+			"categories": [
+				"Advantage",
+				"Chimerstry",
+				"Discipline"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "c915a614-8636-491d-88a1-603d5da7b192",
+			"name": "Sharing of Spirits",
+			"physical": true,
+			"supernatural": true,
+			"base_points": 24,
+			"reference": "VTM98",
+			"calc": {
+				"points": 24
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Song of Serenity"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Animalism"
+						}
+					}
+				]
+			},
+			"notes": "Animalism Level 4. Possess an animal, controlling its actions as if it were the animal.",
+			"categories": [
+				"Advantage",
+				"Animalism",
+				"Discipline"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "72fc0472-a4fb-4930-8330-e533446520b0",
+			"name": "Song of Serenity",
+			"physical": true,
+			"supernatural": true,
+			"base_points": 16,
+			"reference": "VTM98",
+			"calc": {
+				"points": 16
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "The Beckoning"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Animalism"
+						}
+					}
+				]
+			},
+			"notes": "Animalism Level 3. Cause target to become passive and listliss. Contested Will roll. Removes the Beast.",
+			"categories": [
+				"Advantage",
+				"Animalism",
+				"Discipline"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "99605a58-0bc3-4459-9cbd-772704127d87",
+			"name": "Sweet Whispers",
+			"physical": true,
+			"supernatural": true,
+			"base_points": 4,
+			"reference": "VTM97",
+			"calc": {
+				"points": 4
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Disciplines (Kindred)"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Animalism"
+						}
+					}
+				]
+			},
+			"notes": "Animalism Level 1. With eye contact, communicate and make requests of animals. Roll vs Will. Modified by Animal Empathy.",
+			"categories": [
+				"Advantage",
+				"Animalism",
+				"Discipline"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "c71ae541-5db8-4e38-ac89-1d3574e283e1",
+			"name": "The Beckoning",
+			"physical": true,
+			"supernatural": true,
+			"base_points": 8,
+			"reference": "VTM98",
+			"calc": {
+				"points": 8
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Sweet Whispers"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Animalism"
+						}
+					}
+				]
+			},
+			"notes": "Animalism Level 2. Roll vs Will to summons a specific kind of animal. Modified based on how specific the call is.",
+			"categories": [
+				"Advantage",
+				"Animalism",
+				"Discipline"
+			]
+		}
+	]
+}

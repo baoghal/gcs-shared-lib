@@ -1,0 +1,2037 @@
+{
+	"type": "character",
+	"version": 2,
+	"id": "cd33d349-15b5-4cbf-a95b-3cda5d51e656",
+	"settings": {
+		"default_length_units": "ft_in",
+		"default_weight_units": "lb",
+		"user_description_display": "tooltip",
+		"modifiers_display": "inline",
+		"notes_display": "inline",
+		"skill_level_adj_display": "tooltip",
+		"use_multiplicative_modifiers": false,
+		"use_modifying_dice_plus_adds": false,
+		"damage_progression": "basic_set",
+		"use_simple_metric_conversions": true,
+		"show_college_in_sheet_spells": false,
+		"show_difficulty": false,
+		"show_advantage_modifier_adj": false,
+		"show_equipment_modifier_adj": false,
+		"show_spell_adj": true,
+		"use_title_in_footer": false,
+		"page": {
+			"paper_size": "na-letter",
+			"top_margin": "0.25 in",
+			"left_margin": "0.25 in",
+			"bottom_margin": "0.25 in",
+			"right_margin": "0.25 in",
+			"orientation": "portrait"
+		},
+		"block_layout": [
+			"reactions conditional_modifiers",
+			"melee",
+			"ranged",
+			"advantages skills",
+			"spells",
+			"equipment",
+			"other_equipment",
+			"notes"
+		],
+		"attributes": [
+			{
+				"id": "st",
+				"type": "integer",
+				"name": "ST",
+				"full_name": "Strength",
+				"attribute_base": "10",
+				"cost_per_point": 10,
+				"cost_adj_percent_per_sm": 10
+			},
+			{
+				"id": "dx",
+				"type": "integer",
+				"name": "DX",
+				"full_name": "Dexterity",
+				"attribute_base": "10",
+				"cost_per_point": 20,
+				"cost_adj_percent_per_sm": 0
+			},
+			{
+				"id": "iq",
+				"type": "integer",
+				"name": "IQ",
+				"full_name": "Intelligence",
+				"attribute_base": "10",
+				"cost_per_point": 20,
+				"cost_adj_percent_per_sm": 0
+			},
+			{
+				"id": "ht",
+				"type": "integer",
+				"name": "HT",
+				"full_name": "Health",
+				"attribute_base": "10",
+				"cost_per_point": 10,
+				"cost_adj_percent_per_sm": 0
+			},
+			{
+				"id": "will",
+				"type": "integer",
+				"name": "Will",
+				"full_name": "",
+				"attribute_base": "$iq",
+				"cost_per_point": 5,
+				"cost_adj_percent_per_sm": 0
+			},
+			{
+				"id": "fright_check",
+				"type": "integer",
+				"name": "Fright Check",
+				"full_name": "",
+				"attribute_base": "$will",
+				"cost_per_point": 2,
+				"cost_adj_percent_per_sm": 0
+			},
+			{
+				"id": "per",
+				"type": "integer",
+				"name": "Per",
+				"full_name": "Perception",
+				"attribute_base": "$iq",
+				"cost_per_point": 5,
+				"cost_adj_percent_per_sm": 0
+			},
+			{
+				"id": "vision",
+				"type": "integer",
+				"name": "Vision",
+				"full_name": "",
+				"attribute_base": "$per",
+				"cost_per_point": 2,
+				"cost_adj_percent_per_sm": 0
+			},
+			{
+				"id": "hearing",
+				"type": "integer",
+				"name": "Hearing",
+				"full_name": "",
+				"attribute_base": "$per",
+				"cost_per_point": 2,
+				"cost_adj_percent_per_sm": 0
+			},
+			{
+				"id": "taste_smell",
+				"type": "integer",
+				"name": "Taste & Smell",
+				"full_name": "",
+				"attribute_base": "$per",
+				"cost_per_point": 2,
+				"cost_adj_percent_per_sm": 0
+			},
+			{
+				"id": "touch",
+				"type": "integer",
+				"name": "Touch",
+				"full_name": "",
+				"attribute_base": "$per",
+				"cost_per_point": 2,
+				"cost_adj_percent_per_sm": 0
+			},
+			{
+				"id": "basic_speed",
+				"type": "decimal",
+				"name": "Basic Speed",
+				"full_name": "",
+				"attribute_base": "($dx+$ht)/4",
+				"cost_per_point": 20,
+				"cost_adj_percent_per_sm": 0
+			},
+			{
+				"id": "basic_move",
+				"type": "integer",
+				"name": "Basic Move",
+				"full_name": "",
+				"attribute_base": "floor($basic_speed)",
+				"cost_per_point": 5,
+				"cost_adj_percent_per_sm": 0
+			},
+			{
+				"id": "fp",
+				"type": "pool",
+				"name": "FP",
+				"full_name": "Fatigue Points",
+				"attribute_base": "$ht",
+				"cost_per_point": 3,
+				"cost_adj_percent_per_sm": 0,
+				"thresholds": [
+					{
+						"state": "Unconscious",
+						"explanation": "",
+						"multiplier": -1,
+						"divisor": 1,
+						"addition": 0,
+						"ops": [
+							"halve_move",
+							"halve_dodge",
+							"halve_st"
+						]
+					},
+					{
+						"state": "Collapse",
+						"explanation": "Roll vs. Will to do anything besides talk or rest; failure causes unconsciousness\nEach FP you lose below 0 also causes 1 HP of injury\nMove, Dodge and ST are halved (B426)",
+						"multiplier": 0,
+						"divisor": 1,
+						"addition": 0,
+						"ops": [
+							"halve_move",
+							"halve_dodge",
+							"halve_st"
+						]
+					},
+					{
+						"state": "Tired",
+						"explanation": "Move, Dodge and ST are halved (B426)",
+						"multiplier": 1,
+						"divisor": 3,
+						"addition": 0,
+						"ops": [
+							"halve_move",
+							"halve_dodge",
+							"halve_st"
+						]
+					},
+					{
+						"state": "Tiring",
+						"explanation": "",
+						"multiplier": 1,
+						"divisor": 1,
+						"addition": -1,
+						"ops": [
+
+						]
+					},
+					{
+						"state": "Rested",
+						"explanation": "",
+						"multiplier": 1,
+						"divisor": 1,
+						"addition": 0,
+						"ops": [
+
+						]
+					}
+				]
+			},
+			{
+				"id": "hp",
+				"type": "pool",
+				"name": "HP",
+				"full_name": "Hit Points",
+				"attribute_base": "$st",
+				"cost_per_point": 2,
+				"cost_adj_percent_per_sm": 10,
+				"thresholds": [
+					{
+						"state": "Dead",
+						"explanation": "",
+						"multiplier": -5,
+						"divisor": 1,
+						"addition": 0,
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #4",
+						"explanation": "Roll vs. HT to avoid death\nRoll vs. HT-4 every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
+						"multiplier": -4,
+						"divisor": 1,
+						"addition": 0,
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #3",
+						"explanation": "Roll vs. HT to avoid death\nRoll vs. HT-3 every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
+						"multiplier": -3,
+						"divisor": 1,
+						"addition": 0,
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #2",
+						"explanation": "Roll vs. HT to avoid death\nRoll vs. HT-2 every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
+						"multiplier": -2,
+						"divisor": 1,
+						"addition": 0,
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Dying #1",
+						"explanation": "Roll vs. HT to avoid death\nRoll vs. HT-1 every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
+						"multiplier": -1,
+						"divisor": 1,
+						"addition": 0,
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Collapse",
+						"explanation": "Roll vs. HT every second to avoid falling unconscious\nMove and Dodge are halved (B419)",
+						"multiplier": 0,
+						"divisor": 1,
+						"addition": 0,
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Reeling",
+						"explanation": "Move and Dodge are halved (B419)",
+						"multiplier": 1,
+						"divisor": 3,
+						"addition": 0,
+						"ops": [
+							"halve_move",
+							"halve_dodge"
+						]
+					},
+					{
+						"state": "Wounded",
+						"explanation": "",
+						"multiplier": 1,
+						"divisor": 1,
+						"addition": -1,
+						"ops": [
+
+						]
+					},
+					{
+						"state": "Healthy",
+						"explanation": "",
+						"multiplier": 1,
+						"divisor": 1,
+						"addition": 0,
+						"ops": [
+
+						]
+					}
+				]
+			}
+		],
+		"hit_locations": {
+			"id": "humanoid",
+			"name": "Humanoid",
+			"roll": "3d",
+			"locations": [
+				{
+					"id": "eye",
+					"choice_name": "Eyes",
+					"table_name": "Eyes",
+					"slots": 0,
+					"hit_penalty": -9,
+					"dr_bonus": 0,
+					"description": "An attack that misses by 1 hits the torso instead. Only impaling (imp), piercing (pi-, pi, pi+, pi++), and tight-beam burning (burn) attacks can target the eye – and only from the front or sides. Injury over HP÷10 blinds the eye. Otherwise, treat as skull, but without the extra DR!",
+					"calc": {
+						"roll_range": "-",
+						"dr": {
+							"all": 2
+						}
+					}
+				},
+				{
+					"id": "skull",
+					"choice_name": "Skull",
+					"table_name": "Skull",
+					"slots": 2,
+					"hit_penalty": -7,
+					"dr_bonus": 2,
+					"description": "An attack that misses by 1 hits the torso instead. Wounding modifier is x4. Knockdown rolls are at -10. Critical hits use the Critical Head Blow Table (B556). Exception: These special effects do not apply to toxic (tox) damage.",
+					"calc": {
+						"roll_range": "3-4",
+						"dr": {
+							"all": 4
+						}
+					}
+				},
+				{
+					"id": "face",
+					"choice_name": "Face",
+					"table_name": "Face",
+					"slots": 1,
+					"hit_penalty": -5,
+					"dr_bonus": 0,
+					"description": "An attack that misses by 1 hits the torso instead. Jaw, cheeks, nose, ears, etc. If the target has an open-faced helmet, ignore its DR. Knockdown rolls are at -5. Critical hits use the Critical Head Blow Table (B556). Corrosion (cor) damage gets a x1½ wounding modifier, and if it inflicts a major wound, it also blinds one eye (both eyes on damage over full HP). Random attacks from behind hit the skull instead.",
+					"calc": {
+						"roll_range": "5",
+						"dr": {
+							"all": 2
+						}
+					}
+				},
+				{
+					"id": "leg",
+					"choice_name": "Leg",
+					"table_name": "Right Leg",
+					"slots": 2,
+					"hit_penalty": -2,
+					"dr_bonus": 0,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge piercing (pi++), and impaling (imp) damage to x1. Any major wound (loss of over ½ HP from one blow) cripples the limb. Damage beyond that threshold is lost.",
+					"calc": {
+						"roll_range": "6-7",
+						"dr": {
+							"all": 2
+						}
+					}
+				},
+				{
+					"id": "arm",
+					"choice_name": "Arm",
+					"table_name": "Right Arm",
+					"slots": 1,
+					"hit_penalty": -2,
+					"dr_bonus": 0,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge piercing (pi++), and impaling (imp) damage to x1. Any major wound (loss of over ½ HP from one blow) cripples the limb. Damage beyond that threshold is lost. If holding a shield, double the penalty to hit: -4 for shield arm instead of -2.",
+					"calc": {
+						"roll_range": "8",
+						"dr": {
+							"all": 2
+						}
+					}
+				},
+				{
+					"id": "torso",
+					"choice_name": "Torso",
+					"table_name": "Torso",
+					"slots": 2,
+					"hit_penalty": 0,
+					"dr_bonus": 0,
+					"description": "",
+					"calc": {
+						"roll_range": "9-10",
+						"dr": {
+							"all": 2
+						}
+					}
+				},
+				{
+					"id": "groin",
+					"choice_name": "Groin",
+					"table_name": "Groin",
+					"slots": 1,
+					"hit_penalty": -3,
+					"dr_bonus": 0,
+					"description": "An attack that misses by 1 hits the torso instead. Human males and the males of similar species suffer double shock from crushing (cr) damage, and get -5 to knockdown rolls. Otherwise, treat as a torso hit.",
+					"calc": {
+						"roll_range": "11",
+						"dr": {
+							"all": 2
+						}
+					}
+				},
+				{
+					"id": "arm",
+					"choice_name": "Arm",
+					"table_name": "Left Arm",
+					"slots": 1,
+					"hit_penalty": -2,
+					"dr_bonus": 0,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge piercing (pi++), and impaling (imp) damage to x1. Any major wound (loss of over ½ HP from one blow) cripples the limb. Damage beyond that threshold is lost. If holding a shield, double the penalty to hit: -4 for shield arm instead of -2.",
+					"calc": {
+						"roll_range": "12",
+						"dr": {
+							"all": 2
+						}
+					}
+				},
+				{
+					"id": "leg",
+					"choice_name": "Leg",
+					"table_name": "Left Leg",
+					"slots": 2,
+					"hit_penalty": -2,
+					"dr_bonus": 0,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge piercing (pi++), and impaling (imp) damage to x1. Any major wound (loss of over ½ HP from one blow) cripples the limb. Damage beyond that threshold is lost.",
+					"calc": {
+						"roll_range": "13-14",
+						"dr": {
+							"all": 2
+						}
+					}
+				},
+				{
+					"id": "hand",
+					"choice_name": "Hand",
+					"table_name": "Hand",
+					"slots": 1,
+					"hit_penalty": -4,
+					"dr_bonus": 0,
+					"description": "If holding a shield, double the penalty to hit: -8 for shield hand instead of -4. Reduce the wounding multiplier of large piercing (pi+), huge piercing (pi++), and impaling (imp) damage to x1. Any major wound (loss of over ⅓ HP from one blow) cripples the extremity. Damage beyond that threshold is lost.",
+					"calc": {
+						"roll_range": "15",
+						"dr": {
+							"all": 2
+						}
+					}
+				},
+				{
+					"id": "foot",
+					"choice_name": "Foot",
+					"table_name": "Foot",
+					"slots": 1,
+					"hit_penalty": -4,
+					"dr_bonus": 0,
+					"description": "Reduce the wounding multiplier of large piercing (pi+), huge piercing (pi++), and impaling (imp) damage to x1. Any major wound (loss of over ⅓ HP from one blow) cripples the extremity. Damage beyond that threshold is lost.",
+					"calc": {
+						"roll_range": "16",
+						"dr": {
+							"all": 2
+						}
+					}
+				},
+				{
+					"id": "neck",
+					"choice_name": "Neck",
+					"table_name": "Neck",
+					"slots": 2,
+					"hit_penalty": -5,
+					"dr_bonus": 0,
+					"description": "An attack that misses by 1 hits the torso instead. Neck and throat. Increase the wounding multiplier of crushing (cr) and corrosion (cor) attacks to x1½, and that of cutting (cut) damage to x2. At the GM’s option, anyone killed by a cutting (cut) blow to the neck is decapitated!",
+					"calc": {
+						"roll_range": "17-18",
+						"dr": {
+							"all": 2
+						}
+					}
+				},
+				{
+					"id": "vitals",
+					"choice_name": "Vitals",
+					"table_name": "Vitals",
+					"slots": 0,
+					"hit_penalty": -3,
+					"dr_bonus": 0,
+					"description": "An attack that misses by 1 hits the torso instead. Heart, lungs, kidneys, etc. Increase the wounding modifier for an impaling (imp) or any piercing (pi-, pi, pi+, pi++) attack to x3. Increase the wounding modifier for a tight-beam burning (burn) attack to x2. Other attacks cannot target the vitals.",
+					"calc": {
+						"roll_range": "-",
+						"dr": {
+							"all": 2
+						}
+					}
+				}
+			]
+		}
+	},
+	"created_date": "Aug 2, 2022, 8:06 AM",
+	"modified_date": "Aug 28, 2022, 1:47 PM",
+	"profile": {
+		"player_name": "Heather",
+		"name": "Inola (Black Fox)",
+		"age": "146 (appears 23)",
+		"birthday": "January 29, 1876",
+		"eyes": "Green",
+		"hair": "Black",
+		"skin": "Bronze, Tattoos",
+		"handedness": "Right",
+		"height": "5' 3\"",
+		"weight": "140 lb",
+		"gender": "Female",
+		"tech_level": "8"
+	},
+	"attributes": [
+		{
+			"attr_id": "st",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "dx",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "iq",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "ht",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "will",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "fright_check",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "per",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "vision",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "hearing",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "taste_smell",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "touch",
+			"adj": 0,
+			"calc": {
+				"value": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "basic_speed",
+			"adj": 0,
+			"calc": {
+				"value": 5,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "basic_move",
+			"adj": 0,
+			"calc": {
+				"value": 5,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "fp",
+			"adj": 0,
+			"damage": 0,
+			"calc": {
+				"value": 10,
+				"current": 10,
+				"points": 0
+			}
+		},
+		{
+			"attr_id": "hp",
+			"adj": 0,
+			"damage": 0,
+			"calc": {
+				"value": 10,
+				"current": 10,
+				"points": 0
+			}
+		}
+	],
+	"total_points": 275,
+	"advantages": [
+		{
+			"type": "advantage",
+			"id": "29a7a56a-83ab-489a-8894-13e1ce8f5922",
+			"name": "Apparition",
+			"mental": true,
+			"supernatural": true,
+			"base_points": 16,
+			"reference": "VTMC101",
+			"calc": {
+				"points": 16
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Fata Morgana"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Chimerstry"
+						}
+					}
+				]
+			},
+			"notes": "Chimerstry Level 3. As Fata Morgana, but it moves. Expend 1 BP to make the illusion move, stop, or change direction.",
+			"categories": [
+				"Advantage",
+				"Chimerstry",
+				"Discipline"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "f7f065c8-0ef1-4d21-bf02-3eb7318d55c5",
+			"name": "Blood Pool",
+			"physical": true,
+			"supernatural": true,
+			"base_points": 25,
+			"reference": "VTM77",
+			"calc": {
+				"points": 25
+			},
+			"notes": "Gain a Blood Pool containing Blood Points (BP). Can use 1BP in exhange for 2 HP. Can use 1 BP in exchange for 2 FP. Can use 1 BP to add +2 to any skill (requires 1 second of Concentration) and it is cumulative. Can use 1 BP to add 2 to ST for 1 second (cumulative). Can share BP with any other creature with a Blood Pool. ",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "e478a143-b8f9-4746-86b2-ee5f1d7d62c8",
+			"name": "Code of Honor (Ravnos)",
+			"mental": true,
+			"base_points": -5,
+			"reference": "B163,MA53",
+			"calc": {
+				"points": -5
+			},
+			"notes": "Avenge all insults. never break a blood oath, aid true friends when called upon, never cheat or lie to a clan brother, keep all Ravnos secrets from Outsiders.",
+			"categories": [
+				"Quirk"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "185610e3-da31-4490-bdea-abf914f205cb",
+			"name": "Compulsive Gambling",
+			"mental": true,
+			"base_points": -5,
+			"cr": 6,
+			"reference": "B128",
+			"calc": {
+				"points": -10
+			},
+			"categories": [
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "1f7d6c72-8c5e-4620-835f-445c4581d5a1",
+			"name": "Disciplines (Kindred)",
+			"physical": true,
+			"supernatural": true,
+			"base_points": 10,
+			"reference": "VTM58",
+			"calc": {
+				"points": 10
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Blood Pool"
+						}
+					}
+				]
+			},
+			"notes": "Available Disciplines:Animalism, Chimerstry, Fortitude"
+		},
+		{
+			"type": "advantage",
+			"id": "9617752f-3ba0-46a1-8e2b-fdacd5a6e390",
+			"name": "Doesn't Breathe",
+			"physical": true,
+			"exotic": true,
+			"base_points": 20,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "91dc852b-06f0-435a-8363-0d45c4c64496",
+					"disabled": true,
+					"name": "Gills",
+					"reference": "B49",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "1fd7a09f-11ac-4b87-ab9c-4ba1afffb0aa",
+					"disabled": true,
+					"name": "Gills",
+					"reference": "B49",
+					"cost_type": "points",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Suffocates in air"
+				},
+				{
+					"type": "modifier",
+					"id": "720861d4-adab-4300-a882-71ac67fc405a",
+					"disabled": true,
+					"name": "Oxygen Absorption",
+					"reference": "B49",
+					"cost_type": "percentage",
+					"cost": -25,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "3771dbce-f9c1-44c0-901d-fc2cf19eb964",
+					"disabled": true,
+					"name": "Oxygen Storage",
+					"reference": "B49",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total",
+					"notes": "Can hold breath 25 times as long as normal"
+				},
+				{
+					"type": "modifier",
+					"id": "2cf69d97-bcd2-4577-ad8d-02a6a58a5642",
+					"disabled": true,
+					"name": "Oxygen Storage",
+					"reference": "B49",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "total",
+					"notes": "Can hold breath 50 times as long as normal"
+				},
+				{
+					"type": "modifier",
+					"id": "e3015e8c-efed-4002-a10f-c7f7b4d2cbaf",
+					"disabled": true,
+					"name": "Oxygen Storage",
+					"reference": "B49",
+					"cost_type": "percentage",
+					"cost": -30,
+					"affects": "total",
+					"notes": "Can hold breath 100 times as long as normal"
+				},
+				{
+					"type": "modifier",
+					"id": "7910fc39-eb90-4c27-b71e-ffdfeb7e3456",
+					"disabled": true,
+					"name": "Oxygen Storage",
+					"reference": "B49",
+					"cost_type": "percentage",
+					"cost": -20,
+					"affects": "total",
+					"notes": "Can hold breath 200 times as long as normal"
+				},
+				{
+					"type": "modifier",
+					"id": "e986597f-83bd-414f-81d0-df9508da1dd4",
+					"disabled": true,
+					"name": "Oxygen Storage",
+					"reference": "B49",
+					"cost_type": "percentage",
+					"cost": -10,
+					"affects": "total",
+					"notes": "Can hold breath 300 times as long as normal"
+				},
+				{
+					"type": "modifier",
+					"id": "c792a566-b880-4ed0-9101-3a0af6a41885",
+					"disabled": true,
+					"name": "Oxygen Combustion",
+					"reference": "B49",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total"
+				}
+			],
+			"reference": "B49",
+			"calc": {
+				"points": 20
+			},
+			"notes": "You do not need oxygen and do not suffocate. You're still affected by the effects of high pressure or vacuum.",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "df18f86b-9a97-4ea2-8198-065f1a1031f0",
+			"name": "Fata Morgana",
+			"mental": true,
+			"supernatural": true,
+			"base_points": 8,
+			"reference": "VTMC101",
+			"calc": {
+				"points": 8
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Ignis Fatuus"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Chimerstry"
+						}
+					}
+				]
+			},
+			"notes": "Chimerstry Level 2. As Ignis Fatuus, but extends to all senses. Will rolls at -1 per extra sense after the first.",
+			"categories": [
+				"Advantage",
+				"Chimerstry",
+				"Discipline"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "1e81808a-4c97-4dbe-b593-8ede2f960aa1",
+			"name": "Fortitude",
+			"physical": true,
+			"supernatural": true,
+			"base_points": 4,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "13d202af-94de-48bc-a863-37bdadd3868d",
+					"disabled": true,
+					"name": "Power 1",
+					"reference": "VTM103",
+					"cost_type": "points",
+					"cost": 0,
+					"affects": "total",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "arm"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "eye"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "face"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "foot"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "groin"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "hand"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "leg"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "neck"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "skull"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"location": "vitals"
+						}
+					],
+					"notes": "Duration: 10 mins. +1 DR (global), +2 to HT to resist sun or fire damage."
+				},
+				{
+					"type": "modifier",
+					"id": "5cff709d-5797-4316-9b2c-ba35de89f060",
+					"name": "Power 2",
+					"reference": "VTM103",
+					"cost_type": "points",
+					"cost": 4,
+					"affects": "total",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "arm"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "eye"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "face"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "foot"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "groin"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "hand"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "leg"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "neck"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "skull"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 2,
+							"location": "vitals"
+						}
+					],
+					"notes": "Duration: 30 mins. +2 DR (global), +4 to HT to resist sun or fire damage."
+				},
+				{
+					"type": "modifier",
+					"id": "6a113c79-01ca-4622-83af-b048cbcac8f3",
+					"disabled": true,
+					"name": "Power 3",
+					"reference": "VTM103",
+					"cost_type": "points",
+					"cost": 12,
+					"affects": "total",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "arm"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "eye"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "face"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "foot"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "groin"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "hand"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "leg"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "neck"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "skull"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 4,
+							"location": "vitals"
+						}
+					],
+					"notes": "Duration: 1 hour. +4 DR (global), +6 to HT to resist sun or fire damage."
+				},
+				{
+					"type": "modifier",
+					"id": "72ad34ff-ced8-46aa-81fc-6b4fb6e75a04",
+					"disabled": true,
+					"name": "Power 4",
+					"reference": "VTM103",
+					"cost_type": "points",
+					"cost": 20,
+					"affects": "total",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "arm"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "eye"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "face"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "foot"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "groin"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "hand"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "leg"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "neck"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "skull"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 6,
+							"location": "vitals"
+						}
+					],
+					"notes": "Duration: 2 hrs. +6 DR (global), +8 to HT to resist sun or fire damage."
+				},
+				{
+					"type": "modifier",
+					"id": "52efd2de-e7f5-4fc4-9b44-cf382059f8b7",
+					"disabled": true,
+					"name": "Power 5",
+					"reference": "VTM103",
+					"cost_type": "points",
+					"cost": 44,
+					"affects": "total",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "arm"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "eye"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "face"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "foot"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "groin"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "hand"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "leg"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "neck"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "skull"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "torso"
+						},
+						{
+							"type": "dr_bonus",
+							"amount": 10,
+							"location": "vitals"
+						}
+					],
+					"notes": "Duration: 6 hrs. +10 DR (global), +10 to HT to resist sun or fire damage."
+				}
+			],
+			"reference": "VTM103",
+			"calc": {
+				"points": 8
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Disciplines (Kindred)"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Fortitude"
+						}
+					}
+				]
+			},
+			"notes": "The supernatural toughness of Kindred.",
+			"categories": [
+				"Advantage",
+				"Discipline",
+				"Fortitude"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "714d8f32-6efe-4357-b056-d1a3d11f5a01",
+			"name": "Frenzy (Berserk)",
+			"mental": true,
+			"base_points": -10,
+			"cr": 9,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "db963c37-906e-4a95-bb6d-2c5bee23073b",
+					"disabled": true,
+					"name": "Battle Rage",
+					"cost_type": "percentage",
+					"cost": 50,
+					"affects": "total"
+				}
+			],
+			"reference": "B124",
+			"calc": {
+				"points": -15
+			},
+			"notes": "Make a self-control roll any time you suffer damage over 1/4 your HP in the space of one second, and whenever you witness equivalent harm to a loved one",
+			"categories": [
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "1fbbe458-940c-4994-bc61-e8e6dd0437e0",
+			"name": "Horrid Reality",
+			"mental": true,
+			"supernatural": true,
+			"base_points": 48,
+			"reference": "VTMC101",
+			"calc": {
+				"points": 48
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Apparition"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Chimerstry"
+						}
+					}
+				]
+			},
+			"notes": "Chimerstry Level 5. Create an illusion of an object for one individual that can do harm. Quick Contest of Wills. -1 to Will for each full die of damage to inflict. Cant be used to kill someone. Can't do more damage than the real object could.",
+			"categories": [
+				"Advantage",
+				"Chimerstry",
+				"Discipline"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "b0d2bdc9-442c-4380-9768-dbd6e54de7c6",
+			"name": "Ignis Fatuus",
+			"mental": true,
+			"supernatural": true,
+			"base_points": 4,
+			"reference": "VTMC101",
+			"calc": {
+				"points": 4
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Disciplines (Kindred)"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Chimerstry"
+						}
+					}
+				]
+			},
+			"notes": "Chimerstry Level 1. Create static illusion, affectiong only one sense. Requires a Will roll plus Chimerstry level. Doesn't require concentration.",
+			"categories": [
+				"Advantage",
+				"Chimerstry",
+				"Discipline"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "bb2fcf01-fbfc-42d8-936c-1b7a5e7b45e2",
+			"name": "Natural Attacks",
+			"physical": true,
+			"weapons": [
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Bite",
+					"reach": "C",
+					"parry": "No",
+					"block": "No",
+					"calc": {
+						"level": 10,
+						"parry": "No",
+						"block": "No",
+						"damage": "1d-3 cr"
+					},
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr",
+						"base": "-1"
+					},
+					"usage": "Punch",
+					"reach": "C",
+					"parry": "0",
+					"calc": {
+						"level": 10,
+						"parry": "8",
+						"block": "",
+						"damage": "1d-3 cr"
+					},
+					"defaults": [
+						{
+							"type": "dx"
+						},
+						{
+							"type": "skill",
+							"name": "Boxing"
+						},
+						{
+							"type": "skill",
+							"name": "Brawling"
+						},
+						{
+							"type": "skill",
+							"name": "Karate"
+						}
+					]
+				},
+				{
+					"type": "melee_weapon",
+					"damage": {
+						"type": "cr",
+						"st": "thr"
+					},
+					"usage": "Kick",
+					"reach": "C,1",
+					"parry": "No",
+					"calc": {
+						"level": 8,
+						"parry": "No",
+						"block": "",
+						"damage": "1d-2 cr"
+					},
+					"defaults": [
+						{
+							"type": "dx",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Brawling",
+							"modifier": -2
+						},
+						{
+							"type": "skill",
+							"name": "Kicking"
+						},
+						{
+							"type": "skill",
+							"name": "Karate",
+							"modifier": -2
+						}
+					]
+				}
+			],
+			"reference": "B271",
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"type": "advantage",
+			"id": "62fe3eb9-adcb-49e8-8038-eeaad0e0695f",
+			"name": "Persistence of Vision",
+			"mental": true,
+			"supernatural": true,
+			"base_points": 24,
+			"reference": "VTMC101",
+			"calc": {
+				"points": 24
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Apparition"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Chimerstry"
+						}
+					}
+				]
+			},
+			"notes": "Chimerstry Level 4. As Fata Morgana, except the illusion will continue to exist even after the creator can no longer percieve it. It will exist until dissolved or dispelled.",
+			"categories": [
+				"Advantage",
+				"Chimerstry",
+				"Discipline"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "940315c5-4072-4440-a316-e86e444663ab",
+			"name": "Rötschreck",
+			"mental": true,
+			"base_points": -10,
+			"cr": 12,
+			"reference": "VTM62",
+			"calc": {
+				"points": -10
+			},
+			"notes": "Fear of sun and flame."
+		},
+		{
+			"type": "advantage",
+			"id": "48b79b31-04c8-431b-8baf-b27f07fbd2d9",
+			"name": "Secret (Chess Club)",
+			"social": true,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "1655f5b6-e6a5-40d3-9fab-40bcf4819b85",
+					"disabled": true,
+					"name": "Serious Embarrassment",
+					"reference": "B152",
+					"cost_type": "points",
+					"cost": -5,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "d3cb0c32-2dfc-40ca-89db-380662c32195",
+					"disabled": true,
+					"name": "Utter Rejection",
+					"reference": "B152",
+					"cost_type": "points",
+					"cost": -10,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "c25a1b7e-d0c7-44df-8a87-76535d770197",
+					"name": "Imprisonment",
+					"reference": "B152",
+					"cost_type": "points",
+					"cost": -20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "9621a980-855f-46c3-b53a-de93b1cbc439",
+					"disabled": true,
+					"name": "Possible Death",
+					"reference": "B152",
+					"cost_type": "points",
+					"cost": -30,
+					"affects": "total"
+				}
+			],
+			"reference": "B152",
+			"calc": {
+				"points": -20
+			},
+			"categories": [
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "13d05019-7975-4308-83bb-3d23d6996b12",
+			"name": "Secret (Kindred)",
+			"social": true,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "f750be9a-05eb-49a8-897c-9240d7e2f9bb",
+					"disabled": true,
+					"name": "Serious Embarrassment",
+					"reference": "B152",
+					"cost_type": "points",
+					"cost": -5,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "c75e8dc5-9b16-4fbe-a522-07285e4da7fc",
+					"disabled": true,
+					"name": "Utter Rejection",
+					"reference": "B152",
+					"cost_type": "points",
+					"cost": -10,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "e49360b7-0961-46f7-af85-a1aea69646de",
+					"name": "Imprisonment",
+					"reference": "B152",
+					"cost_type": "points",
+					"cost": -20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "05e67fd4-1ab3-428c-8c9e-50ddba28160e",
+					"disabled": true,
+					"name": "Possible Death",
+					"reference": "B152",
+					"cost_type": "points",
+					"cost": -30,
+					"affects": "total"
+				}
+			],
+			"reference": "B152",
+			"calc": {
+				"points": -20
+			},
+			"notes": "Discovery of this secret could result in imprisonment or capture.",
+			"categories": [
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "bd0ac645-e84c-49fe-8d26-4a55119de998",
+			"name": "Sweet Whispers",
+			"physical": true,
+			"supernatural": true,
+			"base_points": 4,
+			"reference": "VTM97",
+			"calc": {
+				"points": 4
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Disciplines (Kindred)"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Animalism"
+						}
+					}
+				]
+			},
+			"notes": "Animalism Level 1. With eye contact, communicate and make requests of animals. Roll vs Will. Modified by Animal Empathy.",
+			"categories": [
+				"Advantage",
+				"Animalism",
+				"Discipline"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "0e617bb4-6d6c-4487-a497-51bff3e8cb32",
+			"name": "The Beckoning",
+			"physical": true,
+			"supernatural": true,
+			"base_points": 8,
+			"reference": "VTM98",
+			"calc": {
+				"points": 8
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Sweet Whispers"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Animalism"
+						}
+					}
+				]
+			},
+			"notes": "Animalism Level 2. Roll vs Will to summons a specific kind of animal. Modified based on how specific the call is.",
+			"categories": [
+				"Advantage",
+				"Animalism",
+				"Discipline"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "af1bd9b2-8604-4d6a-bace-c52041edf1c4",
+			"name": "The Beckoning",
+			"physical": true,
+			"supernatural": true,
+			"base_points": 8,
+			"reference": "VTM98",
+			"calc": {
+				"points": 8
+			},
+			"prereqs": {
+				"type": "prereq_list",
+				"all": true,
+				"prereqs": [
+					{
+						"type": "advantage_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Sweet Whispers"
+						},
+						"notes": {
+							"compare": "contains",
+							"qualifier": "Animalism"
+						}
+					}
+				]
+			},
+			"notes": "Animalism Level 2. Roll vs Will to summons a specific kind of animal. Modified based on how specific the call is.",
+			"categories": [
+				"Advantage",
+				"Animalism",
+				"Discipline"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "90e1b7c2-c51f-4214-88d8-eedf2030edda",
+			"name": "The Draining",
+			"physical": true,
+			"supernatural": true,
+			"base_points": -10,
+			"reference": "VTM63",
+			"calc": {
+				"points": -10
+			},
+			"notes": "You lose 1 Blood Point every dawn. If there are none left, you lose 2 hit points. If you get to -HT, you fall into torpor (VTM83)"
+		},
+		{
+			"type": "advantage",
+			"id": "61750eb0-7b2c-442f-a742-7e04bd2d2dd3",
+			"name": "Unaging",
+			"physical": true,
+			"exotic": true,
+			"base_points": 15,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "ac85212d-0a6d-4180-8fc5-d0e8319b6a2c",
+					"disabled": true,
+					"name": "Age Control",
+					"reference": "B95",
+					"cost_type": "percentage",
+					"cost": 20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "f24ea0c4-0ca1-4463-bcb0-652627a8f389",
+					"disabled": true,
+					"name": "IQ Only",
+					"reference": "RSWL24",
+					"cost_type": "percentage",
+					"cost": -75,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "8063e5a7-9427-4c95-91b6-5855e15cf4b0",
+					"disabled": true,
+					"name": "Halt Aging, Weekly",
+					"reference": "PSI18",
+					"cost_type": "percentage",
+					"cost": 80,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "92c6a6b5-52ce-453b-8aef-0c54955f764d",
+					"disabled": true,
+					"name": "Halt Aging, Monthly",
+					"reference": "PSI18",
+					"cost_type": "percentage",
+					"cost": 100,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "8b4f56bb-4047-4664-a8fd-cc9d08f06a0f",
+					"disabled": true,
+					"name": "Halt Aging, Yearly",
+					"reference": "PSI18",
+					"cost_type": "percentage",
+					"cost": 130,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "aa9e4245-23a9-485a-9bed-cea96aec3013",
+					"disabled": true,
+					"name": "Life Extension",
+					"reference": "PSI18",
+					"cost_type": "percentage",
+					"cost": -30,
+					"affects": "total"
+				}
+			],
+			"reference": "B95,PSI18",
+			"calc": {
+				"points": 15
+			},
+			"notes": "Your age is fixed at a point of your choosing.",
+			"categories": [
+				"Advantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "3ba4d232-944c-47e3-ac3b-b41c62c6be6a",
+			"name": "Unhealing (Partial)",
+			"physical": true,
+			"exotic": true,
+			"base_points": -20,
+			"reference": "B160",
+			"calc": {
+				"points": -20
+			},
+			"notes": "You can not recover lost HT by normal means.",
+			"categories": [
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"id": "f22fd610-2da9-47e1-9dfe-1396bd6e6122",
+			"name": "Vampiric Invulnerability",
+			"physical": true,
+			"supernatural": true,
+			"base_points": 100,
+			"reference": "VTM60",
+			"calc": {
+				"points": 100
+			},
+			"notes": "Only sun, fire, or undead natural weapons kill you. First roll for conciousness happens at -HT. No movement penalty or shock until below 1 HP. At or below -HT, lose 1 Blood Point per turn and roll for concsiousness as normal. If you fall unconscious and lose all blood points, you go into torpor (VTM83)."
+		},
+		{
+			"type": "advantage",
+			"id": "55e66790-cb65-4f7b-a816-9eef48bcf41d",
+			"name": "Weakness",
+			"physical": true,
+			"exotic": true,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "ae7de325-e0be-40cd-89c6-5051f6a22b5d",
+					"name": "1d damage per minute",
+					"reference": "B161",
+					"cost_type": "points",
+					"cost": -20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "dcbe6e63-148c-42d8-a5d2-954ccc229223",
+					"disabled": true,
+					"name": "1d damage per 5 minutes",
+					"reference": "B161",
+					"cost_type": "points",
+					"cost": -10,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "16ba2e4c-3e13-4aba-bda0-d1d882d906da",
+					"disabled": true,
+					"name": "1d damage per 30 minutes",
+					"reference": "B161",
+					"cost_type": "points",
+					"cost": -5,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "b29249d7-2ab4-4943-ae19-ac033ffa32a9",
+					"disabled": true,
+					"name": "@Rare Substance@",
+					"reference": "B161",
+					"cost_type": "multiplier",
+					"cost": 0.5
+				},
+				{
+					"type": "modifier",
+					"id": "5771ed70-94f2-4517-8158-976ef0355c0e",
+					"disabled": true,
+					"name": "@Occasional Substance@",
+					"reference": "B161",
+					"cost_type": "multiplier",
+					"cost": 1
+				},
+				{
+					"type": "modifier",
+					"id": "730fe7a2-f720-43bf-b27e-99c41718b7a9",
+					"name": "Sunlight",
+					"reference": "B161",
+					"cost_type": "multiplier",
+					"cost": 2
+				},
+				{
+					"type": "modifier",
+					"id": "383b41d1-a09a-4d80-bdeb-2816038b114a",
+					"disabled": true,
+					"name": "@Very Common Substance@",
+					"reference": "B161",
+					"cost_type": "multiplier",
+					"cost": 3
+				},
+				{
+					"type": "modifier",
+					"id": "1961061a-decf-4358-8bfc-8f1a41e01bcc",
+					"disabled": true,
+					"name": "Fatigue Only",
+					"reference": "B161",
+					"cost_type": "percentage",
+					"cost": -50,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "5271267f-7543-452e-9ce9-09c4c77d7a2f",
+					"disabled": true,
+					"name": "Variable",
+					"reference": "B161",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "total"
+				}
+			],
+			"reference": "B161, VTM64",
+			"calc": {
+				"points": -40
+			},
+			"categories": [
+				"Disadvantage"
+			]
+		}
+	],
+	"calc": {
+		"swing": "1d",
+		"thrust": "1d-2",
+		"basic_lift": "20 lb",
+		"lifting_st_bonus": 0,
+		"striking_st_bonus": 0,
+		"throwing_st_bonus": 0,
+		"move": [
+			5,
+			4,
+			3,
+			2,
+			1
+		],
+		"dodge": [
+			8,
+			7,
+			6,
+			5,
+			4
+		],
+		"dodge_bonus": 0,
+		"block_bonus": 0,
+		"parry_bonus": 0
+	}
+}

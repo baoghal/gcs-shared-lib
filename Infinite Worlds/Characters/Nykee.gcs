@@ -535,7 +535,7 @@
 		}
 	},
 	"created_date": "Jun 21, 2022, 7:33 PM",
-	"modified_date": "Jul 26, 2022, 10:46 PM",
+	"modified_date": "Aug 2, 2022, 10:42 PM",
 	"profile": {
 		"player_name": "dergl",
 		"name": "Nykee",
@@ -1606,6 +1606,60 @@
 			"calc": {
 				"points": 1
 			}
+		},
+		{
+			"type": "advantage",
+			"id": "ed405bbe-3f32-4803-b25e-f889fbc1acfe",
+			"name": "Secret (Chess Club)",
+			"social": true,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"id": "1cb8c9d5-8d74-4f23-86f5-67cef8f76bf0",
+					"disabled": true,
+					"name": "Serious Embarrassment",
+					"reference": "B152",
+					"cost_type": "points",
+					"cost": -5,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "9ea80145-d5ab-40fd-830c-4f23d1fd3707",
+					"disabled": true,
+					"name": "Utter Rejection",
+					"reference": "B152",
+					"cost_type": "points",
+					"cost": -10,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "cc93f106-04df-48c5-85b4-ef084bd36e62",
+					"name": "Imprisonment",
+					"reference": "B152",
+					"cost_type": "points",
+					"cost": -20,
+					"affects": "total"
+				},
+				{
+					"type": "modifier",
+					"id": "a4b2218d-9007-434e-a5ec-4334438d193e",
+					"disabled": true,
+					"name": "Possible Death",
+					"reference": "B152",
+					"cost_type": "points",
+					"cost": -30,
+					"affects": "total"
+				}
+			],
+			"reference": "B152",
+			"calc": {
+				"points": -20
+			},
+			"categories": [
+				"Disadvantage"
+			]
 		},
 		{
 			"type": "advantage",

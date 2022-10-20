@@ -1,0 +1,982 @@
+{
+	"type": "template",
+	"version": 2,
+	"id": "af1b987f-f0ff-42fe-9bca-af08668471d8",
+	"advantages": [
+		{
+			"type": "advantage_container",
+			"id": "c6d0ca8e-949a-461a-a41f-d9a697d76e9f",
+			"name": "Clan Ravnos",
+			"reference": "VTMC53",
+			"calc": {
+				"points": 7
+			},
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"id": "d32226fe-1568-4e37-9414-0193f554a290",
+					"name": "Choose an illegal compulsion worth -10 points",
+					"physical": true,
+					"base_points": -10,
+					"reference": "VTMC53",
+					"calc": {
+						"points": -10
+					},
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "830c448b-910f-403b-ae78-43f68db36a73",
+					"name": "Code of Honor (Ravnos)",
+					"mental": true,
+					"base_points": -5,
+					"reference": "B163,MA53",
+					"calc": {
+						"points": -5
+					},
+					"notes": "Avenge all insults. never break a blood oath, aid true friends when called upon, never cheat or lie to a clan brother, keep all Ravnos secrets from Outsiders.",
+					"categories": [
+						"Quirk"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "66aee60f-b60f-4e9b-9b7a-87a0ced48286",
+					"name": "Disciplines (Kindred)",
+					"physical": true,
+					"supernatural": true,
+					"base_points": 10,
+					"reference": "VTM58",
+					"calc": {
+						"points": 10
+					},
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Blood Pool"
+								}
+							}
+						]
+					},
+					"notes": "Available Disciplines:Animalism, Chimerstry, Fortitude"
+				},
+				{
+					"type": "advantage",
+					"id": "75d6082d-bdbe-4210-8c12-93615a6ccc51",
+					"name": "Sweet Whispers",
+					"physical": true,
+					"supernatural": true,
+					"base_points": 4,
+					"reference": "VTM97",
+					"calc": {
+						"points": 4
+					},
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Disciplines (Kindred)"
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "Animalism"
+								}
+							}
+						]
+					},
+					"notes": "Animalism Level 1. With eye contact, communicate and make requests of animals. Roll vs Will. Modified by Animal Empathy.",
+					"categories": [
+						"Advantage",
+						"Animalism",
+						"Discipline"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "297e121e-03da-4498-95b0-246c62dbc105",
+					"name": "Ignis Fatuus",
+					"mental": true,
+					"supernatural": true,
+					"base_points": 4,
+					"reference": "VTMC101",
+					"calc": {
+						"points": 4
+					},
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Disciplines (Kindred)"
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "Chimerstry"
+								}
+							}
+						]
+					},
+					"notes": "Chimerstry Level 1. Create static illusion, affectiong only one sense. Requires a Will roll plus Chimerstry level. Doesn't require concentration.",
+					"categories": [
+						"Advantage",
+						"Chimerstry",
+						"Discipline"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "8be67e22-b19c-403b-8a25-dc579d8f1c90",
+					"name": "Fortitude",
+					"physical": true,
+					"supernatural": true,
+					"base_points": 4,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "886e0a9d-2dba-49fe-a110-5b98d260f14b",
+							"name": "Power 1",
+							"reference": "VTM103",
+							"cost_type": "points",
+							"cost": 0,
+							"affects": "total",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"amount": 1,
+									"location": "arm"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 1,
+									"location": "eye"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 1,
+									"location": "face"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 1,
+									"location": "foot"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 1,
+									"location": "groin"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 1,
+									"location": "hand"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 1,
+									"location": "leg"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 1,
+									"location": "neck"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 1,
+									"location": "skull"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 1,
+									"location": "torso"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 1,
+									"location": "vitals"
+								}
+							],
+							"notes": "Duration: 10 mins. +1 DR (global), +2 to HT to resist sun or fire damage."
+						},
+						{
+							"type": "modifier",
+							"id": "5e0c9e41-0a50-446c-a004-7a3b453de091",
+							"disabled": true,
+							"name": "Power 2",
+							"reference": "VTM103",
+							"cost_type": "points",
+							"cost": 4,
+							"affects": "total",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "arm"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "eye"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "face"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "foot"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "groin"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "hand"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "leg"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "neck"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "skull"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "torso"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 2,
+									"location": "vitals"
+								}
+							],
+							"notes": "Duration: 30 mins. +2 DR (global), +4 to HT to resist sun or fire damage."
+						},
+						{
+							"type": "modifier",
+							"id": "7742f7b1-f430-4de4-83d0-62adf970402b",
+							"disabled": true,
+							"name": "Power 3",
+							"reference": "VTM103",
+							"cost_type": "points",
+							"cost": 12,
+							"affects": "total",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"amount": 4,
+									"location": "arm"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 4,
+									"location": "eye"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 4,
+									"location": "face"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 4,
+									"location": "foot"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 4,
+									"location": "groin"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 4,
+									"location": "hand"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 4,
+									"location": "leg"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 4,
+									"location": "neck"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 4,
+									"location": "skull"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 4,
+									"location": "torso"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 4,
+									"location": "vitals"
+								}
+							],
+							"notes": "Duration: 1 hour. +4 DR (global), +6 to HT to resist sun or fire damage."
+						},
+						{
+							"type": "modifier",
+							"id": "14cc38d6-7832-4c35-9f08-93a9db27e510",
+							"disabled": true,
+							"name": "Power 4",
+							"reference": "VTM103",
+							"cost_type": "points",
+							"cost": 20,
+							"affects": "total",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"amount": 6,
+									"location": "arm"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 6,
+									"location": "eye"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 6,
+									"location": "face"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 6,
+									"location": "foot"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 6,
+									"location": "groin"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 6,
+									"location": "hand"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 6,
+									"location": "leg"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 6,
+									"location": "neck"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 6,
+									"location": "skull"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 6,
+									"location": "torso"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 6,
+									"location": "vitals"
+								}
+							],
+							"notes": "Duration: 2 hrs. +6 DR (global), +8 to HT to resist sun or fire damage."
+						},
+						{
+							"type": "modifier",
+							"id": "225afb5a-e29d-4960-8657-da41ef86da0b",
+							"disabled": true,
+							"name": "Power 5",
+							"reference": "VTM103",
+							"cost_type": "points",
+							"cost": 44,
+							"affects": "total",
+							"features": [
+								{
+									"type": "dr_bonus",
+									"amount": 10,
+									"location": "arm"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 10,
+									"location": "eye"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 10,
+									"location": "face"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 10,
+									"location": "foot"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 10,
+									"location": "groin"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 10,
+									"location": "hand"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 10,
+									"location": "leg"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 10,
+									"location": "neck"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 10,
+									"location": "skull"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 10,
+									"location": "torso"
+								},
+								{
+									"type": "dr_bonus",
+									"amount": 10,
+									"location": "vitals"
+								}
+							],
+							"notes": "Duration: 6 hrs. +10 DR (global), +10 to HT to resist sun or fire damage."
+						}
+					],
+					"reference": "VTM103",
+					"calc": {
+						"points": 4
+					},
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "Disciplines (Kindred)"
+								},
+								"notes": {
+									"compare": "contains",
+									"qualifier": "Fortitude"
+								}
+							}
+						]
+					},
+					"notes": "The supernatural toughness of Kindred.",
+					"categories": [
+						"Advantage",
+						"Discipline",
+						"Fortitude"
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage_container",
+			"id": "7f0b47ca-a49d-468b-8a81-c9a97168bfc9",
+			"name": "Vampire (Kindred)",
+			"reference": "VTM54",
+			"calc": {
+				"points": 45
+			},
+			"notes": "An immortal vampire, as described in Vampire: The Masquerade.",
+			"open": true,
+			"children": [
+				{
+					"type": "advantage",
+					"id": "621f8fd2-2a6c-4128-b141-37cf96ca6fdf",
+					"name": "Blood Pool",
+					"physical": true,
+					"supernatural": true,
+					"base_points": 25,
+					"reference": "VTM77",
+					"calc": {
+						"points": 25
+					},
+					"notes": "Gain a Blood Pool containing Blood Points (BP). Can use 1BP in exhange for 2 HP. Can use 1 BP in exchange for 2 FP. Can use 1 BP to add +2 to any skill (requires 1 second of Concentration) and it is cumulative. Can use 1 BP to add 2 to ST for 1 second (cumulative). Can share BP with any other creature with a Blood Pool. ",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "211019bc-8fef-4439-bb94-a0bddd5d53f8",
+					"name": "Doesn't Breathe",
+					"physical": true,
+					"exotic": true,
+					"base_points": 20,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "00c163e7-8c4f-4e48-b047-468a8e3ac43c",
+							"disabled": true,
+							"name": "Gills",
+							"reference": "B49",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "ecd94dcc-370b-480c-a354-f873457f724c",
+							"disabled": true,
+							"name": "Gills",
+							"reference": "B49",
+							"cost_type": "points",
+							"cost": -20,
+							"affects": "total",
+							"notes": "Suffocates in air"
+						},
+						{
+							"type": "modifier",
+							"id": "e4f94b26-478d-4b72-9df2-bbbcfafdd818",
+							"disabled": true,
+							"name": "Oxygen Absorption",
+							"reference": "B49",
+							"cost_type": "percentage",
+							"cost": -25,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "d2eff8af-caab-45b1-b3dc-cd76dfb41c8e",
+							"disabled": true,
+							"name": "Oxygen Storage",
+							"reference": "B49",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "total",
+							"notes": "Can hold breath 25 times as long as normal"
+						},
+						{
+							"type": "modifier",
+							"id": "8f192055-7952-4f53-9405-e33a4426e364",
+							"disabled": true,
+							"name": "Oxygen Storage",
+							"reference": "B49",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "total",
+							"notes": "Can hold breath 50 times as long as normal"
+						},
+						{
+							"type": "modifier",
+							"id": "e62eb0fb-03aa-4661-999b-96a5a13ad589",
+							"disabled": true,
+							"name": "Oxygen Storage",
+							"reference": "B49",
+							"cost_type": "percentage",
+							"cost": -30,
+							"affects": "total",
+							"notes": "Can hold breath 100 times as long as normal"
+						},
+						{
+							"type": "modifier",
+							"id": "9a70aab9-f884-41e0-9d29-af711e662a5f",
+							"disabled": true,
+							"name": "Oxygen Storage",
+							"reference": "B49",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total",
+							"notes": "Can hold breath 200 times as long as normal"
+						},
+						{
+							"type": "modifier",
+							"id": "5981cf2e-1bc8-42c5-9e1f-2a326b896221",
+							"disabled": true,
+							"name": "Oxygen Storage",
+							"reference": "B49",
+							"cost_type": "percentage",
+							"cost": -10,
+							"affects": "total",
+							"notes": "Can hold breath 300 times as long as normal"
+						},
+						{
+							"type": "modifier",
+							"id": "e9c6dcc2-3b99-4b8a-9b7a-ecdbc3dbe0a1",
+							"disabled": true,
+							"name": "Oxygen Combustion",
+							"reference": "B49",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "total"
+						}
+					],
+					"reference": "B49",
+					"calc": {
+						"points": 20
+					},
+					"notes": "You do not need oxygen and do not suffocate. You're still affected by the effects of high pressure or vacuum.",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "e6c2b5c2-06bc-4293-a161-fb5155d907d2",
+					"name": "Frenzy (Berserk)",
+					"mental": true,
+					"base_points": -10,
+					"cr": 9,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "96ad8c25-0425-4a09-bbc9-a00b4c7962c5",
+							"disabled": true,
+							"name": "Battle Rage",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						}
+					],
+					"reference": "B124",
+					"calc": {
+						"points": -15
+					},
+					"notes": "Make a self-control roll any time you suffer damage over 1/4 your HP in the space of one second, and whenever you witness equivalent harm to a loved one",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "17d81297-e23f-4099-90bf-09ce65fe4c4b",
+					"name": "Rötschreck",
+					"mental": true,
+					"base_points": -10,
+					"cr": 12,
+					"reference": "VTM62",
+					"calc": {
+						"points": -10
+					},
+					"notes": "Fear of sun and flame."
+				},
+				{
+					"type": "advantage",
+					"id": "e6204dde-18ca-4fca-9ceb-1fcbfc0c3543",
+					"name": "Secret (Kindred)",
+					"social": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "de729d4b-4b5c-49dc-a93f-77c8fa32303c",
+							"disabled": true,
+							"name": "Serious Embarrassment",
+							"reference": "B152",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "ff3078f0-829d-4f96-94a9-ad70997d2668",
+							"disabled": true,
+							"name": "Utter Rejection",
+							"reference": "B152",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "63461d4d-de89-4be9-b696-881d9a5e3e95",
+							"name": "Imprisonment",
+							"reference": "B152",
+							"cost_type": "points",
+							"cost": -20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "951e5547-a1b9-466b-a9e6-8db707b9c432",
+							"disabled": true,
+							"name": "Possible Death",
+							"reference": "B152",
+							"cost_type": "points",
+							"cost": -30,
+							"affects": "total"
+						}
+					],
+					"reference": "B152",
+					"calc": {
+						"points": -20
+					},
+					"notes": "Discovery of this secret could result in imprisonment or capture.",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "f54d70ab-b894-4c43-92d4-3c2f90261efc",
+					"name": "The Draining",
+					"physical": true,
+					"supernatural": true,
+					"base_points": -10,
+					"reference": "VTM63",
+					"calc": {
+						"points": -10
+					},
+					"notes": "You lose 1 Blood Point every dawn. If there are none left, you lose 2 hit points. If you get to -HT, you fall into torpor (VTM83)"
+				},
+				{
+					"type": "advantage",
+					"id": "345ec2cb-ae74-43b6-b904-b018beb21ceb",
+					"name": "Unaging",
+					"physical": true,
+					"exotic": true,
+					"base_points": 15,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "c6f05b13-8cee-4a11-b1b0-fa879adb83d7",
+							"disabled": true,
+							"name": "Age Control",
+							"reference": "B95",
+							"cost_type": "percentage",
+							"cost": 20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "417dcaac-930c-48c3-adbe-e1376a2c65a5",
+							"disabled": true,
+							"name": "IQ Only",
+							"reference": "RSWL24",
+							"cost_type": "percentage",
+							"cost": -75,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "5d13632a-da9a-4d1d-a950-aaa2c941d0bc",
+							"disabled": true,
+							"name": "Halt Aging, Weekly",
+							"reference": "PSI18",
+							"cost_type": "percentage",
+							"cost": 80,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "15ac8c4a-54ab-4841-bb49-556c44a28e37",
+							"disabled": true,
+							"name": "Halt Aging, Monthly",
+							"reference": "PSI18",
+							"cost_type": "percentage",
+							"cost": 100,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "2f577629-564a-4121-857b-d8a83c124138",
+							"disabled": true,
+							"name": "Halt Aging, Yearly",
+							"reference": "PSI18",
+							"cost_type": "percentage",
+							"cost": 130,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "680f4bfd-c107-48c8-b126-dd63d68b82b1",
+							"disabled": true,
+							"name": "Life Extension",
+							"reference": "PSI18",
+							"cost_type": "percentage",
+							"cost": -30,
+							"affects": "total"
+						}
+					],
+					"reference": "B95,PSI18",
+					"calc": {
+						"points": 15
+					},
+					"notes": "Your age is fixed at a point of your choosing.",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "33e0771e-cb1a-4842-9b65-e8e3cb5b8bb9",
+					"name": "Unhealing (Partial)",
+					"physical": true,
+					"exotic": true,
+					"base_points": -20,
+					"reference": "B160",
+					"calc": {
+						"points": -20
+					},
+					"notes": "You can not recover lost HT by normal means.",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"id": "c75acc57-36d6-4f9c-a30b-f26a89e4554e",
+					"name": "Vampiric Invulnerability",
+					"physical": true,
+					"supernatural": true,
+					"base_points": 100,
+					"reference": "VTM60",
+					"calc": {
+						"points": 100
+					},
+					"notes": "Only sun, fire, or undead natural weapons kill you. First roll for conciousness happens at -HT. No movement penalty or shock until below 1 HP. At or below -HT, lose 1 Blood Point per turn and roll for concsiousness as normal. If you fall unconscious and lose all blood points, you go into torpor (VTM83)."
+				},
+				{
+					"type": "advantage",
+					"id": "64f92da3-d0b2-4552-a167-57d064447aa4",
+					"name": "Weakness",
+					"physical": true,
+					"exotic": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"id": "6409752b-af93-4af7-9b7e-47e0258ef5f6",
+							"name": "1d damage per minute",
+							"reference": "B161",
+							"cost_type": "points",
+							"cost": -20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "ad6c4b0b-5e52-4282-b879-a2d7b9b4ba8e",
+							"disabled": true,
+							"name": "1d damage per 5 minutes",
+							"reference": "B161",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "fcbc03ef-fcbe-4302-8345-7d7641a59ecd",
+							"disabled": true,
+							"name": "1d damage per 30 minutes",
+							"reference": "B161",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "508caa9b-0f98-4451-8f38-9dab602ec745",
+							"disabled": true,
+							"name": "@Rare Substance@",
+							"reference": "B161",
+							"cost_type": "multiplier",
+							"cost": 0.5
+						},
+						{
+							"type": "modifier",
+							"id": "0a3c736b-a12c-4ef0-b96a-9defbab88828",
+							"disabled": true,
+							"name": "@Occasional Substance@",
+							"reference": "B161",
+							"cost_type": "multiplier",
+							"cost": 1
+						},
+						{
+							"type": "modifier",
+							"id": "512e90d7-19f4-4c98-ad80-a56c35e482f9",
+							"name": "Sunlight",
+							"reference": "B161",
+							"cost_type": "multiplier",
+							"cost": 2
+						},
+						{
+							"type": "modifier",
+							"id": "c02dd1e0-9314-40ec-8b86-70d8443431ed",
+							"disabled": true,
+							"name": "@Very Common Substance@",
+							"reference": "B161",
+							"cost_type": "multiplier",
+							"cost": 3
+						},
+						{
+							"type": "modifier",
+							"id": "1d0a754c-d13a-4ac3-b06a-555901f34559",
+							"disabled": true,
+							"name": "Fatigue Only",
+							"reference": "B161",
+							"cost_type": "percentage",
+							"cost": -50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"id": "4133bf1c-fb78-491b-8b5f-ad6c8ab5083d",
+							"disabled": true,
+							"name": "Variable",
+							"reference": "B161",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "total"
+						}
+					],
+					"reference": "B161, VTM64",
+					"calc": {
+						"points": -40
+					},
+					"categories": [
+						"Disadvantage"
+					]
+				}
+			]
+		}
+	]
+}

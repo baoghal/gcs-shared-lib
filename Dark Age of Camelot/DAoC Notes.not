@@ -1,0 +1,13 @@
+{
+	"type": "note_list",
+	"version": 2,
+	"id": "71c49962-e907-4ac6-bfbc-62e5d01b23f3",
+	"rows": [
+		{
+			"type": "note_container",
+			"id": "15c6c109-62d7-4fe5-9b90-3d54eb60204d",
+			"text": "Character Building",
+			"open": true
+		}
+	]
+}

@@ -1,0 +1,87 @@
+{
+	"type": "skill_list",
+	"version": 2,
+	"id": "652b865a-379e-4eda-b61c-18df818bd256",
+	"rows": [
+		{
+			"type": "skill_container",
+			"id": "f08aa344-4d10-4743-9049-8fc52fe7911d",
+			"name": "Crush",
+			"categories": [
+				"Armsman",
+				"Combat"
+			],
+			"open": true
+		},
+		{
+			"type": "skill_container",
+			"id": "96a70f89-2cfa-4321-93a8-4b6865e4ebf6",
+			"name": "Slash",
+			"categories": [
+				"Armsman",
+				"Combat"
+			],
+			"open": true
+		},
+		{
+			"type": "skill_container",
+			"id": "4a2076a3-587a-4dca-9501-f4fae4d4bb4b",
+			"name": "Thrust",
+			"categories": [
+				"Armsman",
+				"Combat"
+			],
+			"open": true
+		},
+		{
+			"type": "skill_container",
+			"id": "32f483f8-96ae-46b4-ba79-1d3c433ae058",
+			"name": "Shield",
+			"categories": [
+				"Armsman",
+				"Combat"
+			],
+			"open": true
+		},
+		{
+			"type": "skill_container",
+			"id": "2b3733ed-8f03-4a0f-8278-7ddb7c5d8842",
+			"name": "Two Handed",
+			"categories": [
+				"Armsman",
+				"Combat"
+			],
+			"open": true
+		},
+		{
+			"type": "skill_container",
+			"id": "4984ff68-fafb-4845-8ba9-c7351fe655d4",
+			"name": "Polearm",
+			"categories": [
+				"Armsman",
+				"Combat"
+			],
+			"open": true
+		},
+		{
+			"type": "skill_container",
+			"id": "26a5d7d2-dc3d-45e1-bfac-b82cb1fac43c",
+			"name": "Parry",
+			"categories": [
+				"Armsman",
+				"Combat"
+			],
+			"open": true
+		},
+		{
+			"type": "skill_container",
+			"id": "91e1b149-3f66-496e-8925-eb78e6d916b6",
+			"name": "Crossbow",
+			"categories": [
+				"Armsman",
+				"Combat"
+			],
+			"open": true
+		}
+	]
+}
